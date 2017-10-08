@@ -1,11 +1,11 @@
 [package]
 name = "xed-sys"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["William Cody Laeder <codylaeder@gmail.com>"]
 description = "FFI bindings to Intel XED encoder/decoder library"
-documentation = "https://valarauca.github.io/xed_sys/xed_sys/index.html"
-homepage = "https://github.com/valarauca/xed_sys"
-repository = "https://github.com/valarauca/xed_sys"
+documentation = "https://valarauca.github.io/xed-sys/xed_sys/index.html"
+homepage = "https://github.com/valarauca/xed-sys"
+repository = "https://github.com/valarauca/xed-sys"
 categories = ["external-ffi-bindings", "hardware-support", "encoding", "parsing"]
 license = "Apache-2.0"
 keywords = ["xed", "intel"]
