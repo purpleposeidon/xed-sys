@@ -14,6 +14,7 @@ Automatically generated bindings via [`bindgen`](https://crates.io/crates/bindge
 * `mkdir`
 * `rustc`/`cargo`
 * `git` (new enough to support submodules)
+* `python v2.7` (to build xed)
 
 You'll need `clang`, `clang++`, `ld`, and `ar` to be located in
 `/usr/bin/`

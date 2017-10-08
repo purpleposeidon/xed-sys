@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xed_isa_set_enum_t` enum in crate `xed_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xed_isa_set_enum_t">
+
+    <title>xed_sys::xed_interface::xed_isa_set_enum_t - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc enum">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Enum xed_isa_set_enum_t</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a></p><script>window.sidebarCurrent = {name: 'xed_isa_set_enum_t', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a>::<wbr><a class="enum" href=''>xed_isa_set_enum_t</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#9788-9905' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'><div class="docblock attributes">#[repr(u32)]
+</div>pub enum xed_isa_set_enum_t {
+    XED_ISA_SET_INVALID,
+    XED_ISA_SET_3DNOW,
+    XED_ISA_SET_AES,
+    XED_ISA_SET_AMD,
+    XED_ISA_SET_AVX,
+    XED_ISA_SET_AVX2,
+    XED_ISA_SET_AVX2GATHER,
+    XED_ISA_SET_AVX512BW_128,
+    XED_ISA_SET_AVX512BW_128N,
+    XED_ISA_SET_AVX512BW_256,
+    XED_ISA_SET_AVX512BW_512,
+    XED_ISA_SET_AVX512BW_KOP,
+    XED_ISA_SET_AVX512CD_128,
+    XED_ISA_SET_AVX512CD_256,
+    XED_ISA_SET_AVX512CD_512,
+    XED_ISA_SET_AVX512DQ_128,
+    XED_ISA_SET_AVX512DQ_128N,
+    XED_ISA_SET_AVX512DQ_256,
+    XED_ISA_SET_AVX512DQ_512,
+    XED_ISA_SET_AVX512DQ_KOP,
+    XED_ISA_SET_AVX512DQ_SCALAR,
+    XED_ISA_SET_AVX512ER_512,
+    XED_ISA_SET_AVX512ER_SCALAR,
+    XED_ISA_SET_AVX512F_128,
+    XED_ISA_SET_AVX512F_128N,
+    XED_ISA_SET_AVX512F_256,
+    XED_ISA_SET_AVX512F_512,
+    XED_ISA_SET_AVX512F_KOP,
+    XED_ISA_SET_AVX512F_SCALAR,
+    XED_ISA_SET_AVX512PF_512,
+    XED_ISA_SET_AVX512_4FMAPS_512,
+    XED_ISA_SET_AVX512_4FMAPS_SCALAR,
+    XED_ISA_SET_AVX512_4VNNIW_512,
+    XED_ISA_SET_AVX512_IFMA_128,
+    XED_ISA_SET_AVX512_IFMA_256,
+    XED_ISA_SET_AVX512_IFMA_512,
+    XED_ISA_SET_AVX512_VBMI_128,
+    XED_ISA_SET_AVX512_VBMI_256,
+    XED_ISA_SET_AVX512_VBMI_512,
+    XED_ISA_SET_AVX512_VPOPCNTDQ_512,
+    XED_ISA_SET_AVXAES,
+    XED_ISA_SET_BDW,
+    XED_ISA_SET_BMI1,
+    XED_ISA_SET_BMI2,
+    XED_ISA_SET_CET,
+    XED_ISA_SET_CLFLUSHOPT,
+    XED_ISA_SET_CLFSH,
+    XED_ISA_SET_CLWB,
+    XED_ISA_SET_CLZERO,
+    XED_ISA_SET_CMOV,
+    XED_ISA_SET_CMPXCHG16B,
+    XED_ISA_SET_F16C,
+    XED_ISA_SET_FAT_NOP,
+    XED_ISA_SET_FCMOV,
+    XED_ISA_SET_FMA,
+    XED_ISA_SET_FMA4,
+    XED_ISA_SET_FXSAVE,
+    XED_ISA_SET_FXSAVE64,
+    XED_ISA_SET_I186,
+    XED_ISA_SET_I286PROTECTED,
+    XED_ISA_SET_I286REAL,
+    XED_ISA_SET_I386,
+    XED_ISA_SET_I486,
+    XED_ISA_SET_I486REAL,
+    XED_ISA_SET_I86,
+    XED_ISA_SET_INVPCID,
+    XED_ISA_SET_LAHF,
+    XED_ISA_SET_LONGMODE,
+    XED_ISA_SET_LZCNT,
+    XED_ISA_SET_MONITOR,
+    XED_ISA_SET_MOVBE,
+    XED_ISA_SET_MPX,
+    XED_ISA_SET_PAUSE,
+    XED_ISA_SET_PCLMULQDQ,
+    XED_ISA_SET_PENTIUMMMX,
+    XED_ISA_SET_PENTIUMREAL,
+    XED_ISA_SET_PKU,
+    XED_ISA_SET_POPCNT,
+    XED_ISA_SET_PPRO,
+    XED_ISA_SET_PREFETCHW,
+    XED_ISA_SET_PREFETCHWT1,
+    XED_ISA_SET_PREFETCH_NOP,
+    XED_ISA_SET_PT,
+    XED_ISA_SET_RDPMC,
+    XED_ISA_SET_RDRAND,
+    XED_ISA_SET_RDSEED,
+    XED_ISA_SET_RDTSCP,
+    XED_ISA_SET_RDWRFSGS,
+    XED_ISA_SET_RTM,
+    XED_ISA_SET_SGX,
+    XED_ISA_SET_SHA,
+    XED_ISA_SET_SMAP,
+    XED_ISA_SET_SMX,
+    XED_ISA_SET_SSE,
+    XED_ISA_SET_SSE2,
+    XED_ISA_SET_SSE2MMX,
+    XED_ISA_SET_SSE3,
+    XED_ISA_SET_SSE3X87,
+    XED_ISA_SET_SSE4,
+    XED_ISA_SET_SSE42,
+    XED_ISA_SET_SSE4A,
+    XED_ISA_SET_SSEMXCSR,
+    XED_ISA_SET_SSE_PREFETCH,
+    XED_ISA_SET_SSSE3,
+    XED_ISA_SET_SSSE3MMX,
+    XED_ISA_SET_SVM,
+    XED_ISA_SET_TBM,
+    XED_ISA_SET_VMFUNC,
+    XED_ISA_SET_VTX,
+    XED_ISA_SET_X87,
+    XED_ISA_SET_XOP,
+    XED_ISA_SET_XSAVE,
+    XED_ISA_SET_XSAVEC,
+    XED_ISA_SET_XSAVEOPT,
+    XED_ISA_SET_XSAVES,
+    XED_ISA_SET_LAST,
+}</pre><h2 id='variants' class='variants'>Variants</h2>
+<span id='variant.XED_ISA_SET_INVALID' class='variant'><span id='XED_ISA_SET_INVALID.v' class='invisible'><code>XED_ISA_SET_INVALID</code></span></span><span id='variant.XED_ISA_SET_3DNOW' class='variant'><span id='XED_ISA_SET_3DNOW.v' class='invisible'><code>XED_ISA_SET_3DNOW</code></span></span><span id='variant.XED_ISA_SET_AES' class='variant'><span id='XED_ISA_SET_AES.v' class='invisible'><code>XED_ISA_SET_AES</code></span></span><span id='variant.XED_ISA_SET_AMD' class='variant'><span id='XED_ISA_SET_AMD.v' class='invisible'><code>XED_ISA_SET_AMD</code></span></span><span id='variant.XED_ISA_SET_AVX' class='variant'><span id='XED_ISA_SET_AVX.v' class='invisible'><code>XED_ISA_SET_AVX</code></span></span><span id='variant.XED_ISA_SET_AVX2' class='variant'><span id='XED_ISA_SET_AVX2.v' class='invisible'><code>XED_ISA_SET_AVX2</code></span></span><span id='variant.XED_ISA_SET_AVX2GATHER' class='variant'><span id='XED_ISA_SET_AVX2GATHER.v' class='invisible'><code>XED_ISA_SET_AVX2GATHER</code></span></span><span id='variant.XED_ISA_SET_AVX512BW_128' class='variant'><span id='XED_ISA_SET_AVX512BW_128.v' class='invisible'><code>XED_ISA_SET_AVX512BW_128</code></span></span><span id='variant.XED_ISA_SET_AVX512BW_128N' class='variant'><span id='XED_ISA_SET_AVX512BW_128N.v' class='invisible'><code>XED_ISA_SET_AVX512BW_128N</code></span></span><span id='variant.XED_ISA_SET_AVX512BW_256' class='variant'><span id='XED_ISA_SET_AVX512BW_256.v' class='invisible'><code>XED_ISA_SET_AVX512BW_256</code></span></span><span id='variant.XED_ISA_SET_AVX512BW_512' class='variant'><span id='XED_ISA_SET_AVX512BW_512.v' class='invisible'><code>XED_ISA_SET_AVX512BW_512</code></span></span><span id='variant.XED_ISA_SET_AVX512BW_KOP' class='variant'><span id='XED_ISA_SET_AVX512BW_KOP.v' class='invisible'><code>XED_ISA_SET_AVX512BW_KOP</code></span></span><span id='variant.XED_ISA_SET_AVX512CD_128' class='variant'><span id='XED_ISA_SET_AVX512CD_128.v' class='invisible'><code>XED_ISA_SET_AVX512CD_128</code></span></span><span id='variant.XED_ISA_SET_AVX512CD_256' class='variant'><span id='XED_ISA_SET_AVX512CD_256.v' class='invisible'><code>XED_ISA_SET_AVX512CD_256</code></span></span><span id='variant.XED_ISA_SET_AVX512CD_512' class='variant'><span id='XED_ISA_SET_AVX512CD_512.v' class='invisible'><code>XED_ISA_SET_AVX512CD_512</code></span></span><span id='variant.XED_ISA_SET_AVX512DQ_128' class='variant'><span id='XED_ISA_SET_AVX512DQ_128.v' class='invisible'><code>XED_ISA_SET_AVX512DQ_128</code></span></span><span id='variant.XED_ISA_SET_AVX512DQ_128N' class='variant'><span id='XED_ISA_SET_AVX512DQ_128N.v' class='invisible'><code>XED_ISA_SET_AVX512DQ_128N</code></span></span><span id='variant.XED_ISA_SET_AVX512DQ_256' class='variant'><span id='XED_ISA_SET_AVX512DQ_256.v' class='invisible'><code>XED_ISA_SET_AVX512DQ_256</code></span></span><span id='variant.XED_ISA_SET_AVX512DQ_512' class='variant'><span id='XED_ISA_SET_AVX512DQ_512.v' class='invisible'><code>XED_ISA_SET_AVX512DQ_512</code></span></span><span id='variant.XED_ISA_SET_AVX512DQ_KOP' class='variant'><span id='XED_ISA_SET_AVX512DQ_KOP.v' class='invisible'><code>XED_ISA_SET_AVX512DQ_KOP</code></span></span><span id='variant.XED_ISA_SET_AVX512DQ_SCALAR' class='variant'><span id='XED_ISA_SET_AVX512DQ_SCALAR.v' class='invisible'><code>XED_ISA_SET_AVX512DQ_SCALAR</code></span></span><span id='variant.XED_ISA_SET_AVX512ER_512' class='variant'><span id='XED_ISA_SET_AVX512ER_512.v' class='invisible'><code>XED_ISA_SET_AVX512ER_512</code></span></span><span id='variant.XED_ISA_SET_AVX512ER_SCALAR' class='variant'><span id='XED_ISA_SET_AVX512ER_SCALAR.v' class='invisible'><code>XED_ISA_SET_AVX512ER_SCALAR</code></span></span><span id='variant.XED_ISA_SET_AVX512F_128' class='variant'><span id='XED_ISA_SET_AVX512F_128.v' class='invisible'><code>XED_ISA_SET_AVX512F_128</code></span></span><span id='variant.XED_ISA_SET_AVX512F_128N' class='variant'><span id='XED_ISA_SET_AVX512F_128N.v' class='invisible'><code>XED_ISA_SET_AVX512F_128N</code></span></span><span id='variant.XED_ISA_SET_AVX512F_256' class='variant'><span id='XED_ISA_SET_AVX512F_256.v' class='invisible'><code>XED_ISA_SET_AVX512F_256</code></span></span><span id='variant.XED_ISA_SET_AVX512F_512' class='variant'><span id='XED_ISA_SET_AVX512F_512.v' class='invisible'><code>XED_ISA_SET_AVX512F_512</code></span></span><span id='variant.XED_ISA_SET_AVX512F_KOP' class='variant'><span id='XED_ISA_SET_AVX512F_KOP.v' class='invisible'><code>XED_ISA_SET_AVX512F_KOP</code></span></span><span id='variant.XED_ISA_SET_AVX512F_SCALAR' class='variant'><span id='XED_ISA_SET_AVX512F_SCALAR.v' class='invisible'><code>XED_ISA_SET_AVX512F_SCALAR</code></span></span><span id='variant.XED_ISA_SET_AVX512PF_512' class='variant'><span id='XED_ISA_SET_AVX512PF_512.v' class='invisible'><code>XED_ISA_SET_AVX512PF_512</code></span></span><span id='variant.XED_ISA_SET_AVX512_4FMAPS_512' class='variant'><span id='XED_ISA_SET_AVX512_4FMAPS_512.v' class='invisible'><code>XED_ISA_SET_AVX512_4FMAPS_512</code></span></span><span id='variant.XED_ISA_SET_AVX512_4FMAPS_SCALAR' class='variant'><span id='XED_ISA_SET_AVX512_4FMAPS_SCALAR.v' class='invisible'><code>XED_ISA_SET_AVX512_4FMAPS_SCALAR</code></span></span><span id='variant.XED_ISA_SET_AVX512_4VNNIW_512' class='variant'><span id='XED_ISA_SET_AVX512_4VNNIW_512.v' class='invisible'><code>XED_ISA_SET_AVX512_4VNNIW_512</code></span></span><span id='variant.XED_ISA_SET_AVX512_IFMA_128' class='variant'><span id='XED_ISA_SET_AVX512_IFMA_128.v' class='invisible'><code>XED_ISA_SET_AVX512_IFMA_128</code></span></span><span id='variant.XED_ISA_SET_AVX512_IFMA_256' class='variant'><span id='XED_ISA_SET_AVX512_IFMA_256.v' class='invisible'><code>XED_ISA_SET_AVX512_IFMA_256</code></span></span><span id='variant.XED_ISA_SET_AVX512_IFMA_512' class='variant'><span id='XED_ISA_SET_AVX512_IFMA_512.v' class='invisible'><code>XED_ISA_SET_AVX512_IFMA_512</code></span></span><span id='variant.XED_ISA_SET_AVX512_VBMI_128' class='variant'><span id='XED_ISA_SET_AVX512_VBMI_128.v' class='invisible'><code>XED_ISA_SET_AVX512_VBMI_128</code></span></span><span id='variant.XED_ISA_SET_AVX512_VBMI_256' class='variant'><span id='XED_ISA_SET_AVX512_VBMI_256.v' class='invisible'><code>XED_ISA_SET_AVX512_VBMI_256</code></span></span><span id='variant.XED_ISA_SET_AVX512_VBMI_512' class='variant'><span id='XED_ISA_SET_AVX512_VBMI_512.v' class='invisible'><code>XED_ISA_SET_AVX512_VBMI_512</code></span></span><span id='variant.XED_ISA_SET_AVX512_VPOPCNTDQ_512' class='variant'><span id='XED_ISA_SET_AVX512_VPOPCNTDQ_512.v' class='invisible'><code>XED_ISA_SET_AVX512_VPOPCNTDQ_512</code></span></span><span id='variant.XED_ISA_SET_AVXAES' class='variant'><span id='XED_ISA_SET_AVXAES.v' class='invisible'><code>XED_ISA_SET_AVXAES</code></span></span><span id='variant.XED_ISA_SET_BDW' class='variant'><span id='XED_ISA_SET_BDW.v' class='invisible'><code>XED_ISA_SET_BDW</code></span></span><span id='variant.XED_ISA_SET_BMI1' class='variant'><span id='XED_ISA_SET_BMI1.v' class='invisible'><code>XED_ISA_SET_BMI1</code></span></span><span id='variant.XED_ISA_SET_BMI2' class='variant'><span id='XED_ISA_SET_BMI2.v' class='invisible'><code>XED_ISA_SET_BMI2</code></span></span><span id='variant.XED_ISA_SET_CET' class='variant'><span id='XED_ISA_SET_CET.v' class='invisible'><code>XED_ISA_SET_CET</code></span></span><span id='variant.XED_ISA_SET_CLFLUSHOPT' class='variant'><span id='XED_ISA_SET_CLFLUSHOPT.v' class='invisible'><code>XED_ISA_SET_CLFLUSHOPT</code></span></span><span id='variant.XED_ISA_SET_CLFSH' class='variant'><span id='XED_ISA_SET_CLFSH.v' class='invisible'><code>XED_ISA_SET_CLFSH</code></span></span><span id='variant.XED_ISA_SET_CLWB' class='variant'><span id='XED_ISA_SET_CLWB.v' class='invisible'><code>XED_ISA_SET_CLWB</code></span></span><span id='variant.XED_ISA_SET_CLZERO' class='variant'><span id='XED_ISA_SET_CLZERO.v' class='invisible'><code>XED_ISA_SET_CLZERO</code></span></span><span id='variant.XED_ISA_SET_CMOV' class='variant'><span id='XED_ISA_SET_CMOV.v' class='invisible'><code>XED_ISA_SET_CMOV</code></span></span><span id='variant.XED_ISA_SET_CMPXCHG16B' class='variant'><span id='XED_ISA_SET_CMPXCHG16B.v' class='invisible'><code>XED_ISA_SET_CMPXCHG16B</code></span></span><span id='variant.XED_ISA_SET_F16C' class='variant'><span id='XED_ISA_SET_F16C.v' class='invisible'><code>XED_ISA_SET_F16C</code></span></span><span id='variant.XED_ISA_SET_FAT_NOP' class='variant'><span id='XED_ISA_SET_FAT_NOP.v' class='invisible'><code>XED_ISA_SET_FAT_NOP</code></span></span><span id='variant.XED_ISA_SET_FCMOV' class='variant'><span id='XED_ISA_SET_FCMOV.v' class='invisible'><code>XED_ISA_SET_FCMOV</code></span></span><span id='variant.XED_ISA_SET_FMA' class='variant'><span id='XED_ISA_SET_FMA.v' class='invisible'><code>XED_ISA_SET_FMA</code></span></span><span id='variant.XED_ISA_SET_FMA4' class='variant'><span id='XED_ISA_SET_FMA4.v' class='invisible'><code>XED_ISA_SET_FMA4</code></span></span><span id='variant.XED_ISA_SET_FXSAVE' class='variant'><span id='XED_ISA_SET_FXSAVE.v' class='invisible'><code>XED_ISA_SET_FXSAVE</code></span></span><span id='variant.XED_ISA_SET_FXSAVE64' class='variant'><span id='XED_ISA_SET_FXSAVE64.v' class='invisible'><code>XED_ISA_SET_FXSAVE64</code></span></span><span id='variant.XED_ISA_SET_I186' class='variant'><span id='XED_ISA_SET_I186.v' class='invisible'><code>XED_ISA_SET_I186</code></span></span><span id='variant.XED_ISA_SET_I286PROTECTED' class='variant'><span id='XED_ISA_SET_I286PROTECTED.v' class='invisible'><code>XED_ISA_SET_I286PROTECTED</code></span></span><span id='variant.XED_ISA_SET_I286REAL' class='variant'><span id='XED_ISA_SET_I286REAL.v' class='invisible'><code>XED_ISA_SET_I286REAL</code></span></span><span id='variant.XED_ISA_SET_I386' class='variant'><span id='XED_ISA_SET_I386.v' class='invisible'><code>XED_ISA_SET_I386</code></span></span><span id='variant.XED_ISA_SET_I486' class='variant'><span id='XED_ISA_SET_I486.v' class='invisible'><code>XED_ISA_SET_I486</code></span></span><span id='variant.XED_ISA_SET_I486REAL' class='variant'><span id='XED_ISA_SET_I486REAL.v' class='invisible'><code>XED_ISA_SET_I486REAL</code></span></span><span id='variant.XED_ISA_SET_I86' class='variant'><span id='XED_ISA_SET_I86.v' class='invisible'><code>XED_ISA_SET_I86</code></span></span><span id='variant.XED_ISA_SET_INVPCID' class='variant'><span id='XED_ISA_SET_INVPCID.v' class='invisible'><code>XED_ISA_SET_INVPCID</code></span></span><span id='variant.XED_ISA_SET_LAHF' class='variant'><span id='XED_ISA_SET_LAHF.v' class='invisible'><code>XED_ISA_SET_LAHF</code></span></span><span id='variant.XED_ISA_SET_LONGMODE' class='variant'><span id='XED_ISA_SET_LONGMODE.v' class='invisible'><code>XED_ISA_SET_LONGMODE</code></span></span><span id='variant.XED_ISA_SET_LZCNT' class='variant'><span id='XED_ISA_SET_LZCNT.v' class='invisible'><code>XED_ISA_SET_LZCNT</code></span></span><span id='variant.XED_ISA_SET_MONITOR' class='variant'><span id='XED_ISA_SET_MONITOR.v' class='invisible'><code>XED_ISA_SET_MONITOR</code></span></span><span id='variant.XED_ISA_SET_MOVBE' class='variant'><span id='XED_ISA_SET_MOVBE.v' class='invisible'><code>XED_ISA_SET_MOVBE</code></span></span><span id='variant.XED_ISA_SET_MPX' class='variant'><span id='XED_ISA_SET_MPX.v' class='invisible'><code>XED_ISA_SET_MPX</code></span></span><span id='variant.XED_ISA_SET_PAUSE' class='variant'><span id='XED_ISA_SET_PAUSE.v' class='invisible'><code>XED_ISA_SET_PAUSE</code></span></span><span id='variant.XED_ISA_SET_PCLMULQDQ' class='variant'><span id='XED_ISA_SET_PCLMULQDQ.v' class='invisible'><code>XED_ISA_SET_PCLMULQDQ</code></span></span><span id='variant.XED_ISA_SET_PENTIUMMMX' class='variant'><span id='XED_ISA_SET_PENTIUMMMX.v' class='invisible'><code>XED_ISA_SET_PENTIUMMMX</code></span></span><span id='variant.XED_ISA_SET_PENTIUMREAL' class='variant'><span id='XED_ISA_SET_PENTIUMREAL.v' class='invisible'><code>XED_ISA_SET_PENTIUMREAL</code></span></span><span id='variant.XED_ISA_SET_PKU' class='variant'><span id='XED_ISA_SET_PKU.v' class='invisible'><code>XED_ISA_SET_PKU</code></span></span><span id='variant.XED_ISA_SET_POPCNT' class='variant'><span id='XED_ISA_SET_POPCNT.v' class='invisible'><code>XED_ISA_SET_POPCNT</code></span></span><span id='variant.XED_ISA_SET_PPRO' class='variant'><span id='XED_ISA_SET_PPRO.v' class='invisible'><code>XED_ISA_SET_PPRO</code></span></span><span id='variant.XED_ISA_SET_PREFETCHW' class='variant'><span id='XED_ISA_SET_PREFETCHW.v' class='invisible'><code>XED_ISA_SET_PREFETCHW</code></span></span><span id='variant.XED_ISA_SET_PREFETCHWT1' class='variant'><span id='XED_ISA_SET_PREFETCHWT1.v' class='invisible'><code>XED_ISA_SET_PREFETCHWT1</code></span></span><span id='variant.XED_ISA_SET_PREFETCH_NOP' class='variant'><span id='XED_ISA_SET_PREFETCH_NOP.v' class='invisible'><code>XED_ISA_SET_PREFETCH_NOP</code></span></span><span id='variant.XED_ISA_SET_PT' class='variant'><span id='XED_ISA_SET_PT.v' class='invisible'><code>XED_ISA_SET_PT</code></span></span><span id='variant.XED_ISA_SET_RDPMC' class='variant'><span id='XED_ISA_SET_RDPMC.v' class='invisible'><code>XED_ISA_SET_RDPMC</code></span></span><span id='variant.XED_ISA_SET_RDRAND' class='variant'><span id='XED_ISA_SET_RDRAND.v' class='invisible'><code>XED_ISA_SET_RDRAND</code></span></span><span id='variant.XED_ISA_SET_RDSEED' class='variant'><span id='XED_ISA_SET_RDSEED.v' class='invisible'><code>XED_ISA_SET_RDSEED</code></span></span><span id='variant.XED_ISA_SET_RDTSCP' class='variant'><span id='XED_ISA_SET_RDTSCP.v' class='invisible'><code>XED_ISA_SET_RDTSCP</code></span></span><span id='variant.XED_ISA_SET_RDWRFSGS' class='variant'><span id='XED_ISA_SET_RDWRFSGS.v' class='invisible'><code>XED_ISA_SET_RDWRFSGS</code></span></span><span id='variant.XED_ISA_SET_RTM' class='variant'><span id='XED_ISA_SET_RTM.v' class='invisible'><code>XED_ISA_SET_RTM</code></span></span><span id='variant.XED_ISA_SET_SGX' class='variant'><span id='XED_ISA_SET_SGX.v' class='invisible'><code>XED_ISA_SET_SGX</code></span></span><span id='variant.XED_ISA_SET_SHA' class='variant'><span id='XED_ISA_SET_SHA.v' class='invisible'><code>XED_ISA_SET_SHA</code></span></span><span id='variant.XED_ISA_SET_SMAP' class='variant'><span id='XED_ISA_SET_SMAP.v' class='invisible'><code>XED_ISA_SET_SMAP</code></span></span><span id='variant.XED_ISA_SET_SMX' class='variant'><span id='XED_ISA_SET_SMX.v' class='invisible'><code>XED_ISA_SET_SMX</code></span></span><span id='variant.XED_ISA_SET_SSE' class='variant'><span id='XED_ISA_SET_SSE.v' class='invisible'><code>XED_ISA_SET_SSE</code></span></span><span id='variant.XED_ISA_SET_SSE2' class='variant'><span id='XED_ISA_SET_SSE2.v' class='invisible'><code>XED_ISA_SET_SSE2</code></span></span><span id='variant.XED_ISA_SET_SSE2MMX' class='variant'><span id='XED_ISA_SET_SSE2MMX.v' class='invisible'><code>XED_ISA_SET_SSE2MMX</code></span></span><span id='variant.XED_ISA_SET_SSE3' class='variant'><span id='XED_ISA_SET_SSE3.v' class='invisible'><code>XED_ISA_SET_SSE3</code></span></span><span id='variant.XED_ISA_SET_SSE3X87' class='variant'><span id='XED_ISA_SET_SSE3X87.v' class='invisible'><code>XED_ISA_SET_SSE3X87</code></span></span><span id='variant.XED_ISA_SET_SSE4' class='variant'><span id='XED_ISA_SET_SSE4.v' class='invisible'><code>XED_ISA_SET_SSE4</code></span></span><span id='variant.XED_ISA_SET_SSE42' class='variant'><span id='XED_ISA_SET_SSE42.v' class='invisible'><code>XED_ISA_SET_SSE42</code></span></span><span id='variant.XED_ISA_SET_SSE4A' class='variant'><span id='XED_ISA_SET_SSE4A.v' class='invisible'><code>XED_ISA_SET_SSE4A</code></span></span><span id='variant.XED_ISA_SET_SSEMXCSR' class='variant'><span id='XED_ISA_SET_SSEMXCSR.v' class='invisible'><code>XED_ISA_SET_SSEMXCSR</code></span></span><span id='variant.XED_ISA_SET_SSE_PREFETCH' class='variant'><span id='XED_ISA_SET_SSE_PREFETCH.v' class='invisible'><code>XED_ISA_SET_SSE_PREFETCH</code></span></span><span id='variant.XED_ISA_SET_SSSE3' class='variant'><span id='XED_ISA_SET_SSSE3.v' class='invisible'><code>XED_ISA_SET_SSSE3</code></span></span><span id='variant.XED_ISA_SET_SSSE3MMX' class='variant'><span id='XED_ISA_SET_SSSE3MMX.v' class='invisible'><code>XED_ISA_SET_SSSE3MMX</code></span></span><span id='variant.XED_ISA_SET_SVM' class='variant'><span id='XED_ISA_SET_SVM.v' class='invisible'><code>XED_ISA_SET_SVM</code></span></span><span id='variant.XED_ISA_SET_TBM' class='variant'><span id='XED_ISA_SET_TBM.v' class='invisible'><code>XED_ISA_SET_TBM</code></span></span><span id='variant.XED_ISA_SET_VMFUNC' class='variant'><span id='XED_ISA_SET_VMFUNC.v' class='invisible'><code>XED_ISA_SET_VMFUNC</code></span></span><span id='variant.XED_ISA_SET_VTX' class='variant'><span id='XED_ISA_SET_VTX.v' class='invisible'><code>XED_ISA_SET_VTX</code></span></span><span id='variant.XED_ISA_SET_X87' class='variant'><span id='XED_ISA_SET_X87.v' class='invisible'><code>XED_ISA_SET_X87</code></span></span><span id='variant.XED_ISA_SET_XOP' class='variant'><span id='XED_ISA_SET_XOP.v' class='invisible'><code>XED_ISA_SET_XOP</code></span></span><span id='variant.XED_ISA_SET_XSAVE' class='variant'><span id='XED_ISA_SET_XSAVE.v' class='invisible'><code>XED_ISA_SET_XSAVE</code></span></span><span id='variant.XED_ISA_SET_XSAVEC' class='variant'><span id='XED_ISA_SET_XSAVEC.v' class='invisible'><code>XED_ISA_SET_XSAVEC</code></span></span><span id='variant.XED_ISA_SET_XSAVEOPT' class='variant'><span id='XED_ISA_SET_XSAVEOPT.v' class='invisible'><code>XED_ISA_SET_XSAVEOPT</code></span></span><span id='variant.XED_ISA_SET_XSAVES' class='variant'><span id='XED_ISA_SET_XSAVES.v' class='invisible'><code>XED_ISA_SET_XSAVES</code></span></span><span id='variant.XED_ISA_SET_LAST' class='variant'><span id='XED_ISA_SET_LAST.v' class='invisible'><code>XED_ISA_SET_LAST</code></span></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_isa_set_enum_t.html" title="enum xed_sys::xed_interface::xed_isa_set_enum_t">xed_isa_set_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#9787' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_isa_set_enum_t.html" title="enum xed_sys::xed_interface::xed_isa_set_enum_t">xed_isa_set_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#9787' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_isa_set_enum_t.html" title="enum xed_sys::xed_interface::xed_isa_set_enum_t">xed_isa_set_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#9787' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="../../xed_sys/xed_interface/enum.xed_isa_set_enum_t.html" title="enum xed_sys::xed_interface::xed_isa_set_enum_t">xed_isa_set_enum_t</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_isa_set_enum_t.html" title="enum xed_sys::xed_interface::xed_isa_set_enum_t">xed_isa_set_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#9787' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class="enum" href="../../xed_sys/xed_interface/enum.xed_isa_set_enum_t.html" title="enum xed_sys::xed_interface::xed_isa_set_enum_t">xed_isa_set_enum_t</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html" title="trait core::cmp::Eq">Eq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_isa_set_enum_t.html" title="enum xed_sys::xed_interface::xed_isa_set_enum_t">xed_isa_set_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#9787' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html" title="trait core::hash::Hash">Hash</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_isa_set_enum_t.html" title="enum xed_sys::xed_interface::xed_isa_set_enum_t">xed_isa_set_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#9787' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class="method"><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash">Read more</a></p>
+</div><h4 id='method.hash_slice' class="method"><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[Self]</a>, state: &amp;mut H) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;H: <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>,&nbsp;</span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "xed_sys";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

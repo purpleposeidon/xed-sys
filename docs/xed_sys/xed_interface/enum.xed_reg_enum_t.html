@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xed_reg_enum_t` enum in crate `xed_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xed_reg_enum_t">
+
+    <title>xed_sys::xed_interface::xed_reg_enum_t - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc enum">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Enum xed_reg_enum_t</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a></p><script>window.sidebarCurrent = {name: 'xed_reg_enum_t', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a>::<wbr><a class="enum" href=''>xed_reg_enum_t</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3253-3537' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'><div class="docblock attributes">#[repr(u32)]
+</div>pub enum xed_reg_enum_t {
+    XED_REG_INVALID,
+    XED_REG_BNDCFGU,
+    XED_REG_BNDSTATUS,
+    XED_REG_BND0,
+    XED_REG_BND1,
+    XED_REG_BND2,
+    XED_REG_BND3,
+    XED_REG_CR0,
+    XED_REG_CR1,
+    XED_REG_CR2,
+    XED_REG_CR3,
+    XED_REG_CR4,
+    XED_REG_CR5,
+    XED_REG_CR6,
+    XED_REG_CR7,
+    XED_REG_CR8,
+    XED_REG_CR9,
+    XED_REG_CR10,
+    XED_REG_CR11,
+    XED_REG_CR12,
+    XED_REG_CR13,
+    XED_REG_CR14,
+    XED_REG_CR15,
+    XED_REG_DR0,
+    XED_REG_DR1,
+    XED_REG_DR2,
+    XED_REG_DR3,
+    XED_REG_DR4,
+    XED_REG_DR5,
+    XED_REG_DR6,
+    XED_REG_DR7,
+    XED_REG_DR8,
+    XED_REG_DR9,
+    XED_REG_DR10,
+    XED_REG_DR11,
+    XED_REG_DR12,
+    XED_REG_DR13,
+    XED_REG_DR14,
+    XED_REG_DR15,
+    XED_REG_FLAGS,
+    XED_REG_EFLAGS,
+    XED_REG_RFLAGS,
+    XED_REG_AX,
+    XED_REG_CX,
+    XED_REG_DX,
+    XED_REG_BX,
+    XED_REG_SP,
+    XED_REG_BP,
+    XED_REG_SI,
+    XED_REG_DI,
+    XED_REG_R8W,
+    XED_REG_R9W,
+    XED_REG_R10W,
+    XED_REG_R11W,
+    XED_REG_R12W,
+    XED_REG_R13W,
+    XED_REG_R14W,
+    XED_REG_R15W,
+    XED_REG_EAX,
+    XED_REG_ECX,
+    XED_REG_EDX,
+    XED_REG_EBX,
+    XED_REG_ESP,
+    XED_REG_EBP,
+    XED_REG_ESI,
+    XED_REG_EDI,
+    XED_REG_R8D,
+    XED_REG_R9D,
+    XED_REG_R10D,
+    XED_REG_R11D,
+    XED_REG_R12D,
+    XED_REG_R13D,
+    XED_REG_R14D,
+    XED_REG_R15D,
+    XED_REG_RAX,
+    XED_REG_RCX,
+    XED_REG_RDX,
+    XED_REG_RBX,
+    XED_REG_RSP,
+    XED_REG_RBP,
+    XED_REG_RSI,
+    XED_REG_RDI,
+    XED_REG_R8,
+    XED_REG_R9,
+    XED_REG_R10,
+    XED_REG_R11,
+    XED_REG_R12,
+    XED_REG_R13,
+    XED_REG_R14,
+    XED_REG_R15,
+    XED_REG_AL,
+    XED_REG_CL,
+    XED_REG_DL,
+    XED_REG_BL,
+    XED_REG_SPL,
+    XED_REG_BPL,
+    XED_REG_SIL,
+    XED_REG_DIL,
+    XED_REG_R8B,
+    XED_REG_R9B,
+    XED_REG_R10B,
+    XED_REG_R11B,
+    XED_REG_R12B,
+    XED_REG_R13B,
+    XED_REG_R14B,
+    XED_REG_R15B,
+    XED_REG_AH,
+    XED_REG_CH,
+    XED_REG_DH,
+    XED_REG_BH,
+    XED_REG_ERROR,
+    XED_REG_RIP,
+    XED_REG_EIP,
+    XED_REG_IP,
+    XED_REG_K0,
+    XED_REG_K1,
+    XED_REG_K2,
+    XED_REG_K3,
+    XED_REG_K4,
+    XED_REG_K5,
+    XED_REG_K6,
+    XED_REG_K7,
+    XED_REG_MMX0,
+    XED_REG_MMX1,
+    XED_REG_MMX2,
+    XED_REG_MMX3,
+    XED_REG_MMX4,
+    XED_REG_MMX5,
+    XED_REG_MMX6,
+    XED_REG_MMX7,
+    XED_REG_SSP,
+    XED_REG_IA32_U_CET,
+    XED_REG_MXCSR,
+    XED_REG_STACKPUSH,
+    XED_REG_STACKPOP,
+    XED_REG_GDTR,
+    XED_REG_LDTR,
+    XED_REG_IDTR,
+    XED_REG_TR,
+    XED_REG_TSC,
+    XED_REG_TSCAUX,
+    XED_REG_MSRS,
+    XED_REG_FSBASE,
+    XED_REG_GSBASE,
+    XED_REG_X87CONTROL,
+    XED_REG_X87STATUS,
+    XED_REG_X87TAG,
+    XED_REG_X87PUSH,
+    XED_REG_X87POP,
+    XED_REG_X87POP2,
+    XED_REG_X87OPCODE,
+    XED_REG_X87LASTCS,
+    XED_REG_X87LASTIP,
+    XED_REG_X87LASTDS,
+    XED_REG_X87LASTDP,
+    XED_REG_CS,
+    XED_REG_DS,
+    XED_REG_ES,
+    XED_REG_SS,
+    XED_REG_FS,
+    XED_REG_GS,
+    XED_REG_TMP0,
+    XED_REG_TMP1,
+    XED_REG_TMP2,
+    XED_REG_TMP3,
+    XED_REG_TMP4,
+    XED_REG_TMP5,
+    XED_REG_TMP6,
+    XED_REG_TMP7,
+    XED_REG_TMP8,
+    XED_REG_TMP9,
+    XED_REG_TMP10,
+    XED_REG_TMP11,
+    XED_REG_TMP12,
+    XED_REG_TMP13,
+    XED_REG_TMP14,
+    XED_REG_TMP15,
+    XED_REG_ST0,
+    XED_REG_ST1,
+    XED_REG_ST2,
+    XED_REG_ST3,
+    XED_REG_ST4,
+    XED_REG_ST5,
+    XED_REG_ST6,
+    XED_REG_ST7,
+    XED_REG_XCR0,
+    XED_REG_XMM0,
+    XED_REG_XMM1,
+    XED_REG_XMM2,
+    XED_REG_XMM3,
+    XED_REG_XMM4,
+    XED_REG_XMM5,
+    XED_REG_XMM6,
+    XED_REG_XMM7,
+    XED_REG_XMM8,
+    XED_REG_XMM9,
+    XED_REG_XMM10,
+    XED_REG_XMM11,
+    XED_REG_XMM12,
+    XED_REG_XMM13,
+    XED_REG_XMM14,
+    XED_REG_XMM15,
+    XED_REG_XMM16,
+    XED_REG_XMM17,
+    XED_REG_XMM18,
+    XED_REG_XMM19,
+    XED_REG_XMM20,
+    XED_REG_XMM21,
+    XED_REG_XMM22,
+    XED_REG_XMM23,
+    XED_REG_XMM24,
+    XED_REG_XMM25,
+    XED_REG_XMM26,
+    XED_REG_XMM27,
+    XED_REG_XMM28,
+    XED_REG_XMM29,
+    XED_REG_XMM30,
+    XED_REG_XMM31,
+    XED_REG_YMM0,
+    XED_REG_YMM1,
+    XED_REG_YMM2,
+    XED_REG_YMM3,
+    XED_REG_YMM4,
+    XED_REG_YMM5,
+    XED_REG_YMM6,
+    XED_REG_YMM7,
+    XED_REG_YMM8,
+    XED_REG_YMM9,
+    XED_REG_YMM10,
+    XED_REG_YMM11,
+    XED_REG_YMM12,
+    XED_REG_YMM13,
+    XED_REG_YMM14,
+    XED_REG_YMM15,
+    XED_REG_YMM16,
+    XED_REG_YMM17,
+    XED_REG_YMM18,
+    XED_REG_YMM19,
+    XED_REG_YMM20,
+    XED_REG_YMM21,
+    XED_REG_YMM22,
+    XED_REG_YMM23,
+    XED_REG_YMM24,
+    XED_REG_YMM25,
+    XED_REG_YMM26,
+    XED_REG_YMM27,
+    XED_REG_YMM28,
+    XED_REG_YMM29,
+    XED_REG_YMM30,
+    XED_REG_YMM31,
+    XED_REG_ZMM0,
+    XED_REG_ZMM1,
+    XED_REG_ZMM2,
+    XED_REG_ZMM3,
+    XED_REG_ZMM4,
+    XED_REG_ZMM5,
+    XED_REG_ZMM6,
+    XED_REG_ZMM7,
+    XED_REG_ZMM8,
+    XED_REG_ZMM9,
+    XED_REG_ZMM10,
+    XED_REG_ZMM11,
+    XED_REG_ZMM12,
+    XED_REG_ZMM13,
+    XED_REG_ZMM14,
+    XED_REG_ZMM15,
+    XED_REG_ZMM16,
+    XED_REG_ZMM17,
+    XED_REG_ZMM18,
+    XED_REG_ZMM19,
+    XED_REG_ZMM20,
+    XED_REG_ZMM21,
+    XED_REG_ZMM22,
+    XED_REG_ZMM23,
+    XED_REG_ZMM24,
+    XED_REG_ZMM25,
+    XED_REG_ZMM26,
+    XED_REG_ZMM27,
+    XED_REG_ZMM28,
+    XED_REG_ZMM29,
+    XED_REG_ZMM30,
+    XED_REG_ZMM31,
+    XED_REG_LAST,
+}</pre><h2 id='variants' class='variants'>Variants</h2>
+<span id='variant.XED_REG_INVALID' class='variant'><span id='XED_REG_INVALID.v' class='invisible'><code>XED_REG_INVALID</code></span></span><span id='variant.XED_REG_BNDCFGU' class='variant'><span id='XED_REG_BNDCFGU.v' class='invisible'><code>XED_REG_BNDCFGU</code></span></span><span id='variant.XED_REG_BNDSTATUS' class='variant'><span id='XED_REG_BNDSTATUS.v' class='invisible'><code>XED_REG_BNDSTATUS</code></span></span><span id='variant.XED_REG_BND0' class='variant'><span id='XED_REG_BND0.v' class='invisible'><code>XED_REG_BND0</code></span></span><span id='variant.XED_REG_BND1' class='variant'><span id='XED_REG_BND1.v' class='invisible'><code>XED_REG_BND1</code></span></span><span id='variant.XED_REG_BND2' class='variant'><span id='XED_REG_BND2.v' class='invisible'><code>XED_REG_BND2</code></span></span><span id='variant.XED_REG_BND3' class='variant'><span id='XED_REG_BND3.v' class='invisible'><code>XED_REG_BND3</code></span></span><span id='variant.XED_REG_CR0' class='variant'><span id='XED_REG_CR0.v' class='invisible'><code>XED_REG_CR0</code></span></span><span id='variant.XED_REG_CR1' class='variant'><span id='XED_REG_CR1.v' class='invisible'><code>XED_REG_CR1</code></span></span><span id='variant.XED_REG_CR2' class='variant'><span id='XED_REG_CR2.v' class='invisible'><code>XED_REG_CR2</code></span></span><span id='variant.XED_REG_CR3' class='variant'><span id='XED_REG_CR3.v' class='invisible'><code>XED_REG_CR3</code></span></span><span id='variant.XED_REG_CR4' class='variant'><span id='XED_REG_CR4.v' class='invisible'><code>XED_REG_CR4</code></span></span><span id='variant.XED_REG_CR5' class='variant'><span id='XED_REG_CR5.v' class='invisible'><code>XED_REG_CR5</code></span></span><span id='variant.XED_REG_CR6' class='variant'><span id='XED_REG_CR6.v' class='invisible'><code>XED_REG_CR6</code></span></span><span id='variant.XED_REG_CR7' class='variant'><span id='XED_REG_CR7.v' class='invisible'><code>XED_REG_CR7</code></span></span><span id='variant.XED_REG_CR8' class='variant'><span id='XED_REG_CR8.v' class='invisible'><code>XED_REG_CR8</code></span></span><span id='variant.XED_REG_CR9' class='variant'><span id='XED_REG_CR9.v' class='invisible'><code>XED_REG_CR9</code></span></span><span id='variant.XED_REG_CR10' class='variant'><span id='XED_REG_CR10.v' class='invisible'><code>XED_REG_CR10</code></span></span><span id='variant.XED_REG_CR11' class='variant'><span id='XED_REG_CR11.v' class='invisible'><code>XED_REG_CR11</code></span></span><span id='variant.XED_REG_CR12' class='variant'><span id='XED_REG_CR12.v' class='invisible'><code>XED_REG_CR12</code></span></span><span id='variant.XED_REG_CR13' class='variant'><span id='XED_REG_CR13.v' class='invisible'><code>XED_REG_CR13</code></span></span><span id='variant.XED_REG_CR14' class='variant'><span id='XED_REG_CR14.v' class='invisible'><code>XED_REG_CR14</code></span></span><span id='variant.XED_REG_CR15' class='variant'><span id='XED_REG_CR15.v' class='invisible'><code>XED_REG_CR15</code></span></span><span id='variant.XED_REG_DR0' class='variant'><span id='XED_REG_DR0.v' class='invisible'><code>XED_REG_DR0</code></span></span><span id='variant.XED_REG_DR1' class='variant'><span id='XED_REG_DR1.v' class='invisible'><code>XED_REG_DR1</code></span></span><span id='variant.XED_REG_DR2' class='variant'><span id='XED_REG_DR2.v' class='invisible'><code>XED_REG_DR2</code></span></span><span id='variant.XED_REG_DR3' class='variant'><span id='XED_REG_DR3.v' class='invisible'><code>XED_REG_DR3</code></span></span><span id='variant.XED_REG_DR4' class='variant'><span id='XED_REG_DR4.v' class='invisible'><code>XED_REG_DR4</code></span></span><span id='variant.XED_REG_DR5' class='variant'><span id='XED_REG_DR5.v' class='invisible'><code>XED_REG_DR5</code></span></span><span id='variant.XED_REG_DR6' class='variant'><span id='XED_REG_DR6.v' class='invisible'><code>XED_REG_DR6</code></span></span><span id='variant.XED_REG_DR7' class='variant'><span id='XED_REG_DR7.v' class='invisible'><code>XED_REG_DR7</code></span></span><span id='variant.XED_REG_DR8' class='variant'><span id='XED_REG_DR8.v' class='invisible'><code>XED_REG_DR8</code></span></span><span id='variant.XED_REG_DR9' class='variant'><span id='XED_REG_DR9.v' class='invisible'><code>XED_REG_DR9</code></span></span><span id='variant.XED_REG_DR10' class='variant'><span id='XED_REG_DR10.v' class='invisible'><code>XED_REG_DR10</code></span></span><span id='variant.XED_REG_DR11' class='variant'><span id='XED_REG_DR11.v' class='invisible'><code>XED_REG_DR11</code></span></span><span id='variant.XED_REG_DR12' class='variant'><span id='XED_REG_DR12.v' class='invisible'><code>XED_REG_DR12</code></span></span><span id='variant.XED_REG_DR13' class='variant'><span id='XED_REG_DR13.v' class='invisible'><code>XED_REG_DR13</code></span></span><span id='variant.XED_REG_DR14' class='variant'><span id='XED_REG_DR14.v' class='invisible'><code>XED_REG_DR14</code></span></span><span id='variant.XED_REG_DR15' class='variant'><span id='XED_REG_DR15.v' class='invisible'><code>XED_REG_DR15</code></span></span><span id='variant.XED_REG_FLAGS' class='variant'><span id='XED_REG_FLAGS.v' class='invisible'><code>XED_REG_FLAGS</code></span></span><span id='variant.XED_REG_EFLAGS' class='variant'><span id='XED_REG_EFLAGS.v' class='invisible'><code>XED_REG_EFLAGS</code></span></span><span id='variant.XED_REG_RFLAGS' class='variant'><span id='XED_REG_RFLAGS.v' class='invisible'><code>XED_REG_RFLAGS</code></span></span><span id='variant.XED_REG_AX' class='variant'><span id='XED_REG_AX.v' class='invisible'><code>XED_REG_AX</code></span></span><span id='variant.XED_REG_CX' class='variant'><span id='XED_REG_CX.v' class='invisible'><code>XED_REG_CX</code></span></span><span id='variant.XED_REG_DX' class='variant'><span id='XED_REG_DX.v' class='invisible'><code>XED_REG_DX</code></span></span><span id='variant.XED_REG_BX' class='variant'><span id='XED_REG_BX.v' class='invisible'><code>XED_REG_BX</code></span></span><span id='variant.XED_REG_SP' class='variant'><span id='XED_REG_SP.v' class='invisible'><code>XED_REG_SP</code></span></span><span id='variant.XED_REG_BP' class='variant'><span id='XED_REG_BP.v' class='invisible'><code>XED_REG_BP</code></span></span><span id='variant.XED_REG_SI' class='variant'><span id='XED_REG_SI.v' class='invisible'><code>XED_REG_SI</code></span></span><span id='variant.XED_REG_DI' class='variant'><span id='XED_REG_DI.v' class='invisible'><code>XED_REG_DI</code></span></span><span id='variant.XED_REG_R8W' class='variant'><span id='XED_REG_R8W.v' class='invisible'><code>XED_REG_R8W</code></span></span><span id='variant.XED_REG_R9W' class='variant'><span id='XED_REG_R9W.v' class='invisible'><code>XED_REG_R9W</code></span></span><span id='variant.XED_REG_R10W' class='variant'><span id='XED_REG_R10W.v' class='invisible'><code>XED_REG_R10W</code></span></span><span id='variant.XED_REG_R11W' class='variant'><span id='XED_REG_R11W.v' class='invisible'><code>XED_REG_R11W</code></span></span><span id='variant.XED_REG_R12W' class='variant'><span id='XED_REG_R12W.v' class='invisible'><code>XED_REG_R12W</code></span></span><span id='variant.XED_REG_R13W' class='variant'><span id='XED_REG_R13W.v' class='invisible'><code>XED_REG_R13W</code></span></span><span id='variant.XED_REG_R14W' class='variant'><span id='XED_REG_R14W.v' class='invisible'><code>XED_REG_R14W</code></span></span><span id='variant.XED_REG_R15W' class='variant'><span id='XED_REG_R15W.v' class='invisible'><code>XED_REG_R15W</code></span></span><span id='variant.XED_REG_EAX' class='variant'><span id='XED_REG_EAX.v' class='invisible'><code>XED_REG_EAX</code></span></span><span id='variant.XED_REG_ECX' class='variant'><span id='XED_REG_ECX.v' class='invisible'><code>XED_REG_ECX</code></span></span><span id='variant.XED_REG_EDX' class='variant'><span id='XED_REG_EDX.v' class='invisible'><code>XED_REG_EDX</code></span></span><span id='variant.XED_REG_EBX' class='variant'><span id='XED_REG_EBX.v' class='invisible'><code>XED_REG_EBX</code></span></span><span id='variant.XED_REG_ESP' class='variant'><span id='XED_REG_ESP.v' class='invisible'><code>XED_REG_ESP</code></span></span><span id='variant.XED_REG_EBP' class='variant'><span id='XED_REG_EBP.v' class='invisible'><code>XED_REG_EBP</code></span></span><span id='variant.XED_REG_ESI' class='variant'><span id='XED_REG_ESI.v' class='invisible'><code>XED_REG_ESI</code></span></span><span id='variant.XED_REG_EDI' class='variant'><span id='XED_REG_EDI.v' class='invisible'><code>XED_REG_EDI</code></span></span><span id='variant.XED_REG_R8D' class='variant'><span id='XED_REG_R8D.v' class='invisible'><code>XED_REG_R8D</code></span></span><span id='variant.XED_REG_R9D' class='variant'><span id='XED_REG_R9D.v' class='invisible'><code>XED_REG_R9D</code></span></span><span id='variant.XED_REG_R10D' class='variant'><span id='XED_REG_R10D.v' class='invisible'><code>XED_REG_R10D</code></span></span><span id='variant.XED_REG_R11D' class='variant'><span id='XED_REG_R11D.v' class='invisible'><code>XED_REG_R11D</code></span></span><span id='variant.XED_REG_R12D' class='variant'><span id='XED_REG_R12D.v' class='invisible'><code>XED_REG_R12D</code></span></span><span id='variant.XED_REG_R13D' class='variant'><span id='XED_REG_R13D.v' class='invisible'><code>XED_REG_R13D</code></span></span><span id='variant.XED_REG_R14D' class='variant'><span id='XED_REG_R14D.v' class='invisible'><code>XED_REG_R14D</code></span></span><span id='variant.XED_REG_R15D' class='variant'><span id='XED_REG_R15D.v' class='invisible'><code>XED_REG_R15D</code></span></span><span id='variant.XED_REG_RAX' class='variant'><span id='XED_REG_RAX.v' class='invisible'><code>XED_REG_RAX</code></span></span><span id='variant.XED_REG_RCX' class='variant'><span id='XED_REG_RCX.v' class='invisible'><code>XED_REG_RCX</code></span></span><span id='variant.XED_REG_RDX' class='variant'><span id='XED_REG_RDX.v' class='invisible'><code>XED_REG_RDX</code></span></span><span id='variant.XED_REG_RBX' class='variant'><span id='XED_REG_RBX.v' class='invisible'><code>XED_REG_RBX</code></span></span><span id='variant.XED_REG_RSP' class='variant'><span id='XED_REG_RSP.v' class='invisible'><code>XED_REG_RSP</code></span></span><span id='variant.XED_REG_RBP' class='variant'><span id='XED_REG_RBP.v' class='invisible'><code>XED_REG_RBP</code></span></span><span id='variant.XED_REG_RSI' class='variant'><span id='XED_REG_RSI.v' class='invisible'><code>XED_REG_RSI</code></span></span><span id='variant.XED_REG_RDI' class='variant'><span id='XED_REG_RDI.v' class='invisible'><code>XED_REG_RDI</code></span></span><span id='variant.XED_REG_R8' class='variant'><span id='XED_REG_R8.v' class='invisible'><code>XED_REG_R8</code></span></span><span id='variant.XED_REG_R9' class='variant'><span id='XED_REG_R9.v' class='invisible'><code>XED_REG_R9</code></span></span><span id='variant.XED_REG_R10' class='variant'><span id='XED_REG_R10.v' class='invisible'><code>XED_REG_R10</code></span></span><span id='variant.XED_REG_R11' class='variant'><span id='XED_REG_R11.v' class='invisible'><code>XED_REG_R11</code></span></span><span id='variant.XED_REG_R12' class='variant'><span id='XED_REG_R12.v' class='invisible'><code>XED_REG_R12</code></span></span><span id='variant.XED_REG_R13' class='variant'><span id='XED_REG_R13.v' class='invisible'><code>XED_REG_R13</code></span></span><span id='variant.XED_REG_R14' class='variant'><span id='XED_REG_R14.v' class='invisible'><code>XED_REG_R14</code></span></span><span id='variant.XED_REG_R15' class='variant'><span id='XED_REG_R15.v' class='invisible'><code>XED_REG_R15</code></span></span><span id='variant.XED_REG_AL' class='variant'><span id='XED_REG_AL.v' class='invisible'><code>XED_REG_AL</code></span></span><span id='variant.XED_REG_CL' class='variant'><span id='XED_REG_CL.v' class='invisible'><code>XED_REG_CL</code></span></span><span id='variant.XED_REG_DL' class='variant'><span id='XED_REG_DL.v' class='invisible'><code>XED_REG_DL</code></span></span><span id='variant.XED_REG_BL' class='variant'><span id='XED_REG_BL.v' class='invisible'><code>XED_REG_BL</code></span></span><span id='variant.XED_REG_SPL' class='variant'><span id='XED_REG_SPL.v' class='invisible'><code>XED_REG_SPL</code></span></span><span id='variant.XED_REG_BPL' class='variant'><span id='XED_REG_BPL.v' class='invisible'><code>XED_REG_BPL</code></span></span><span id='variant.XED_REG_SIL' class='variant'><span id='XED_REG_SIL.v' class='invisible'><code>XED_REG_SIL</code></span></span><span id='variant.XED_REG_DIL' class='variant'><span id='XED_REG_DIL.v' class='invisible'><code>XED_REG_DIL</code></span></span><span id='variant.XED_REG_R8B' class='variant'><span id='XED_REG_R8B.v' class='invisible'><code>XED_REG_R8B</code></span></span><span id='variant.XED_REG_R9B' class='variant'><span id='XED_REG_R9B.v' class='invisible'><code>XED_REG_R9B</code></span></span><span id='variant.XED_REG_R10B' class='variant'><span id='XED_REG_R10B.v' class='invisible'><code>XED_REG_R10B</code></span></span><span id='variant.XED_REG_R11B' class='variant'><span id='XED_REG_R11B.v' class='invisible'><code>XED_REG_R11B</code></span></span><span id='variant.XED_REG_R12B' class='variant'><span id='XED_REG_R12B.v' class='invisible'><code>XED_REG_R12B</code></span></span><span id='variant.XED_REG_R13B' class='variant'><span id='XED_REG_R13B.v' class='invisible'><code>XED_REG_R13B</code></span></span><span id='variant.XED_REG_R14B' class='variant'><span id='XED_REG_R14B.v' class='invisible'><code>XED_REG_R14B</code></span></span><span id='variant.XED_REG_R15B' class='variant'><span id='XED_REG_R15B.v' class='invisible'><code>XED_REG_R15B</code></span></span><span id='variant.XED_REG_AH' class='variant'><span id='XED_REG_AH.v' class='invisible'><code>XED_REG_AH</code></span></span><span id='variant.XED_REG_CH' class='variant'><span id='XED_REG_CH.v' class='invisible'><code>XED_REG_CH</code></span></span><span id='variant.XED_REG_DH' class='variant'><span id='XED_REG_DH.v' class='invisible'><code>XED_REG_DH</code></span></span><span id='variant.XED_REG_BH' class='variant'><span id='XED_REG_BH.v' class='invisible'><code>XED_REG_BH</code></span></span><span id='variant.XED_REG_ERROR' class='variant'><span id='XED_REG_ERROR.v' class='invisible'><code>XED_REG_ERROR</code></span></span><span id='variant.XED_REG_RIP' class='variant'><span id='XED_REG_RIP.v' class='invisible'><code>XED_REG_RIP</code></span></span><span id='variant.XED_REG_EIP' class='variant'><span id='XED_REG_EIP.v' class='invisible'><code>XED_REG_EIP</code></span></span><span id='variant.XED_REG_IP' class='variant'><span id='XED_REG_IP.v' class='invisible'><code>XED_REG_IP</code></span></span><span id='variant.XED_REG_K0' class='variant'><span id='XED_REG_K0.v' class='invisible'><code>XED_REG_K0</code></span></span><span id='variant.XED_REG_K1' class='variant'><span id='XED_REG_K1.v' class='invisible'><code>XED_REG_K1</code></span></span><span id='variant.XED_REG_K2' class='variant'><span id='XED_REG_K2.v' class='invisible'><code>XED_REG_K2</code></span></span><span id='variant.XED_REG_K3' class='variant'><span id='XED_REG_K3.v' class='invisible'><code>XED_REG_K3</code></span></span><span id='variant.XED_REG_K4' class='variant'><span id='XED_REG_K4.v' class='invisible'><code>XED_REG_K4</code></span></span><span id='variant.XED_REG_K5' class='variant'><span id='XED_REG_K5.v' class='invisible'><code>XED_REG_K5</code></span></span><span id='variant.XED_REG_K6' class='variant'><span id='XED_REG_K6.v' class='invisible'><code>XED_REG_K6</code></span></span><span id='variant.XED_REG_K7' class='variant'><span id='XED_REG_K7.v' class='invisible'><code>XED_REG_K7</code></span></span><span id='variant.XED_REG_MMX0' class='variant'><span id='XED_REG_MMX0.v' class='invisible'><code>XED_REG_MMX0</code></span></span><span id='variant.XED_REG_MMX1' class='variant'><span id='XED_REG_MMX1.v' class='invisible'><code>XED_REG_MMX1</code></span></span><span id='variant.XED_REG_MMX2' class='variant'><span id='XED_REG_MMX2.v' class='invisible'><code>XED_REG_MMX2</code></span></span><span id='variant.XED_REG_MMX3' class='variant'><span id='XED_REG_MMX3.v' class='invisible'><code>XED_REG_MMX3</code></span></span><span id='variant.XED_REG_MMX4' class='variant'><span id='XED_REG_MMX4.v' class='invisible'><code>XED_REG_MMX4</code></span></span><span id='variant.XED_REG_MMX5' class='variant'><span id='XED_REG_MMX5.v' class='invisible'><code>XED_REG_MMX5</code></span></span><span id='variant.XED_REG_MMX6' class='variant'><span id='XED_REG_MMX6.v' class='invisible'><code>XED_REG_MMX6</code></span></span><span id='variant.XED_REG_MMX7' class='variant'><span id='XED_REG_MMX7.v' class='invisible'><code>XED_REG_MMX7</code></span></span><span id='variant.XED_REG_SSP' class='variant'><span id='XED_REG_SSP.v' class='invisible'><code>XED_REG_SSP</code></span></span><span id='variant.XED_REG_IA32_U_CET' class='variant'><span id='XED_REG_IA32_U_CET.v' class='invisible'><code>XED_REG_IA32_U_CET</code></span></span><span id='variant.XED_REG_MXCSR' class='variant'><span id='XED_REG_MXCSR.v' class='invisible'><code>XED_REG_MXCSR</code></span></span><span id='variant.XED_REG_STACKPUSH' class='variant'><span id='XED_REG_STACKPUSH.v' class='invisible'><code>XED_REG_STACKPUSH</code></span></span><span id='variant.XED_REG_STACKPOP' class='variant'><span id='XED_REG_STACKPOP.v' class='invisible'><code>XED_REG_STACKPOP</code></span></span><span id='variant.XED_REG_GDTR' class='variant'><span id='XED_REG_GDTR.v' class='invisible'><code>XED_REG_GDTR</code></span></span><span id='variant.XED_REG_LDTR' class='variant'><span id='XED_REG_LDTR.v' class='invisible'><code>XED_REG_LDTR</code></span></span><span id='variant.XED_REG_IDTR' class='variant'><span id='XED_REG_IDTR.v' class='invisible'><code>XED_REG_IDTR</code></span></span><span id='variant.XED_REG_TR' class='variant'><span id='XED_REG_TR.v' class='invisible'><code>XED_REG_TR</code></span></span><span id='variant.XED_REG_TSC' class='variant'><span id='XED_REG_TSC.v' class='invisible'><code>XED_REG_TSC</code></span></span><span id='variant.XED_REG_TSCAUX' class='variant'><span id='XED_REG_TSCAUX.v' class='invisible'><code>XED_REG_TSCAUX</code></span></span><span id='variant.XED_REG_MSRS' class='variant'><span id='XED_REG_MSRS.v' class='invisible'><code>XED_REG_MSRS</code></span></span><span id='variant.XED_REG_FSBASE' class='variant'><span id='XED_REG_FSBASE.v' class='invisible'><code>XED_REG_FSBASE</code></span></span><span id='variant.XED_REG_GSBASE' class='variant'><span id='XED_REG_GSBASE.v' class='invisible'><code>XED_REG_GSBASE</code></span></span><span id='variant.XED_REG_X87CONTROL' class='variant'><span id='XED_REG_X87CONTROL.v' class='invisible'><code>XED_REG_X87CONTROL</code></span></span><span id='variant.XED_REG_X87STATUS' class='variant'><span id='XED_REG_X87STATUS.v' class='invisible'><code>XED_REG_X87STATUS</code></span></span><span id='variant.XED_REG_X87TAG' class='variant'><span id='XED_REG_X87TAG.v' class='invisible'><code>XED_REG_X87TAG</code></span></span><span id='variant.XED_REG_X87PUSH' class='variant'><span id='XED_REG_X87PUSH.v' class='invisible'><code>XED_REG_X87PUSH</code></span></span><span id='variant.XED_REG_X87POP' class='variant'><span id='XED_REG_X87POP.v' class='invisible'><code>XED_REG_X87POP</code></span></span><span id='variant.XED_REG_X87POP2' class='variant'><span id='XED_REG_X87POP2.v' class='invisible'><code>XED_REG_X87POP2</code></span></span><span id='variant.XED_REG_X87OPCODE' class='variant'><span id='XED_REG_X87OPCODE.v' class='invisible'><code>XED_REG_X87OPCODE</code></span></span><span id='variant.XED_REG_X87LASTCS' class='variant'><span id='XED_REG_X87LASTCS.v' class='invisible'><code>XED_REG_X87LASTCS</code></span></span><span id='variant.XED_REG_X87LASTIP' class='variant'><span id='XED_REG_X87LASTIP.v' class='invisible'><code>XED_REG_X87LASTIP</code></span></span><span id='variant.XED_REG_X87LASTDS' class='variant'><span id='XED_REG_X87LASTDS.v' class='invisible'><code>XED_REG_X87LASTDS</code></span></span><span id='variant.XED_REG_X87LASTDP' class='variant'><span id='XED_REG_X87LASTDP.v' class='invisible'><code>XED_REG_X87LASTDP</code></span></span><span id='variant.XED_REG_CS' class='variant'><span id='XED_REG_CS.v' class='invisible'><code>XED_REG_CS</code></span></span><span id='variant.XED_REG_DS' class='variant'><span id='XED_REG_DS.v' class='invisible'><code>XED_REG_DS</code></span></span><span id='variant.XED_REG_ES' class='variant'><span id='XED_REG_ES.v' class='invisible'><code>XED_REG_ES</code></span></span><span id='variant.XED_REG_SS' class='variant'><span id='XED_REG_SS.v' class='invisible'><code>XED_REG_SS</code></span></span><span id='variant.XED_REG_FS' class='variant'><span id='XED_REG_FS.v' class='invisible'><code>XED_REG_FS</code></span></span><span id='variant.XED_REG_GS' class='variant'><span id='XED_REG_GS.v' class='invisible'><code>XED_REG_GS</code></span></span><span id='variant.XED_REG_TMP0' class='variant'><span id='XED_REG_TMP0.v' class='invisible'><code>XED_REG_TMP0</code></span></span><span id='variant.XED_REG_TMP1' class='variant'><span id='XED_REG_TMP1.v' class='invisible'><code>XED_REG_TMP1</code></span></span><span id='variant.XED_REG_TMP2' class='variant'><span id='XED_REG_TMP2.v' class='invisible'><code>XED_REG_TMP2</code></span></span><span id='variant.XED_REG_TMP3' class='variant'><span id='XED_REG_TMP3.v' class='invisible'><code>XED_REG_TMP3</code></span></span><span id='variant.XED_REG_TMP4' class='variant'><span id='XED_REG_TMP4.v' class='invisible'><code>XED_REG_TMP4</code></span></span><span id='variant.XED_REG_TMP5' class='variant'><span id='XED_REG_TMP5.v' class='invisible'><code>XED_REG_TMP5</code></span></span><span id='variant.XED_REG_TMP6' class='variant'><span id='XED_REG_TMP6.v' class='invisible'><code>XED_REG_TMP6</code></span></span><span id='variant.XED_REG_TMP7' class='variant'><span id='XED_REG_TMP7.v' class='invisible'><code>XED_REG_TMP7</code></span></span><span id='variant.XED_REG_TMP8' class='variant'><span id='XED_REG_TMP8.v' class='invisible'><code>XED_REG_TMP8</code></span></span><span id='variant.XED_REG_TMP9' class='variant'><span id='XED_REG_TMP9.v' class='invisible'><code>XED_REG_TMP9</code></span></span><span id='variant.XED_REG_TMP10' class='variant'><span id='XED_REG_TMP10.v' class='invisible'><code>XED_REG_TMP10</code></span></span><span id='variant.XED_REG_TMP11' class='variant'><span id='XED_REG_TMP11.v' class='invisible'><code>XED_REG_TMP11</code></span></span><span id='variant.XED_REG_TMP12' class='variant'><span id='XED_REG_TMP12.v' class='invisible'><code>XED_REG_TMP12</code></span></span><span id='variant.XED_REG_TMP13' class='variant'><span id='XED_REG_TMP13.v' class='invisible'><code>XED_REG_TMP13</code></span></span><span id='variant.XED_REG_TMP14' class='variant'><span id='XED_REG_TMP14.v' class='invisible'><code>XED_REG_TMP14</code></span></span><span id='variant.XED_REG_TMP15' class='variant'><span id='XED_REG_TMP15.v' class='invisible'><code>XED_REG_TMP15</code></span></span><span id='variant.XED_REG_ST0' class='variant'><span id='XED_REG_ST0.v' class='invisible'><code>XED_REG_ST0</code></span></span><span id='variant.XED_REG_ST1' class='variant'><span id='XED_REG_ST1.v' class='invisible'><code>XED_REG_ST1</code></span></span><span id='variant.XED_REG_ST2' class='variant'><span id='XED_REG_ST2.v' class='invisible'><code>XED_REG_ST2</code></span></span><span id='variant.XED_REG_ST3' class='variant'><span id='XED_REG_ST3.v' class='invisible'><code>XED_REG_ST3</code></span></span><span id='variant.XED_REG_ST4' class='variant'><span id='XED_REG_ST4.v' class='invisible'><code>XED_REG_ST4</code></span></span><span id='variant.XED_REG_ST5' class='variant'><span id='XED_REG_ST5.v' class='invisible'><code>XED_REG_ST5</code></span></span><span id='variant.XED_REG_ST6' class='variant'><span id='XED_REG_ST6.v' class='invisible'><code>XED_REG_ST6</code></span></span><span id='variant.XED_REG_ST7' class='variant'><span id='XED_REG_ST7.v' class='invisible'><code>XED_REG_ST7</code></span></span><span id='variant.XED_REG_XCR0' class='variant'><span id='XED_REG_XCR0.v' class='invisible'><code>XED_REG_XCR0</code></span></span><span id='variant.XED_REG_XMM0' class='variant'><span id='XED_REG_XMM0.v' class='invisible'><code>XED_REG_XMM0</code></span></span><span id='variant.XED_REG_XMM1' class='variant'><span id='XED_REG_XMM1.v' class='invisible'><code>XED_REG_XMM1</code></span></span><span id='variant.XED_REG_XMM2' class='variant'><span id='XED_REG_XMM2.v' class='invisible'><code>XED_REG_XMM2</code></span></span><span id='variant.XED_REG_XMM3' class='variant'><span id='XED_REG_XMM3.v' class='invisible'><code>XED_REG_XMM3</code></span></span><span id='variant.XED_REG_XMM4' class='variant'><span id='XED_REG_XMM4.v' class='invisible'><code>XED_REG_XMM4</code></span></span><span id='variant.XED_REG_XMM5' class='variant'><span id='XED_REG_XMM5.v' class='invisible'><code>XED_REG_XMM5</code></span></span><span id='variant.XED_REG_XMM6' class='variant'><span id='XED_REG_XMM6.v' class='invisible'><code>XED_REG_XMM6</code></span></span><span id='variant.XED_REG_XMM7' class='variant'><span id='XED_REG_XMM7.v' class='invisible'><code>XED_REG_XMM7</code></span></span><span id='variant.XED_REG_XMM8' class='variant'><span id='XED_REG_XMM8.v' class='invisible'><code>XED_REG_XMM8</code></span></span><span id='variant.XED_REG_XMM9' class='variant'><span id='XED_REG_XMM9.v' class='invisible'><code>XED_REG_XMM9</code></span></span><span id='variant.XED_REG_XMM10' class='variant'><span id='XED_REG_XMM10.v' class='invisible'><code>XED_REG_XMM10</code></span></span><span id='variant.XED_REG_XMM11' class='variant'><span id='XED_REG_XMM11.v' class='invisible'><code>XED_REG_XMM11</code></span></span><span id='variant.XED_REG_XMM12' class='variant'><span id='XED_REG_XMM12.v' class='invisible'><code>XED_REG_XMM12</code></span></span><span id='variant.XED_REG_XMM13' class='variant'><span id='XED_REG_XMM13.v' class='invisible'><code>XED_REG_XMM13</code></span></span><span id='variant.XED_REG_XMM14' class='variant'><span id='XED_REG_XMM14.v' class='invisible'><code>XED_REG_XMM14</code></span></span><span id='variant.XED_REG_XMM15' class='variant'><span id='XED_REG_XMM15.v' class='invisible'><code>XED_REG_XMM15</code></span></span><span id='variant.XED_REG_XMM16' class='variant'><span id='XED_REG_XMM16.v' class='invisible'><code>XED_REG_XMM16</code></span></span><span id='variant.XED_REG_XMM17' class='variant'><span id='XED_REG_XMM17.v' class='invisible'><code>XED_REG_XMM17</code></span></span><span id='variant.XED_REG_XMM18' class='variant'><span id='XED_REG_XMM18.v' class='invisible'><code>XED_REG_XMM18</code></span></span><span id='variant.XED_REG_XMM19' class='variant'><span id='XED_REG_XMM19.v' class='invisible'><code>XED_REG_XMM19</code></span></span><span id='variant.XED_REG_XMM20' class='variant'><span id='XED_REG_XMM20.v' class='invisible'><code>XED_REG_XMM20</code></span></span><span id='variant.XED_REG_XMM21' class='variant'><span id='XED_REG_XMM21.v' class='invisible'><code>XED_REG_XMM21</code></span></span><span id='variant.XED_REG_XMM22' class='variant'><span id='XED_REG_XMM22.v' class='invisible'><code>XED_REG_XMM22</code></span></span><span id='variant.XED_REG_XMM23' class='variant'><span id='XED_REG_XMM23.v' class='invisible'><code>XED_REG_XMM23</code></span></span><span id='variant.XED_REG_XMM24' class='variant'><span id='XED_REG_XMM24.v' class='invisible'><code>XED_REG_XMM24</code></span></span><span id='variant.XED_REG_XMM25' class='variant'><span id='XED_REG_XMM25.v' class='invisible'><code>XED_REG_XMM25</code></span></span><span id='variant.XED_REG_XMM26' class='variant'><span id='XED_REG_XMM26.v' class='invisible'><code>XED_REG_XMM26</code></span></span><span id='variant.XED_REG_XMM27' class='variant'><span id='XED_REG_XMM27.v' class='invisible'><code>XED_REG_XMM27</code></span></span><span id='variant.XED_REG_XMM28' class='variant'><span id='XED_REG_XMM28.v' class='invisible'><code>XED_REG_XMM28</code></span></span><span id='variant.XED_REG_XMM29' class='variant'><span id='XED_REG_XMM29.v' class='invisible'><code>XED_REG_XMM29</code></span></span><span id='variant.XED_REG_XMM30' class='variant'><span id='XED_REG_XMM30.v' class='invisible'><code>XED_REG_XMM30</code></span></span><span id='variant.XED_REG_XMM31' class='variant'><span id='XED_REG_XMM31.v' class='invisible'><code>XED_REG_XMM31</code></span></span><span id='variant.XED_REG_YMM0' class='variant'><span id='XED_REG_YMM0.v' class='invisible'><code>XED_REG_YMM0</code></span></span><span id='variant.XED_REG_YMM1' class='variant'><span id='XED_REG_YMM1.v' class='invisible'><code>XED_REG_YMM1</code></span></span><span id='variant.XED_REG_YMM2' class='variant'><span id='XED_REG_YMM2.v' class='invisible'><code>XED_REG_YMM2</code></span></span><span id='variant.XED_REG_YMM3' class='variant'><span id='XED_REG_YMM3.v' class='invisible'><code>XED_REG_YMM3</code></span></span><span id='variant.XED_REG_YMM4' class='variant'><span id='XED_REG_YMM4.v' class='invisible'><code>XED_REG_YMM4</code></span></span><span id='variant.XED_REG_YMM5' class='variant'><span id='XED_REG_YMM5.v' class='invisible'><code>XED_REG_YMM5</code></span></span><span id='variant.XED_REG_YMM6' class='variant'><span id='XED_REG_YMM6.v' class='invisible'><code>XED_REG_YMM6</code></span></span><span id='variant.XED_REG_YMM7' class='variant'><span id='XED_REG_YMM7.v' class='invisible'><code>XED_REG_YMM7</code></span></span><span id='variant.XED_REG_YMM8' class='variant'><span id='XED_REG_YMM8.v' class='invisible'><code>XED_REG_YMM8</code></span></span><span id='variant.XED_REG_YMM9' class='variant'><span id='XED_REG_YMM9.v' class='invisible'><code>XED_REG_YMM9</code></span></span><span id='variant.XED_REG_YMM10' class='variant'><span id='XED_REG_YMM10.v' class='invisible'><code>XED_REG_YMM10</code></span></span><span id='variant.XED_REG_YMM11' class='variant'><span id='XED_REG_YMM11.v' class='invisible'><code>XED_REG_YMM11</code></span></span><span id='variant.XED_REG_YMM12' class='variant'><span id='XED_REG_YMM12.v' class='invisible'><code>XED_REG_YMM12</code></span></span><span id='variant.XED_REG_YMM13' class='variant'><span id='XED_REG_YMM13.v' class='invisible'><code>XED_REG_YMM13</code></span></span><span id='variant.XED_REG_YMM14' class='variant'><span id='XED_REG_YMM14.v' class='invisible'><code>XED_REG_YMM14</code></span></span><span id='variant.XED_REG_YMM15' class='variant'><span id='XED_REG_YMM15.v' class='invisible'><code>XED_REG_YMM15</code></span></span><span id='variant.XED_REG_YMM16' class='variant'><span id='XED_REG_YMM16.v' class='invisible'><code>XED_REG_YMM16</code></span></span><span id='variant.XED_REG_YMM17' class='variant'><span id='XED_REG_YMM17.v' class='invisible'><code>XED_REG_YMM17</code></span></span><span id='variant.XED_REG_YMM18' class='variant'><span id='XED_REG_YMM18.v' class='invisible'><code>XED_REG_YMM18</code></span></span><span id='variant.XED_REG_YMM19' class='variant'><span id='XED_REG_YMM19.v' class='invisible'><code>XED_REG_YMM19</code></span></span><span id='variant.XED_REG_YMM20' class='variant'><span id='XED_REG_YMM20.v' class='invisible'><code>XED_REG_YMM20</code></span></span><span id='variant.XED_REG_YMM21' class='variant'><span id='XED_REG_YMM21.v' class='invisible'><code>XED_REG_YMM21</code></span></span><span id='variant.XED_REG_YMM22' class='variant'><span id='XED_REG_YMM22.v' class='invisible'><code>XED_REG_YMM22</code></span></span><span id='variant.XED_REG_YMM23' class='variant'><span id='XED_REG_YMM23.v' class='invisible'><code>XED_REG_YMM23</code></span></span><span id='variant.XED_REG_YMM24' class='variant'><span id='XED_REG_YMM24.v' class='invisible'><code>XED_REG_YMM24</code></span></span><span id='variant.XED_REG_YMM25' class='variant'><span id='XED_REG_YMM25.v' class='invisible'><code>XED_REG_YMM25</code></span></span><span id='variant.XED_REG_YMM26' class='variant'><span id='XED_REG_YMM26.v' class='invisible'><code>XED_REG_YMM26</code></span></span><span id='variant.XED_REG_YMM27' class='variant'><span id='XED_REG_YMM27.v' class='invisible'><code>XED_REG_YMM27</code></span></span><span id='variant.XED_REG_YMM28' class='variant'><span id='XED_REG_YMM28.v' class='invisible'><code>XED_REG_YMM28</code></span></span><span id='variant.XED_REG_YMM29' class='variant'><span id='XED_REG_YMM29.v' class='invisible'><code>XED_REG_YMM29</code></span></span><span id='variant.XED_REG_YMM30' class='variant'><span id='XED_REG_YMM30.v' class='invisible'><code>XED_REG_YMM30</code></span></span><span id='variant.XED_REG_YMM31' class='variant'><span id='XED_REG_YMM31.v' class='invisible'><code>XED_REG_YMM31</code></span></span><span id='variant.XED_REG_ZMM0' class='variant'><span id='XED_REG_ZMM0.v' class='invisible'><code>XED_REG_ZMM0</code></span></span><span id='variant.XED_REG_ZMM1' class='variant'><span id='XED_REG_ZMM1.v' class='invisible'><code>XED_REG_ZMM1</code></span></span><span id='variant.XED_REG_ZMM2' class='variant'><span id='XED_REG_ZMM2.v' class='invisible'><code>XED_REG_ZMM2</code></span></span><span id='variant.XED_REG_ZMM3' class='variant'><span id='XED_REG_ZMM3.v' class='invisible'><code>XED_REG_ZMM3</code></span></span><span id='variant.XED_REG_ZMM4' class='variant'><span id='XED_REG_ZMM4.v' class='invisible'><code>XED_REG_ZMM4</code></span></span><span id='variant.XED_REG_ZMM5' class='variant'><span id='XED_REG_ZMM5.v' class='invisible'><code>XED_REG_ZMM5</code></span></span><span id='variant.XED_REG_ZMM6' class='variant'><span id='XED_REG_ZMM6.v' class='invisible'><code>XED_REG_ZMM6</code></span></span><span id='variant.XED_REG_ZMM7' class='variant'><span id='XED_REG_ZMM7.v' class='invisible'><code>XED_REG_ZMM7</code></span></span><span id='variant.XED_REG_ZMM8' class='variant'><span id='XED_REG_ZMM8.v' class='invisible'><code>XED_REG_ZMM8</code></span></span><span id='variant.XED_REG_ZMM9' class='variant'><span id='XED_REG_ZMM9.v' class='invisible'><code>XED_REG_ZMM9</code></span></span><span id='variant.XED_REG_ZMM10' class='variant'><span id='XED_REG_ZMM10.v' class='invisible'><code>XED_REG_ZMM10</code></span></span><span id='variant.XED_REG_ZMM11' class='variant'><span id='XED_REG_ZMM11.v' class='invisible'><code>XED_REG_ZMM11</code></span></span><span id='variant.XED_REG_ZMM12' class='variant'><span id='XED_REG_ZMM12.v' class='invisible'><code>XED_REG_ZMM12</code></span></span><span id='variant.XED_REG_ZMM13' class='variant'><span id='XED_REG_ZMM13.v' class='invisible'><code>XED_REG_ZMM13</code></span></span><span id='variant.XED_REG_ZMM14' class='variant'><span id='XED_REG_ZMM14.v' class='invisible'><code>XED_REG_ZMM14</code></span></span><span id='variant.XED_REG_ZMM15' class='variant'><span id='XED_REG_ZMM15.v' class='invisible'><code>XED_REG_ZMM15</code></span></span><span id='variant.XED_REG_ZMM16' class='variant'><span id='XED_REG_ZMM16.v' class='invisible'><code>XED_REG_ZMM16</code></span></span><span id='variant.XED_REG_ZMM17' class='variant'><span id='XED_REG_ZMM17.v' class='invisible'><code>XED_REG_ZMM17</code></span></span><span id='variant.XED_REG_ZMM18' class='variant'><span id='XED_REG_ZMM18.v' class='invisible'><code>XED_REG_ZMM18</code></span></span><span id='variant.XED_REG_ZMM19' class='variant'><span id='XED_REG_ZMM19.v' class='invisible'><code>XED_REG_ZMM19</code></span></span><span id='variant.XED_REG_ZMM20' class='variant'><span id='XED_REG_ZMM20.v' class='invisible'><code>XED_REG_ZMM20</code></span></span><span id='variant.XED_REG_ZMM21' class='variant'><span id='XED_REG_ZMM21.v' class='invisible'><code>XED_REG_ZMM21</code></span></span><span id='variant.XED_REG_ZMM22' class='variant'><span id='XED_REG_ZMM22.v' class='invisible'><code>XED_REG_ZMM22</code></span></span><span id='variant.XED_REG_ZMM23' class='variant'><span id='XED_REG_ZMM23.v' class='invisible'><code>XED_REG_ZMM23</code></span></span><span id='variant.XED_REG_ZMM24' class='variant'><span id='XED_REG_ZMM24.v' class='invisible'><code>XED_REG_ZMM24</code></span></span><span id='variant.XED_REG_ZMM25' class='variant'><span id='XED_REG_ZMM25.v' class='invisible'><code>XED_REG_ZMM25</code></span></span><span id='variant.XED_REG_ZMM26' class='variant'><span id='XED_REG_ZMM26.v' class='invisible'><code>XED_REG_ZMM26</code></span></span><span id='variant.XED_REG_ZMM27' class='variant'><span id='XED_REG_ZMM27.v' class='invisible'><code>XED_REG_ZMM27</code></span></span><span id='variant.XED_REG_ZMM28' class='variant'><span id='XED_REG_ZMM28.v' class='invisible'><code>XED_REG_ZMM28</code></span></span><span id='variant.XED_REG_ZMM29' class='variant'><span id='XED_REG_ZMM29.v' class='invisible'><code>XED_REG_ZMM29</code></span></span><span id='variant.XED_REG_ZMM30' class='variant'><span id='XED_REG_ZMM30.v' class='invisible'><code>XED_REG_ZMM30</code></span></span><span id='variant.XED_REG_ZMM31' class='variant'><span id='XED_REG_ZMM31.v' class='invisible'><code>XED_REG_ZMM31</code></span></span><span id='variant.XED_REG_LAST' class='variant'><span id='XED_REG_LAST.v' class='invisible'><code>XED_REG_LAST</code></span></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_reg_enum_t.html" title="enum xed_sys::xed_interface::xed_reg_enum_t">xed_reg_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3252' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_reg_enum_t.html" title="enum xed_sys::xed_interface::xed_reg_enum_t">xed_reg_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3252' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_reg_enum_t.html" title="enum xed_sys::xed_interface::xed_reg_enum_t">xed_reg_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3252' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="../../xed_sys/xed_interface/enum.xed_reg_enum_t.html" title="enum xed_sys::xed_interface::xed_reg_enum_t">xed_reg_enum_t</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_reg_enum_t.html" title="enum xed_sys::xed_interface::xed_reg_enum_t">xed_reg_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3252' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class="enum" href="../../xed_sys/xed_interface/enum.xed_reg_enum_t.html" title="enum xed_sys::xed_interface::xed_reg_enum_t">xed_reg_enum_t</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html" title="trait core::cmp::Eq">Eq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_reg_enum_t.html" title="enum xed_sys::xed_interface::xed_reg_enum_t">xed_reg_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3252' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html" title="trait core::hash::Hash">Hash</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_reg_enum_t.html" title="enum xed_sys::xed_interface::xed_reg_enum_t">xed_reg_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3252' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class="method"><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash">Read more</a></p>
+</div><h4 id='method.hash_slice' class="method"><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[Self]</a>, state: &amp;mut H) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;H: <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>,&nbsp;</span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "xed_sys";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

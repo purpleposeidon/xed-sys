@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xed_chip_enum_t` enum in crate `xed_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xed_chip_enum_t">
+
+    <title>xed_sys::xed_interface::xed_chip_enum_t - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc enum">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Enum xed_chip_enum_t</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a></p><script>window.sidebarCurrent = {name: 'xed_chip_enum_t', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a>::<wbr><a class="enum" href=''>xed_chip_enum_t</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#12241-12291' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'><div class="docblock attributes">#[repr(u32)]
+</div>pub enum xed_chip_enum_t {
+    XED_CHIP_INVALID,
+    XED_CHIP_I86,
+    XED_CHIP_I86FP,
+    XED_CHIP_I186,
+    XED_CHIP_I186FP,
+    XED_CHIP_I286REAL,
+    XED_CHIP_I286,
+    XED_CHIP_I2186FP,
+    XED_CHIP_I386REAL,
+    XED_CHIP_I386,
+    XED_CHIP_I386FP,
+    XED_CHIP_I486REAL,
+    XED_CHIP_I486,
+    XED_CHIP_PENTIUMREAL,
+    XED_CHIP_PENTIUM,
+    XED_CHIP_QUARK,
+    XED_CHIP_PENTIUMMMXREAL,
+    XED_CHIP_PENTIUMMMX,
+    XED_CHIP_ALLREAL,
+    XED_CHIP_PENTIUMPRO,
+    XED_CHIP_PENTIUM2,
+    XED_CHIP_PENTIUM3,
+    XED_CHIP_PENTIUM4,
+    XED_CHIP_P4PRESCOTT,
+    XED_CHIP_P4PRESCOTT_NOLAHF,
+    XED_CHIP_P4PRESCOTT_VTX,
+    XED_CHIP_CORE2,
+    XED_CHIP_PENRYN,
+    XED_CHIP_PENRYN_E,
+    XED_CHIP_NEHALEM,
+    XED_CHIP_WESTMERE,
+    XED_CHIP_BONNELL,
+    XED_CHIP_SALTWELL,
+    XED_CHIP_SILVERMONT,
+    XED_CHIP_AMD,
+    XED_CHIP_GOLDMONT,
+    XED_CHIP_SANDYBRIDGE,
+    XED_CHIP_IVYBRIDGE,
+    XED_CHIP_HASWELL,
+    XED_CHIP_BROADWELL,
+    XED_CHIP_SKYLAKE,
+    XED_CHIP_SKYLAKE_SERVER,
+    XED_CHIP_MEMORY_FUTURE,
+    XED_CHIP_FUTURE,
+    XED_CHIP_KNL,
+    XED_CHIP_KNM,
+    XED_CHIP_AVX512_FUTURE,
+    XED_CHIP_ALL,
+    XED_CHIP_LAST,
+}</pre><h2 id='variants' class='variants'>Variants</h2>
+<span id='variant.XED_CHIP_INVALID' class='variant'><span id='XED_CHIP_INVALID.v' class='invisible'><code>XED_CHIP_INVALID</code></span></span><span id='variant.XED_CHIP_I86' class='variant'><span id='XED_CHIP_I86.v' class='invisible'><code>XED_CHIP_I86</code></span></span><span id='variant.XED_CHIP_I86FP' class='variant'><span id='XED_CHIP_I86FP.v' class='invisible'><code>XED_CHIP_I86FP</code></span></span><span id='variant.XED_CHIP_I186' class='variant'><span id='XED_CHIP_I186.v' class='invisible'><code>XED_CHIP_I186</code></span></span><span id='variant.XED_CHIP_I186FP' class='variant'><span id='XED_CHIP_I186FP.v' class='invisible'><code>XED_CHIP_I186FP</code></span></span><span id='variant.XED_CHIP_I286REAL' class='variant'><span id='XED_CHIP_I286REAL.v' class='invisible'><code>XED_CHIP_I286REAL</code></span></span><span id='variant.XED_CHIP_I286' class='variant'><span id='XED_CHIP_I286.v' class='invisible'><code>XED_CHIP_I286</code></span></span><span id='variant.XED_CHIP_I2186FP' class='variant'><span id='XED_CHIP_I2186FP.v' class='invisible'><code>XED_CHIP_I2186FP</code></span></span><span id='variant.XED_CHIP_I386REAL' class='variant'><span id='XED_CHIP_I386REAL.v' class='invisible'><code>XED_CHIP_I386REAL</code></span></span><span id='variant.XED_CHIP_I386' class='variant'><span id='XED_CHIP_I386.v' class='invisible'><code>XED_CHIP_I386</code></span></span><span id='variant.XED_CHIP_I386FP' class='variant'><span id='XED_CHIP_I386FP.v' class='invisible'><code>XED_CHIP_I386FP</code></span></span><span id='variant.XED_CHIP_I486REAL' class='variant'><span id='XED_CHIP_I486REAL.v' class='invisible'><code>XED_CHIP_I486REAL</code></span></span><span id='variant.XED_CHIP_I486' class='variant'><span id='XED_CHIP_I486.v' class='invisible'><code>XED_CHIP_I486</code></span></span><span id='variant.XED_CHIP_PENTIUMREAL' class='variant'><span id='XED_CHIP_PENTIUMREAL.v' class='invisible'><code>XED_CHIP_PENTIUMREAL</code></span></span><span id='variant.XED_CHIP_PENTIUM' class='variant'><span id='XED_CHIP_PENTIUM.v' class='invisible'><code>XED_CHIP_PENTIUM</code></span></span><span id='variant.XED_CHIP_QUARK' class='variant'><span id='XED_CHIP_QUARK.v' class='invisible'><code>XED_CHIP_QUARK</code></span></span><span id='variant.XED_CHIP_PENTIUMMMXREAL' class='variant'><span id='XED_CHIP_PENTIUMMMXREAL.v' class='invisible'><code>XED_CHIP_PENTIUMMMXREAL</code></span></span><span id='variant.XED_CHIP_PENTIUMMMX' class='variant'><span id='XED_CHIP_PENTIUMMMX.v' class='invisible'><code>XED_CHIP_PENTIUMMMX</code></span></span><span id='variant.XED_CHIP_ALLREAL' class='variant'><span id='XED_CHIP_ALLREAL.v' class='invisible'><code>XED_CHIP_ALLREAL</code></span></span><span id='variant.XED_CHIP_PENTIUMPRO' class='variant'><span id='XED_CHIP_PENTIUMPRO.v' class='invisible'><code>XED_CHIP_PENTIUMPRO</code></span></span><span id='variant.XED_CHIP_PENTIUM2' class='variant'><span id='XED_CHIP_PENTIUM2.v' class='invisible'><code>XED_CHIP_PENTIUM2</code></span></span><span id='variant.XED_CHIP_PENTIUM3' class='variant'><span id='XED_CHIP_PENTIUM3.v' class='invisible'><code>XED_CHIP_PENTIUM3</code></span></span><span id='variant.XED_CHIP_PENTIUM4' class='variant'><span id='XED_CHIP_PENTIUM4.v' class='invisible'><code>XED_CHIP_PENTIUM4</code></span></span><span id='variant.XED_CHIP_P4PRESCOTT' class='variant'><span id='XED_CHIP_P4PRESCOTT.v' class='invisible'><code>XED_CHIP_P4PRESCOTT</code></span></span><span id='variant.XED_CHIP_P4PRESCOTT_NOLAHF' class='variant'><span id='XED_CHIP_P4PRESCOTT_NOLAHF.v' class='invisible'><code>XED_CHIP_P4PRESCOTT_NOLAHF</code></span></span><span id='variant.XED_CHIP_P4PRESCOTT_VTX' class='variant'><span id='XED_CHIP_P4PRESCOTT_VTX.v' class='invisible'><code>XED_CHIP_P4PRESCOTT_VTX</code></span></span><span id='variant.XED_CHIP_CORE2' class='variant'><span id='XED_CHIP_CORE2.v' class='invisible'><code>XED_CHIP_CORE2</code></span></span><span id='variant.XED_CHIP_PENRYN' class='variant'><span id='XED_CHIP_PENRYN.v' class='invisible'><code>XED_CHIP_PENRYN</code></span></span><span id='variant.XED_CHIP_PENRYN_E' class='variant'><span id='XED_CHIP_PENRYN_E.v' class='invisible'><code>XED_CHIP_PENRYN_E</code></span></span><span id='variant.XED_CHIP_NEHALEM' class='variant'><span id='XED_CHIP_NEHALEM.v' class='invisible'><code>XED_CHIP_NEHALEM</code></span></span><span id='variant.XED_CHIP_WESTMERE' class='variant'><span id='XED_CHIP_WESTMERE.v' class='invisible'><code>XED_CHIP_WESTMERE</code></span></span><span id='variant.XED_CHIP_BONNELL' class='variant'><span id='XED_CHIP_BONNELL.v' class='invisible'><code>XED_CHIP_BONNELL</code></span></span><span id='variant.XED_CHIP_SALTWELL' class='variant'><span id='XED_CHIP_SALTWELL.v' class='invisible'><code>XED_CHIP_SALTWELL</code></span></span><span id='variant.XED_CHIP_SILVERMONT' class='variant'><span id='XED_CHIP_SILVERMONT.v' class='invisible'><code>XED_CHIP_SILVERMONT</code></span></span><span id='variant.XED_CHIP_AMD' class='variant'><span id='XED_CHIP_AMD.v' class='invisible'><code>XED_CHIP_AMD</code></span></span><span id='variant.XED_CHIP_GOLDMONT' class='variant'><span id='XED_CHIP_GOLDMONT.v' class='invisible'><code>XED_CHIP_GOLDMONT</code></span></span><span id='variant.XED_CHIP_SANDYBRIDGE' class='variant'><span id='XED_CHIP_SANDYBRIDGE.v' class='invisible'><code>XED_CHIP_SANDYBRIDGE</code></span></span><span id='variant.XED_CHIP_IVYBRIDGE' class='variant'><span id='XED_CHIP_IVYBRIDGE.v' class='invisible'><code>XED_CHIP_IVYBRIDGE</code></span></span><span id='variant.XED_CHIP_HASWELL' class='variant'><span id='XED_CHIP_HASWELL.v' class='invisible'><code>XED_CHIP_HASWELL</code></span></span><span id='variant.XED_CHIP_BROADWELL' class='variant'><span id='XED_CHIP_BROADWELL.v' class='invisible'><code>XED_CHIP_BROADWELL</code></span></span><span id='variant.XED_CHIP_SKYLAKE' class='variant'><span id='XED_CHIP_SKYLAKE.v' class='invisible'><code>XED_CHIP_SKYLAKE</code></span></span><span id='variant.XED_CHIP_SKYLAKE_SERVER' class='variant'><span id='XED_CHIP_SKYLAKE_SERVER.v' class='invisible'><code>XED_CHIP_SKYLAKE_SERVER</code></span></span><span id='variant.XED_CHIP_MEMORY_FUTURE' class='variant'><span id='XED_CHIP_MEMORY_FUTURE.v' class='invisible'><code>XED_CHIP_MEMORY_FUTURE</code></span></span><span id='variant.XED_CHIP_FUTURE' class='variant'><span id='XED_CHIP_FUTURE.v' class='invisible'><code>XED_CHIP_FUTURE</code></span></span><span id='variant.XED_CHIP_KNL' class='variant'><span id='XED_CHIP_KNL.v' class='invisible'><code>XED_CHIP_KNL</code></span></span><span id='variant.XED_CHIP_KNM' class='variant'><span id='XED_CHIP_KNM.v' class='invisible'><code>XED_CHIP_KNM</code></span></span><span id='variant.XED_CHIP_AVX512_FUTURE' class='variant'><span id='XED_CHIP_AVX512_FUTURE.v' class='invisible'><code>XED_CHIP_AVX512_FUTURE</code></span></span><span id='variant.XED_CHIP_ALL' class='variant'><span id='XED_CHIP_ALL.v' class='invisible'><code>XED_CHIP_ALL</code></span></span><span id='variant.XED_CHIP_LAST' class='variant'><span id='XED_CHIP_LAST.v' class='invisible'><code>XED_CHIP_LAST</code></span></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_chip_enum_t.html" title="enum xed_sys::xed_interface::xed_chip_enum_t">xed_chip_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#12240' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_chip_enum_t.html" title="enum xed_sys::xed_interface::xed_chip_enum_t">xed_chip_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#12240' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_chip_enum_t.html" title="enum xed_sys::xed_interface::xed_chip_enum_t">xed_chip_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#12240' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="../../xed_sys/xed_interface/enum.xed_chip_enum_t.html" title="enum xed_sys::xed_interface::xed_chip_enum_t">xed_chip_enum_t</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_chip_enum_t.html" title="enum xed_sys::xed_interface::xed_chip_enum_t">xed_chip_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#12240' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class="enum" href="../../xed_sys/xed_interface/enum.xed_chip_enum_t.html" title="enum xed_sys::xed_interface::xed_chip_enum_t">xed_chip_enum_t</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html" title="trait core::cmp::Eq">Eq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_chip_enum_t.html" title="enum xed_sys::xed_interface::xed_chip_enum_t">xed_chip_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#12240' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html" title="trait core::hash::Hash">Hash</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_chip_enum_t.html" title="enum xed_sys::xed_interface::xed_chip_enum_t">xed_chip_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#12240' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class="method"><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash">Read more</a></p>
+</div><h4 id='method.hash_slice' class="method"><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[Self]</a>, state: &amp;mut H) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;H: <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>,&nbsp;</span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "xed_sys";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

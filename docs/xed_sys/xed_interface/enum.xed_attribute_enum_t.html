@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xed_attribute_enum_t` enum in crate `xed_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xed_attribute_enum_t">
+
+    <title>xed_sys::xed_interface::xed_attribute_enum_t - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc enum">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Enum xed_attribute_enum_t</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a></p><script>window.sidebarCurrent = {name: 'xed_attribute_enum_t', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a>::<wbr><a class="enum" href=''>xed_attribute_enum_t</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3551-3641' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'><div class="docblock attributes">#[repr(u32)]
+</div>pub enum xed_attribute_enum_t {
+    XED_ATTRIBUTE_INVALID,
+    XED_ATTRIBUTE_ATT_OPERAND_ORDER_EXCEPTION,
+    XED_ATTRIBUTE_BROADCAST_ENABLED,
+    XED_ATTRIBUTE_BYTEOP,
+    XED_ATTRIBUTE_DISP8_EIGHTHMEM,
+    XED_ATTRIBUTE_DISP8_FULL,
+    XED_ATTRIBUTE_DISP8_FULLMEM,
+    XED_ATTRIBUTE_DISP8_GPR_READER,
+    XED_ATTRIBUTE_DISP8_GPR_READER_BYTE,
+    XED_ATTRIBUTE_DISP8_GPR_READER_WORD,
+    XED_ATTRIBUTE_DISP8_GPR_WRITER_LDOP_D,
+    XED_ATTRIBUTE_DISP8_GPR_WRITER_LDOP_Q,
+    XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE,
+    XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE_BYTE,
+    XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE_WORD,
+    XED_ATTRIBUTE_DISP8_GSCAT,
+    XED_ATTRIBUTE_DISP8_HALF,
+    XED_ATTRIBUTE_DISP8_HALFMEM,
+    XED_ATTRIBUTE_DISP8_MEM128,
+    XED_ATTRIBUTE_DISP8_MOVDDUP,
+    XED_ATTRIBUTE_DISP8_QUARTERMEM,
+    XED_ATTRIBUTE_DISP8_SCALAR,
+    XED_ATTRIBUTE_DISP8_TUPLE1,
+    XED_ATTRIBUTE_DISP8_TUPLE1_4X,
+    XED_ATTRIBUTE_DISP8_TUPLE1_BYTE,
+    XED_ATTRIBUTE_DISP8_TUPLE1_WORD,
+    XED_ATTRIBUTE_DISP8_TUPLE2,
+    XED_ATTRIBUTE_DISP8_TUPLE4,
+    XED_ATTRIBUTE_DISP8_TUPLE8,
+    XED_ATTRIBUTE_DOUBLE_WIDE_MEMOP,
+    XED_ATTRIBUTE_DOUBLE_WIDE_OUTPUT,
+    XED_ATTRIBUTE_DWORD_INDICES,
+    XED_ATTRIBUTE_ELEMENT_SIZE_D,
+    XED_ATTRIBUTE_ELEMENT_SIZE_Q,
+    XED_ATTRIBUTE_EXCEPTION_BR,
+    XED_ATTRIBUTE_FAR_XFER,
+    XED_ATTRIBUTE_FIXED_BASE0,
+    XED_ATTRIBUTE_FIXED_BASE1,
+    XED_ATTRIBUTE_GATHER,
+    XED_ATTRIBUTE_HALF_WIDE_OUTPUT,
+    XED_ATTRIBUTE_HLE_ACQ_ABLE,
+    XED_ATTRIBUTE_HLE_REL_ABLE,
+    XED_ATTRIBUTE_IGNORES_OSFXSR,
+    XED_ATTRIBUTE_IMPLICIT_ONE,
+    XED_ATTRIBUTE_INDEX_REG_IS_POINTER,
+    XED_ATTRIBUTE_INDIRECT_BRANCH,
+    XED_ATTRIBUTE_KMASK,
+    XED_ATTRIBUTE_LOCKABLE,
+    XED_ATTRIBUTE_LOCKED,
+    XED_ATTRIBUTE_MASKOP,
+    XED_ATTRIBUTE_MASKOP_EVEX,
+    XED_ATTRIBUTE_MASK_AS_CONTROL,
+    XED_ATTRIBUTE_MASK_VARIABLE_MEMOP,
+    XED_ATTRIBUTE_MEMORY_FAULT_SUPPRESSION,
+    XED_ATTRIBUTE_MMX_EXCEPT,
+    XED_ATTRIBUTE_MPX_PREFIX_ABLE,
+    XED_ATTRIBUTE_MULTISOURCE4,
+    XED_ATTRIBUTE_MXCSR,
+    XED_ATTRIBUTE_MXCSR_RD,
+    XED_ATTRIBUTE_NONTEMPORAL,
+    XED_ATTRIBUTE_NOP,
+    XED_ATTRIBUTE_NOTSX,
+    XED_ATTRIBUTE_NOTSX_COND,
+    XED_ATTRIBUTE_NO_RIP_REL,
+    XED_ATTRIBUTE_PREFETCH,
+    XED_ATTRIBUTE_PROTECTED_MODE,
+    XED_ATTRIBUTE_QWORD_INDICES,
+    XED_ATTRIBUTE_REP,
+    XED_ATTRIBUTE_REQUIRES_ALIGNMENT,
+    XED_ATTRIBUTE_RING0,
+    XED_ATTRIBUTE_SCALABLE,
+    XED_ATTRIBUTE_SCATTER,
+    XED_ATTRIBUTE_SIMD_SCALAR,
+    XED_ATTRIBUTE_SKIPLOW32,
+    XED_ATTRIBUTE_SKIPLOW64,
+    XED_ATTRIBUTE_SPECIAL_AGEN_REQUIRED,
+    XED_ATTRIBUTE_STACKPOP0,
+    XED_ATTRIBUTE_STACKPOP1,
+    XED_ATTRIBUTE_STACKPUSH0,
+    XED_ATTRIBUTE_STACKPUSH1,
+    XED_ATTRIBUTE_X87_CONTROL,
+    XED_ATTRIBUTE_X87_MMX_STATE_CW,
+    XED_ATTRIBUTE_X87_MMX_STATE_R,
+    XED_ATTRIBUTE_X87_MMX_STATE_W,
+    XED_ATTRIBUTE_X87_NOWAIT,
+    XED_ATTRIBUTE_XMM_STATE_CW,
+    XED_ATTRIBUTE_XMM_STATE_R,
+    XED_ATTRIBUTE_XMM_STATE_W,
+    XED_ATTRIBUTE_LAST,
+}</pre><h2 id='variants' class='variants'>Variants</h2>
+<span id='variant.XED_ATTRIBUTE_INVALID' class='variant'><span id='XED_ATTRIBUTE_INVALID.v' class='invisible'><code>XED_ATTRIBUTE_INVALID</code></span></span><span id='variant.XED_ATTRIBUTE_ATT_OPERAND_ORDER_EXCEPTION' class='variant'><span id='XED_ATTRIBUTE_ATT_OPERAND_ORDER_EXCEPTION.v' class='invisible'><code>XED_ATTRIBUTE_ATT_OPERAND_ORDER_EXCEPTION</code></span></span><span id='variant.XED_ATTRIBUTE_BROADCAST_ENABLED' class='variant'><span id='XED_ATTRIBUTE_BROADCAST_ENABLED.v' class='invisible'><code>XED_ATTRIBUTE_BROADCAST_ENABLED</code></span></span><span id='variant.XED_ATTRIBUTE_BYTEOP' class='variant'><span id='XED_ATTRIBUTE_BYTEOP.v' class='invisible'><code>XED_ATTRIBUTE_BYTEOP</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_EIGHTHMEM' class='variant'><span id='XED_ATTRIBUTE_DISP8_EIGHTHMEM.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_EIGHTHMEM</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_FULL' class='variant'><span id='XED_ATTRIBUTE_DISP8_FULL.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_FULL</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_FULLMEM' class='variant'><span id='XED_ATTRIBUTE_DISP8_FULLMEM.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_FULLMEM</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_GPR_READER' class='variant'><span id='XED_ATTRIBUTE_DISP8_GPR_READER.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_GPR_READER</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_GPR_READER_BYTE' class='variant'><span id='XED_ATTRIBUTE_DISP8_GPR_READER_BYTE.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_GPR_READER_BYTE</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_GPR_READER_WORD' class='variant'><span id='XED_ATTRIBUTE_DISP8_GPR_READER_WORD.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_GPR_READER_WORD</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_GPR_WRITER_LDOP_D' class='variant'><span id='XED_ATTRIBUTE_DISP8_GPR_WRITER_LDOP_D.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_GPR_WRITER_LDOP_D</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_GPR_WRITER_LDOP_Q' class='variant'><span id='XED_ATTRIBUTE_DISP8_GPR_WRITER_LDOP_Q.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_GPR_WRITER_LDOP_Q</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE' class='variant'><span id='XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE_BYTE' class='variant'><span id='XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE_BYTE.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE_BYTE</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE_WORD' class='variant'><span id='XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE_WORD.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_GPR_WRITER_STORE_WORD</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_GSCAT' class='variant'><span id='XED_ATTRIBUTE_DISP8_GSCAT.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_GSCAT</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_HALF' class='variant'><span id='XED_ATTRIBUTE_DISP8_HALF.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_HALF</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_HALFMEM' class='variant'><span id='XED_ATTRIBUTE_DISP8_HALFMEM.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_HALFMEM</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_MEM128' class='variant'><span id='XED_ATTRIBUTE_DISP8_MEM128.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_MEM128</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_MOVDDUP' class='variant'><span id='XED_ATTRIBUTE_DISP8_MOVDDUP.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_MOVDDUP</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_QUARTERMEM' class='variant'><span id='XED_ATTRIBUTE_DISP8_QUARTERMEM.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_QUARTERMEM</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_SCALAR' class='variant'><span id='XED_ATTRIBUTE_DISP8_SCALAR.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_SCALAR</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_TUPLE1' class='variant'><span id='XED_ATTRIBUTE_DISP8_TUPLE1.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_TUPLE1</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_TUPLE1_4X' class='variant'><span id='XED_ATTRIBUTE_DISP8_TUPLE1_4X.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_TUPLE1_4X</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_TUPLE1_BYTE' class='variant'><span id='XED_ATTRIBUTE_DISP8_TUPLE1_BYTE.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_TUPLE1_BYTE</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_TUPLE1_WORD' class='variant'><span id='XED_ATTRIBUTE_DISP8_TUPLE1_WORD.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_TUPLE1_WORD</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_TUPLE2' class='variant'><span id='XED_ATTRIBUTE_DISP8_TUPLE2.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_TUPLE2</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_TUPLE4' class='variant'><span id='XED_ATTRIBUTE_DISP8_TUPLE4.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_TUPLE4</code></span></span><span id='variant.XED_ATTRIBUTE_DISP8_TUPLE8' class='variant'><span id='XED_ATTRIBUTE_DISP8_TUPLE8.v' class='invisible'><code>XED_ATTRIBUTE_DISP8_TUPLE8</code></span></span><span id='variant.XED_ATTRIBUTE_DOUBLE_WIDE_MEMOP' class='variant'><span id='XED_ATTRIBUTE_DOUBLE_WIDE_MEMOP.v' class='invisible'><code>XED_ATTRIBUTE_DOUBLE_WIDE_MEMOP</code></span></span><span id='variant.XED_ATTRIBUTE_DOUBLE_WIDE_OUTPUT' class='variant'><span id='XED_ATTRIBUTE_DOUBLE_WIDE_OUTPUT.v' class='invisible'><code>XED_ATTRIBUTE_DOUBLE_WIDE_OUTPUT</code></span></span><span id='variant.XED_ATTRIBUTE_DWORD_INDICES' class='variant'><span id='XED_ATTRIBUTE_DWORD_INDICES.v' class='invisible'><code>XED_ATTRIBUTE_DWORD_INDICES</code></span></span><span id='variant.XED_ATTRIBUTE_ELEMENT_SIZE_D' class='variant'><span id='XED_ATTRIBUTE_ELEMENT_SIZE_D.v' class='invisible'><code>XED_ATTRIBUTE_ELEMENT_SIZE_D</code></span></span><span id='variant.XED_ATTRIBUTE_ELEMENT_SIZE_Q' class='variant'><span id='XED_ATTRIBUTE_ELEMENT_SIZE_Q.v' class='invisible'><code>XED_ATTRIBUTE_ELEMENT_SIZE_Q</code></span></span><span id='variant.XED_ATTRIBUTE_EXCEPTION_BR' class='variant'><span id='XED_ATTRIBUTE_EXCEPTION_BR.v' class='invisible'><code>XED_ATTRIBUTE_EXCEPTION_BR</code></span></span><span id='variant.XED_ATTRIBUTE_FAR_XFER' class='variant'><span id='XED_ATTRIBUTE_FAR_XFER.v' class='invisible'><code>XED_ATTRIBUTE_FAR_XFER</code></span></span><span id='variant.XED_ATTRIBUTE_FIXED_BASE0' class='variant'><span id='XED_ATTRIBUTE_FIXED_BASE0.v' class='invisible'><code>XED_ATTRIBUTE_FIXED_BASE0</code></span></span><span id='variant.XED_ATTRIBUTE_FIXED_BASE1' class='variant'><span id='XED_ATTRIBUTE_FIXED_BASE1.v' class='invisible'><code>XED_ATTRIBUTE_FIXED_BASE1</code></span></span><span id='variant.XED_ATTRIBUTE_GATHER' class='variant'><span id='XED_ATTRIBUTE_GATHER.v' class='invisible'><code>XED_ATTRIBUTE_GATHER</code></span></span><span id='variant.XED_ATTRIBUTE_HALF_WIDE_OUTPUT' class='variant'><span id='XED_ATTRIBUTE_HALF_WIDE_OUTPUT.v' class='invisible'><code>XED_ATTRIBUTE_HALF_WIDE_OUTPUT</code></span></span><span id='variant.XED_ATTRIBUTE_HLE_ACQ_ABLE' class='variant'><span id='XED_ATTRIBUTE_HLE_ACQ_ABLE.v' class='invisible'><code>XED_ATTRIBUTE_HLE_ACQ_ABLE</code></span></span><span id='variant.XED_ATTRIBUTE_HLE_REL_ABLE' class='variant'><span id='XED_ATTRIBUTE_HLE_REL_ABLE.v' class='invisible'><code>XED_ATTRIBUTE_HLE_REL_ABLE</code></span></span><span id='variant.XED_ATTRIBUTE_IGNORES_OSFXSR' class='variant'><span id='XED_ATTRIBUTE_IGNORES_OSFXSR.v' class='invisible'><code>XED_ATTRIBUTE_IGNORES_OSFXSR</code></span></span><span id='variant.XED_ATTRIBUTE_IMPLICIT_ONE' class='variant'><span id='XED_ATTRIBUTE_IMPLICIT_ONE.v' class='invisible'><code>XED_ATTRIBUTE_IMPLICIT_ONE</code></span></span><span id='variant.XED_ATTRIBUTE_INDEX_REG_IS_POINTER' class='variant'><span id='XED_ATTRIBUTE_INDEX_REG_IS_POINTER.v' class='invisible'><code>XED_ATTRIBUTE_INDEX_REG_IS_POINTER</code></span></span><span id='variant.XED_ATTRIBUTE_INDIRECT_BRANCH' class='variant'><span id='XED_ATTRIBUTE_INDIRECT_BRANCH.v' class='invisible'><code>XED_ATTRIBUTE_INDIRECT_BRANCH</code></span></span><span id='variant.XED_ATTRIBUTE_KMASK' class='variant'><span id='XED_ATTRIBUTE_KMASK.v' class='invisible'><code>XED_ATTRIBUTE_KMASK</code></span></span><span id='variant.XED_ATTRIBUTE_LOCKABLE' class='variant'><span id='XED_ATTRIBUTE_LOCKABLE.v' class='invisible'><code>XED_ATTRIBUTE_LOCKABLE</code></span></span><span id='variant.XED_ATTRIBUTE_LOCKED' class='variant'><span id='XED_ATTRIBUTE_LOCKED.v' class='invisible'><code>XED_ATTRIBUTE_LOCKED</code></span></span><span id='variant.XED_ATTRIBUTE_MASKOP' class='variant'><span id='XED_ATTRIBUTE_MASKOP.v' class='invisible'><code>XED_ATTRIBUTE_MASKOP</code></span></span><span id='variant.XED_ATTRIBUTE_MASKOP_EVEX' class='variant'><span id='XED_ATTRIBUTE_MASKOP_EVEX.v' class='invisible'><code>XED_ATTRIBUTE_MASKOP_EVEX</code></span></span><span id='variant.XED_ATTRIBUTE_MASK_AS_CONTROL' class='variant'><span id='XED_ATTRIBUTE_MASK_AS_CONTROL.v' class='invisible'><code>XED_ATTRIBUTE_MASK_AS_CONTROL</code></span></span><span id='variant.XED_ATTRIBUTE_MASK_VARIABLE_MEMOP' class='variant'><span id='XED_ATTRIBUTE_MASK_VARIABLE_MEMOP.v' class='invisible'><code>XED_ATTRIBUTE_MASK_VARIABLE_MEMOP</code></span></span><span id='variant.XED_ATTRIBUTE_MEMORY_FAULT_SUPPRESSION' class='variant'><span id='XED_ATTRIBUTE_MEMORY_FAULT_SUPPRESSION.v' class='invisible'><code>XED_ATTRIBUTE_MEMORY_FAULT_SUPPRESSION</code></span></span><span id='variant.XED_ATTRIBUTE_MMX_EXCEPT' class='variant'><span id='XED_ATTRIBUTE_MMX_EXCEPT.v' class='invisible'><code>XED_ATTRIBUTE_MMX_EXCEPT</code></span></span><span id='variant.XED_ATTRIBUTE_MPX_PREFIX_ABLE' class='variant'><span id='XED_ATTRIBUTE_MPX_PREFIX_ABLE.v' class='invisible'><code>XED_ATTRIBUTE_MPX_PREFIX_ABLE</code></span></span><span id='variant.XED_ATTRIBUTE_MULTISOURCE4' class='variant'><span id='XED_ATTRIBUTE_MULTISOURCE4.v' class='invisible'><code>XED_ATTRIBUTE_MULTISOURCE4</code></span></span><span id='variant.XED_ATTRIBUTE_MXCSR' class='variant'><span id='XED_ATTRIBUTE_MXCSR.v' class='invisible'><code>XED_ATTRIBUTE_MXCSR</code></span></span><span id='variant.XED_ATTRIBUTE_MXCSR_RD' class='variant'><span id='XED_ATTRIBUTE_MXCSR_RD.v' class='invisible'><code>XED_ATTRIBUTE_MXCSR_RD</code></span></span><span id='variant.XED_ATTRIBUTE_NONTEMPORAL' class='variant'><span id='XED_ATTRIBUTE_NONTEMPORAL.v' class='invisible'><code>XED_ATTRIBUTE_NONTEMPORAL</code></span></span><span id='variant.XED_ATTRIBUTE_NOP' class='variant'><span id='XED_ATTRIBUTE_NOP.v' class='invisible'><code>XED_ATTRIBUTE_NOP</code></span></span><span id='variant.XED_ATTRIBUTE_NOTSX' class='variant'><span id='XED_ATTRIBUTE_NOTSX.v' class='invisible'><code>XED_ATTRIBUTE_NOTSX</code></span></span><span id='variant.XED_ATTRIBUTE_NOTSX_COND' class='variant'><span id='XED_ATTRIBUTE_NOTSX_COND.v' class='invisible'><code>XED_ATTRIBUTE_NOTSX_COND</code></span></span><span id='variant.XED_ATTRIBUTE_NO_RIP_REL' class='variant'><span id='XED_ATTRIBUTE_NO_RIP_REL.v' class='invisible'><code>XED_ATTRIBUTE_NO_RIP_REL</code></span></span><span id='variant.XED_ATTRIBUTE_PREFETCH' class='variant'><span id='XED_ATTRIBUTE_PREFETCH.v' class='invisible'><code>XED_ATTRIBUTE_PREFETCH</code></span></span><span id='variant.XED_ATTRIBUTE_PROTECTED_MODE' class='variant'><span id='XED_ATTRIBUTE_PROTECTED_MODE.v' class='invisible'><code>XED_ATTRIBUTE_PROTECTED_MODE</code></span></span><span id='variant.XED_ATTRIBUTE_QWORD_INDICES' class='variant'><span id='XED_ATTRIBUTE_QWORD_INDICES.v' class='invisible'><code>XED_ATTRIBUTE_QWORD_INDICES</code></span></span><span id='variant.XED_ATTRIBUTE_REP' class='variant'><span id='XED_ATTRIBUTE_REP.v' class='invisible'><code>XED_ATTRIBUTE_REP</code></span></span><span id='variant.XED_ATTRIBUTE_REQUIRES_ALIGNMENT' class='variant'><span id='XED_ATTRIBUTE_REQUIRES_ALIGNMENT.v' class='invisible'><code>XED_ATTRIBUTE_REQUIRES_ALIGNMENT</code></span></span><span id='variant.XED_ATTRIBUTE_RING0' class='variant'><span id='XED_ATTRIBUTE_RING0.v' class='invisible'><code>XED_ATTRIBUTE_RING0</code></span></span><span id='variant.XED_ATTRIBUTE_SCALABLE' class='variant'><span id='XED_ATTRIBUTE_SCALABLE.v' class='invisible'><code>XED_ATTRIBUTE_SCALABLE</code></span></span><span id='variant.XED_ATTRIBUTE_SCATTER' class='variant'><span id='XED_ATTRIBUTE_SCATTER.v' class='invisible'><code>XED_ATTRIBUTE_SCATTER</code></span></span><span id='variant.XED_ATTRIBUTE_SIMD_SCALAR' class='variant'><span id='XED_ATTRIBUTE_SIMD_SCALAR.v' class='invisible'><code>XED_ATTRIBUTE_SIMD_SCALAR</code></span></span><span id='variant.XED_ATTRIBUTE_SKIPLOW32' class='variant'><span id='XED_ATTRIBUTE_SKIPLOW32.v' class='invisible'><code>XED_ATTRIBUTE_SKIPLOW32</code></span></span><span id='variant.XED_ATTRIBUTE_SKIPLOW64' class='variant'><span id='XED_ATTRIBUTE_SKIPLOW64.v' class='invisible'><code>XED_ATTRIBUTE_SKIPLOW64</code></span></span><span id='variant.XED_ATTRIBUTE_SPECIAL_AGEN_REQUIRED' class='variant'><span id='XED_ATTRIBUTE_SPECIAL_AGEN_REQUIRED.v' class='invisible'><code>XED_ATTRIBUTE_SPECIAL_AGEN_REQUIRED</code></span></span><span id='variant.XED_ATTRIBUTE_STACKPOP0' class='variant'><span id='XED_ATTRIBUTE_STACKPOP0.v' class='invisible'><code>XED_ATTRIBUTE_STACKPOP0</code></span></span><span id='variant.XED_ATTRIBUTE_STACKPOP1' class='variant'><span id='XED_ATTRIBUTE_STACKPOP1.v' class='invisible'><code>XED_ATTRIBUTE_STACKPOP1</code></span></span><span id='variant.XED_ATTRIBUTE_STACKPUSH0' class='variant'><span id='XED_ATTRIBUTE_STACKPUSH0.v' class='invisible'><code>XED_ATTRIBUTE_STACKPUSH0</code></span></span><span id='variant.XED_ATTRIBUTE_STACKPUSH1' class='variant'><span id='XED_ATTRIBUTE_STACKPUSH1.v' class='invisible'><code>XED_ATTRIBUTE_STACKPUSH1</code></span></span><span id='variant.XED_ATTRIBUTE_X87_CONTROL' class='variant'><span id='XED_ATTRIBUTE_X87_CONTROL.v' class='invisible'><code>XED_ATTRIBUTE_X87_CONTROL</code></span></span><span id='variant.XED_ATTRIBUTE_X87_MMX_STATE_CW' class='variant'><span id='XED_ATTRIBUTE_X87_MMX_STATE_CW.v' class='invisible'><code>XED_ATTRIBUTE_X87_MMX_STATE_CW</code></span></span><span id='variant.XED_ATTRIBUTE_X87_MMX_STATE_R' class='variant'><span id='XED_ATTRIBUTE_X87_MMX_STATE_R.v' class='invisible'><code>XED_ATTRIBUTE_X87_MMX_STATE_R</code></span></span><span id='variant.XED_ATTRIBUTE_X87_MMX_STATE_W' class='variant'><span id='XED_ATTRIBUTE_X87_MMX_STATE_W.v' class='invisible'><code>XED_ATTRIBUTE_X87_MMX_STATE_W</code></span></span><span id='variant.XED_ATTRIBUTE_X87_NOWAIT' class='variant'><span id='XED_ATTRIBUTE_X87_NOWAIT.v' class='invisible'><code>XED_ATTRIBUTE_X87_NOWAIT</code></span></span><span id='variant.XED_ATTRIBUTE_XMM_STATE_CW' class='variant'><span id='XED_ATTRIBUTE_XMM_STATE_CW.v' class='invisible'><code>XED_ATTRIBUTE_XMM_STATE_CW</code></span></span><span id='variant.XED_ATTRIBUTE_XMM_STATE_R' class='variant'><span id='XED_ATTRIBUTE_XMM_STATE_R.v' class='invisible'><code>XED_ATTRIBUTE_XMM_STATE_R</code></span></span><span id='variant.XED_ATTRIBUTE_XMM_STATE_W' class='variant'><span id='XED_ATTRIBUTE_XMM_STATE_W.v' class='invisible'><code>XED_ATTRIBUTE_XMM_STATE_W</code></span></span><span id='variant.XED_ATTRIBUTE_LAST' class='variant'><span id='XED_ATTRIBUTE_LAST.v' class='invisible'><code>XED_ATTRIBUTE_LAST</code></span></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_attribute_enum_t.html" title="enum xed_sys::xed_interface::xed_attribute_enum_t">xed_attribute_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3550' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_attribute_enum_t.html" title="enum xed_sys::xed_interface::xed_attribute_enum_t">xed_attribute_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3550' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_attribute_enum_t.html" title="enum xed_sys::xed_interface::xed_attribute_enum_t">xed_attribute_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3550' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="../../xed_sys/xed_interface/enum.xed_attribute_enum_t.html" title="enum xed_sys::xed_interface::xed_attribute_enum_t">xed_attribute_enum_t</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_attribute_enum_t.html" title="enum xed_sys::xed_interface::xed_attribute_enum_t">xed_attribute_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3550' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class="enum" href="../../xed_sys/xed_interface/enum.xed_attribute_enum_t.html" title="enum xed_sys::xed_interface::xed_attribute_enum_t">xed_attribute_enum_t</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html" title="trait core::cmp::Eq">Eq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_attribute_enum_t.html" title="enum xed_sys::xed_interface::xed_attribute_enum_t">xed_attribute_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3550' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html" title="trait core::hash::Hash">Hash</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_attribute_enum_t.html" title="enum xed_sys::xed_interface::xed_attribute_enum_t">xed_attribute_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#3550' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class="method"><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash">Read more</a></p>
+</div><h4 id='method.hash_slice' class="method"><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[Self]</a>, state: &amp;mut H) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;H: <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>,&nbsp;</span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "xed_sys";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

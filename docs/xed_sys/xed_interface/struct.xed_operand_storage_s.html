@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xed_operand_storage_s` struct in crate `xed_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xed_operand_storage_s">
+
+    <title>xed_sys::xed_interface::xed_operand_storage_s - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct xed_operand_storage_s</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a></p><script>window.sidebarCurrent = {name: 'xed_operand_storage_s', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a>::<wbr><a class="struct" href=''>xed_operand_storage_s</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#12369-12493' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct xed_operand_storage_s {
+    pub agen: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub amd3dnow: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub asz: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub bcrc: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub cet: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub df32: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub df64: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub dummy: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub encoder_preferred: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub evexrr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub has_sib: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub ild_f2: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub ild_f3: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub imm0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub imm0signed: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub imm1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub lock: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub lzcnt: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub mem0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub mem1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub modep5: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub modep55c: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub mode_first_prefix: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub mpxmode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub needrex: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub norex: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub no_scale_disp8: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub osz: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub out_of_bytes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub p4: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub prefix66: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub ptr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub realmode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub relbr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub rex: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub rexb: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub rexr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub rexrr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub rexw: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub rexx: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub sae: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub sib: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub skip_osz: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub tzcnt: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub ubit: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub using_default_segment0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub using_default_segment1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub vexdest3: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub vexdest4: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub vex_c4: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub zeroing: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub default_seg: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub easz: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub eosz: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub first_f2f3: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub has_modrm: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub last_f2f3: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub llrc: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub mod_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub mode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub rep: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub sibscale: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub smode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub vex_prefix: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub vl: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub hint: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub mask: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub reg: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub rm: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub roundc: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub seg_ovd: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub sibbase: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub sibindex: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub srm: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub vexdest210: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub vexvalid: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub error: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub esrc: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub map: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub nelem: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub scale: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub type_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub bcast: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub chip: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub need_memdisp: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub brdisp_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub disp_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub ild_seg: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub imm1_bytes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub imm_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub max_bytes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub modrm_byte: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub nominal_opcode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub nprefixes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub nrexes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub nseg_prefixes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub pos_disp: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub pos_imm: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub pos_imm1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub pos_modrm: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub pos_nominal_opcode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub pos_sib: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub uimm1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub base0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub base1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub element_size: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub index: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub outreg: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub reg0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub reg1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub reg2: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub reg3: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub reg4: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub reg5: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub reg6: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub reg7: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub reg8: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub seg0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub seg1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub iclass: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub mem_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a>,
+    pub disp: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a>,
+    pub uimm0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a>,
+}</pre><h2 id='fields' class='fields'>Fields</h2><span id='structfield.agen' class="structfield">
+                           <span id='agen.v' class='invisible'>
+                           <code>agen: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.amd3dnow' class="structfield">
+                           <span id='amd3dnow.v' class='invisible'>
+                           <code>amd3dnow: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.asz' class="structfield">
+                           <span id='asz.v' class='invisible'>
+                           <code>asz: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.bcrc' class="structfield">
+                           <span id='bcrc.v' class='invisible'>
+                           <code>bcrc: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.cet' class="structfield">
+                           <span id='cet.v' class='invisible'>
+                           <code>cet: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.df32' class="structfield">
+                           <span id='df32.v' class='invisible'>
+                           <code>df32: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.df64' class="structfield">
+                           <span id='df64.v' class='invisible'>
+                           <code>df64: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.dummy' class="structfield">
+                           <span id='dummy.v' class='invisible'>
+                           <code>dummy: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.encoder_preferred' class="structfield">
+                           <span id='encoder_preferred.v' class='invisible'>
+                           <code>encoder_preferred: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.evexrr' class="structfield">
+                           <span id='evexrr.v' class='invisible'>
+                           <code>evexrr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.has_sib' class="structfield">
+                           <span id='has_sib.v' class='invisible'>
+                           <code>has_sib: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.ild_f2' class="structfield">
+                           <span id='ild_f2.v' class='invisible'>
+                           <code>ild_f2: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.ild_f3' class="structfield">
+                           <span id='ild_f3.v' class='invisible'>
+                           <code>ild_f3: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.imm0' class="structfield">
+                           <span id='imm0.v' class='invisible'>
+                           <code>imm0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.imm0signed' class="structfield">
+                           <span id='imm0signed.v' class='invisible'>
+                           <code>imm0signed: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.imm1' class="structfield">
+                           <span id='imm1.v' class='invisible'>
+                           <code>imm1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.lock' class="structfield">
+                           <span id='lock.v' class='invisible'>
+                           <code>lock: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.lzcnt' class="structfield">
+                           <span id='lzcnt.v' class='invisible'>
+                           <code>lzcnt: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.mem0' class="structfield">
+                           <span id='mem0.v' class='invisible'>
+                           <code>mem0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.mem1' class="structfield">
+                           <span id='mem1.v' class='invisible'>
+                           <code>mem1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.modep5' class="structfield">
+                           <span id='modep5.v' class='invisible'>
+                           <code>modep5: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.modep55c' class="structfield">
+                           <span id='modep55c.v' class='invisible'>
+                           <code>modep55c: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.mode_first_prefix' class="structfield">
+                           <span id='mode_first_prefix.v' class='invisible'>
+                           <code>mode_first_prefix: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.mpxmode' class="structfield">
+                           <span id='mpxmode.v' class='invisible'>
+                           <code>mpxmode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.needrex' class="structfield">
+                           <span id='needrex.v' class='invisible'>
+                           <code>needrex: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.norex' class="structfield">
+                           <span id='norex.v' class='invisible'>
+                           <code>norex: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.no_scale_disp8' class="structfield">
+                           <span id='no_scale_disp8.v' class='invisible'>
+                           <code>no_scale_disp8: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.osz' class="structfield">
+                           <span id='osz.v' class='invisible'>
+                           <code>osz: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.out_of_bytes' class="structfield">
+                           <span id='out_of_bytes.v' class='invisible'>
+                           <code>out_of_bytes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.p4' class="structfield">
+                           <span id='p4.v' class='invisible'>
+                           <code>p4: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.prefix66' class="structfield">
+                           <span id='prefix66.v' class='invisible'>
+                           <code>prefix66: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.ptr' class="structfield">
+                           <span id='ptr.v' class='invisible'>
+                           <code>ptr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.realmode' class="structfield">
+                           <span id='realmode.v' class='invisible'>
+                           <code>realmode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.relbr' class="structfield">
+                           <span id='relbr.v' class='invisible'>
+                           <code>relbr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.rex' class="structfield">
+                           <span id='rex.v' class='invisible'>
+                           <code>rex: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.rexb' class="structfield">
+                           <span id='rexb.v' class='invisible'>
+                           <code>rexb: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.rexr' class="structfield">
+                           <span id='rexr.v' class='invisible'>
+                           <code>rexr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.rexrr' class="structfield">
+                           <span id='rexrr.v' class='invisible'>
+                           <code>rexrr: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.rexw' class="structfield">
+                           <span id='rexw.v' class='invisible'>
+                           <code>rexw: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.rexx' class="structfield">
+                           <span id='rexx.v' class='invisible'>
+                           <code>rexx: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.sae' class="structfield">
+                           <span id='sae.v' class='invisible'>
+                           <code>sae: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.sib' class="structfield">
+                           <span id='sib.v' class='invisible'>
+                           <code>sib: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.skip_osz' class="structfield">
+                           <span id='skip_osz.v' class='invisible'>
+                           <code>skip_osz: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.tzcnt' class="structfield">
+                           <span id='tzcnt.v' class='invisible'>
+                           <code>tzcnt: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.ubit' class="structfield">
+                           <span id='ubit.v' class='invisible'>
+                           <code>ubit: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.using_default_segment0' class="structfield">
+                           <span id='using_default_segment0.v' class='invisible'>
+                           <code>using_default_segment0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.using_default_segment1' class="structfield">
+                           <span id='using_default_segment1.v' class='invisible'>
+                           <code>using_default_segment1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.vexdest3' class="structfield">
+                           <span id='vexdest3.v' class='invisible'>
+                           <code>vexdest3: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.vexdest4' class="structfield">
+                           <span id='vexdest4.v' class='invisible'>
+                           <code>vexdest4: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.vex_c4' class="structfield">
+                           <span id='vex_c4.v' class='invisible'>
+                           <code>vex_c4: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.zeroing' class="structfield">
+                           <span id='zeroing.v' class='invisible'>
+                           <code>zeroing: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.default_seg' class="structfield">
+                           <span id='default_seg.v' class='invisible'>
+                           <code>default_seg: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.easz' class="structfield">
+                           <span id='easz.v' class='invisible'>
+                           <code>easz: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.eosz' class="structfield">
+                           <span id='eosz.v' class='invisible'>
+                           <code>eosz: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.first_f2f3' class="structfield">
+                           <span id='first_f2f3.v' class='invisible'>
+                           <code>first_f2f3: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.has_modrm' class="structfield">
+                           <span id='has_modrm.v' class='invisible'>
+                           <code>has_modrm: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.last_f2f3' class="structfield">
+                           <span id='last_f2f3.v' class='invisible'>
+                           <code>last_f2f3: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.llrc' class="structfield">
+                           <span id='llrc.v' class='invisible'>
+                           <code>llrc: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.mod_' class="structfield">
+                           <span id='mod_.v' class='invisible'>
+                           <code>mod_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.mode' class="structfield">
+                           <span id='mode.v' class='invisible'>
+                           <code>mode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.rep' class="structfield">
+                           <span id='rep.v' class='invisible'>
+                           <code>rep: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.sibscale' class="structfield">
+                           <span id='sibscale.v' class='invisible'>
+                           <code>sibscale: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.smode' class="structfield">
+                           <span id='smode.v' class='invisible'>
+                           <code>smode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.vex_prefix' class="structfield">
+                           <span id='vex_prefix.v' class='invisible'>
+                           <code>vex_prefix: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.vl' class="structfield">
+                           <span id='vl.v' class='invisible'>
+                           <code>vl: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.hint' class="structfield">
+                           <span id='hint.v' class='invisible'>
+                           <code>hint: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.mask' class="structfield">
+                           <span id='mask.v' class='invisible'>
+                           <code>mask: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.reg' class="structfield">
+                           <span id='reg.v' class='invisible'>
+                           <code>reg: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.rm' class="structfield">
+                           <span id='rm.v' class='invisible'>
+                           <code>rm: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.roundc' class="structfield">
+                           <span id='roundc.v' class='invisible'>
+                           <code>roundc: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.seg_ovd' class="structfield">
+                           <span id='seg_ovd.v' class='invisible'>
+                           <code>seg_ovd: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.sibbase' class="structfield">
+                           <span id='sibbase.v' class='invisible'>
+                           <code>sibbase: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.sibindex' class="structfield">
+                           <span id='sibindex.v' class='invisible'>
+                           <code>sibindex: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.srm' class="structfield">
+                           <span id='srm.v' class='invisible'>
+                           <code>srm: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.vexdest210' class="structfield">
+                           <span id='vexdest210.v' class='invisible'>
+                           <code>vexdest210: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.vexvalid' class="structfield">
+                           <span id='vexvalid.v' class='invisible'>
+                           <code>vexvalid: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.error' class="structfield">
+                           <span id='error.v' class='invisible'>
+                           <code>error: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.esrc' class="structfield">
+                           <span id='esrc.v' class='invisible'>
+                           <code>esrc: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.map' class="structfield">
+                           <span id='map.v' class='invisible'>
+                           <code>map: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.nelem' class="structfield">
+                           <span id='nelem.v' class='invisible'>
+                           <code>nelem: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.scale' class="structfield">
+                           <span id='scale.v' class='invisible'>
+                           <code>scale: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.type_' class="structfield">
+                           <span id='type_.v' class='invisible'>
+                           <code>type_: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.bcast' class="structfield">
+                           <span id='bcast.v' class='invisible'>
+                           <code>bcast: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.chip' class="structfield">
+                           <span id='chip.v' class='invisible'>
+                           <code>chip: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.need_memdisp' class="structfield">
+                           <span id='need_memdisp.v' class='invisible'>
+                           <code>need_memdisp: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.brdisp_width' class="structfield">
+                           <span id='brdisp_width.v' class='invisible'>
+                           <code>brdisp_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.disp_width' class="structfield">
+                           <span id='disp_width.v' class='invisible'>
+                           <code>disp_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.ild_seg' class="structfield">
+                           <span id='ild_seg.v' class='invisible'>
+                           <code>ild_seg: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.imm1_bytes' class="structfield">
+                           <span id='imm1_bytes.v' class='invisible'>
+                           <code>imm1_bytes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.imm_width' class="structfield">
+                           <span id='imm_width.v' class='invisible'>
+                           <code>imm_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.max_bytes' class="structfield">
+                           <span id='max_bytes.v' class='invisible'>
+                           <code>max_bytes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.modrm_byte' class="structfield">
+                           <span id='modrm_byte.v' class='invisible'>
+                           <code>modrm_byte: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.nominal_opcode' class="structfield">
+                           <span id='nominal_opcode.v' class='invisible'>
+                           <code>nominal_opcode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.nprefixes' class="structfield">
+                           <span id='nprefixes.v' class='invisible'>
+                           <code>nprefixes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.nrexes' class="structfield">
+                           <span id='nrexes.v' class='invisible'>
+                           <code>nrexes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.nseg_prefixes' class="structfield">
+                           <span id='nseg_prefixes.v' class='invisible'>
+                           <code>nseg_prefixes: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.pos_disp' class="structfield">
+                           <span id='pos_disp.v' class='invisible'>
+                           <code>pos_disp: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.pos_imm' class="structfield">
+                           <span id='pos_imm.v' class='invisible'>
+                           <code>pos_imm: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.pos_imm1' class="structfield">
+                           <span id='pos_imm1.v' class='invisible'>
+                           <code>pos_imm1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.pos_modrm' class="structfield">
+                           <span id='pos_modrm.v' class='invisible'>
+                           <code>pos_modrm: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.pos_nominal_opcode' class="structfield">
+                           <span id='pos_nominal_opcode.v' class='invisible'>
+                           <code>pos_nominal_opcode: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.pos_sib' class="structfield">
+                           <span id='pos_sib.v' class='invisible'>
+                           <code>pos_sib: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.uimm1' class="structfield">
+                           <span id='uimm1.v' class='invisible'>
+                           <code>uimm1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code>
+                           </span></span><span id='structfield.base0' class="structfield">
+                           <span id='base0.v' class='invisible'>
+                           <code>base0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.base1' class="structfield">
+                           <span id='base1.v' class='invisible'>
+                           <code>base1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.element_size' class="structfield">
+                           <span id='element_size.v' class='invisible'>
+                           <code>element_size: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.index' class="structfield">
+                           <span id='index.v' class='invisible'>
+                           <code>index: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.outreg' class="structfield">
+                           <span id='outreg.v' class='invisible'>
+                           <code>outreg: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.reg0' class="structfield">
+                           <span id='reg0.v' class='invisible'>
+                           <code>reg0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.reg1' class="structfield">
+                           <span id='reg1.v' class='invisible'>
+                           <code>reg1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.reg2' class="structfield">
+                           <span id='reg2.v' class='invisible'>
+                           <code>reg2: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.reg3' class="structfield">
+                           <span id='reg3.v' class='invisible'>
+                           <code>reg3: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.reg4' class="structfield">
+                           <span id='reg4.v' class='invisible'>
+                           <code>reg4: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.reg5' class="structfield">
+                           <span id='reg5.v' class='invisible'>
+                           <code>reg5: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.reg6' class="structfield">
+                           <span id='reg6.v' class='invisible'>
+                           <code>reg6: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.reg7' class="structfield">
+                           <span id='reg7.v' class='invisible'>
+                           <code>reg7: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.reg8' class="structfield">
+                           <span id='reg8.v' class='invisible'>
+                           <code>reg8: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.seg0' class="structfield">
+                           <span id='seg0.v' class='invisible'>
+                           <code>seg0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.seg1' class="structfield">
+                           <span id='seg1.v' class='invisible'>
+                           <code>seg1: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.iclass' class="structfield">
+                           <span id='iclass.v' class='invisible'>
+                           <code>iclass: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.mem_width' class="structfield">
+                           <span id='mem_width.v' class='invisible'>
+                           <code>mem_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u16.html">u16</a></code>
+                           </span></span><span id='structfield.disp' class="structfield">
+                           <span id='disp.v' class='invisible'>
+                           <code>disp: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a></code>
+                           </span></span><span id='structfield.uimm0' class="structfield">
+                           <span id='uimm0.v' class='invisible'>
+                           <code>uimm0: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a></code>
+                           </span></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../xed_sys/xed_interface/struct.xed_operand_storage_s.html" title="struct xed_sys::xed_interface::xed_operand_storage_s">xed_operand_storage_s</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#12368' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="struct" href="../../xed_sys/xed_interface/struct.xed_operand_storage_s.html" title="struct xed_sys::xed_interface::xed_operand_storage_s">xed_operand_storage_s</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#12368' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../../xed_sys/xed_interface/struct.xed_operand_storage_s.html" title="struct xed_sys::xed_interface::xed_operand_storage_s">xed_operand_storage_s</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#13123-13125' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; Self</code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "xed_sys";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

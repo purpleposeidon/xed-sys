@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xed_format_context` fn in crate `xed_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xed_format_context">
+
+    <title>xed_sys::xed_interface::xed_format_context - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc fn">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a></p><script>window.sidebarCurrent = {name: 'xed_format_context', ty: 'fn', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Function <a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a>::<wbr><a class="fn" href=''>xed_format_context</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#15557-15565' title='goto source code'>[src]</a></span></h1>
+<pre class='rust fn'>pub unsafe extern &quot;C&quot; fn xed_format_context(<br>&nbsp;&nbsp;&nbsp;&nbsp;syntax: <a class="enum" href="../../xed_sys/xed_interface/enum.xed_syntax_enum_t.html" title="enum xed_sys::xed_interface::xed_syntax_enum_t">xed_syntax_enum_t</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;xedd: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="type" href="../../xed_sys/xed_interface/type.xed_decoded_inst_t.html" title="type xed_sys::xed_interface::xed_decoded_inst_t">xed_decoded_inst_t</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;out_buffer: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html" title="type std::os::raw::c_char">c_char</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;buffer_len: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_int.html" title="type std::os::raw::c_int">c_int</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;runtime_instruction_address: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;context: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="https://doc.rust-lang.org/nightly/std/os/raw/enum.c_void.html" title="enum std::os::raw::c_void">c_void</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;symbolic_callback: <a class="type" href="../../xed_sys/xed_interface/type.xed_disassembly_callback_fn_t.html" title="type xed_sys::xed_interface::xed_disassembly_callback_fn_t">xed_disassembly_callback_fn_t</a><br>) -&gt; <a class="type" href="../../xed_sys/xed_interface/type.xed_bool_t.html" title="type xed_sys::xed_interface::xed_bool_t">xed_bool_t</a></pre><div class='docblock'><p>Disassemble the decoded instruction using the specified syntax.
+ The output buffer must be at least 25 bytes long. Returns true if
+ disassembly proceeded without errors.
+ @param syntax a #xed_syntax_enum_t the specifies the disassembly format
+ @param xedd a #xed_decoded_inst_t for a decoded instruction
+ @param out_buffer a buffer to write the disassembly in to.
+ @param buffer_len maximum length of the disassembly buffer
+ @param runtime_instruction_address the address of the instruction being disassembled. If zero, the offset is printed for relative branches. If nonzero, XED attempts to print the target address for relative branches.
+ @param context A void* used only for the call back routine for symbolic disassembly if one is provided. Can be zero.
+ @param symbolic_callback A function pointer for obtaining symbolic disassembly. Can be zero.
+ @return Returns 0 if the disassembly fails, 1 otherwise.
+@ingroup PRINT</p>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "xed_sys";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

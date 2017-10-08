@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xed_print_info_t` struct in crate `xed_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xed_print_info_t">
+
+    <title>xed_sys::xed_interface::xed_print_info_t - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct xed_print_info_t</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a></p><script>window.sidebarCurrent = {name: 'xed_print_info_t', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a>::<wbr><a class="struct" href=''>xed_print_info_t</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#15223-15255' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'><div class="docblock attributes">#[repr(C)]
+</div>pub struct xed_print_info_t {
+    pub p: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="type" href="../../xed_sys/xed_interface/type.xed_decoded_inst_t.html" title="type xed_sys::xed_interface::xed_decoded_inst_t">xed_decoded_inst_t</a>,
+    pub buf: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html" title="type std::os::raw::c_char">c_char</a>,
+    pub blen: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_int.html" title="type std::os::raw::c_int">c_int</a>,
+    pub runtime_address: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a>,
+    pub disassembly_callback: <a class="type" href="../../xed_sys/xed_interface/type.xed_disassembly_callback_fn_t.html" title="type xed_sys::xed_interface::xed_disassembly_callback_fn_t">xed_disassembly_callback_fn_t</a>,
+    pub context: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="https://doc.rust-lang.org/nightly/std/os/raw/enum.c_void.html" title="enum std::os::raw::c_void">c_void</a>,
+    pub syntax: <a class="enum" href="../../xed_sys/xed_interface/enum.xed_syntax_enum_t.html" title="enum xed_sys::xed_interface::xed_syntax_enum_t">xed_syntax_enum_t</a>,
+    pub format_options_valid: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_int.html" title="type std::os::raw::c_int">c_int</a>,
+    pub format_options: <a class="struct" href="../../xed_sys/xed_interface/struct.xed_format_options_t.html" title="struct xed_sys::xed_interface::xed_format_options_t">xed_format_options_t</a>,
+    pub emitted: <a class="type" href="../../xed_sys/xed_interface/type.xed_bool_t.html" title="type xed_sys::xed_interface::xed_bool_t">xed_bool_t</a>,
+    pub operand_indx: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a>,
+    pub skip_operand: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a>,
+    pub extra_index_operand: <a class="enum" href="../../xed_sys/xed_interface/enum.xed_reg_enum_t.html" title="enum xed_sys::xed_interface::xed_reg_enum_t">xed_reg_enum_t</a>,
+    pub implicit: <a class="type" href="../../xed_sys/xed_interface/type.xed_bool_t.html" title="type xed_sys::xed_interface::xed_bool_t">xed_bool_t</a>,
+}</pre><div class='docblock'><p>@ingroup PRINT
+This contains the information used by the various disassembly printers.
+Call xed_init_print_info to initialize the fields.  Then change the
+required and optional fields when required.</p>
+</div><h2 id='fields' class='fields'>Fields</h2><span id='structfield.p' class="structfield">
+                           <span id='p.v' class='invisible'>
+                           <code>p: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*const </a><a class="type" href="../../xed_sys/xed_interface/type.xed_decoded_inst_t.html" title="type xed_sys::xed_interface::xed_decoded_inst_t">xed_decoded_inst_t</a></code>
+                           </span></span><div class='docblock'><p>the decoded instruction to print</p>
+</div><span id='structfield.buf' class="structfield">
+                           <span id='buf.v' class='invisible'>
+                           <code>buf: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_char.html" title="type std::os::raw::c_char">c_char</a></code>
+                           </span></span><div class='docblock'><p>pointer to the output buffer</p>
+</div><span id='structfield.blen' class="structfield">
+                           <span id='blen.v' class='invisible'>
+                           <code>blen: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_int.html" title="type std::os::raw::c_int">c_int</a></code>
+                           </span></span><div class='docblock'><p>length of the output buffer. (bytes) Must be &gt; 25 to start.</p>
+</div><span id='structfield.runtime_address' class="structfield">
+                           <span id='runtime_address.v' class='invisible'>
+                           <code>runtime_address: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u64.html">u64</a></code>
+                           </span></span><div class='docblock'><p>program counter location. Must be zero if not used.  (Sometimes
+instructions are disassembled in a temporary buffer at a different
+location than where they may or will exist in memory).</p>
+</div><span id='structfield.disassembly_callback' class="structfield">
+                           <span id='disassembly_callback.v' class='invisible'>
+                           <code>disassembly_callback: <a class="type" href="../../xed_sys/xed_interface/type.xed_disassembly_callback_fn_t.html" title="type xed_sys::xed_interface::xed_disassembly_callback_fn_t">xed_disassembly_callback_fn_t</a></code>
+                           </span></span><div class='docblock'><p>disassembly_callback MUST be set to zero if not used!  If zero, the
+default disassembly callback is used (if one has been registered).</p>
+</div><span id='structfield.context' class="structfield">
+                           <span id='context.v' class='invisible'>
+                           <code>context: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.pointer.html">*mut </a><a class="enum" href="https://doc.rust-lang.org/nightly/std/os/raw/enum.c_void.html" title="enum std::os::raw::c_void">c_void</a></code>
+                           </span></span><div class='docblock'><p>passed to disassembly callback. Can be zero if not used.</p>
+</div><span id='structfield.syntax' class="structfield">
+                           <span id='syntax.v' class='invisible'>
+                           <code>syntax: <a class="enum" href="../../xed_sys/xed_interface/enum.xed_syntax_enum_t.html" title="enum xed_sys::xed_interface::xed_syntax_enum_t">xed_syntax_enum_t</a></code>
+                           </span></span><div class='docblock'><p>default is Intel-syntax (dest on left)</p>
+</div><span id='structfield.format_options_valid' class="structfield">
+                           <span id='format_options_valid.v' class='invisible'>
+                           <code>format_options_valid: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_int.html" title="type std::os::raw::c_int">c_int</a></code>
+                           </span></span><div class='docblock'><p>1=indicated the format_options field is valid, 0=use default
+formatting options from xed_format_set_options().</p>
+</div><span id='structfield.format_options' class="structfield">
+                           <span id='format_options.v' class='invisible'>
+                           <code>format_options: <a class="struct" href="../../xed_sys/xed_interface/struct.xed_format_options_t.html" title="struct xed_sys::xed_interface::xed_format_options_t">xed_format_options_t</a></code>
+                           </span></span><span id='structfield.emitted' class="structfield">
+                           <span id='emitted.v' class='invisible'>
+                           <code>emitted: <a class="type" href="../../xed_sys/xed_interface/type.xed_bool_t.html" title="type xed_sys::xed_interface::xed_bool_t">xed_bool_t</a></code>
+                           </span></span><div class='docblock'><p>internal, do not use</p>
+</div><span id='structfield.operand_indx' class="structfield">
+                           <span id='operand_indx.v' class='invisible'>
+                           <code>operand_indx: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a></code>
+                           </span></span><div class='docblock'><p>internal, do not use</p>
+</div><span id='structfield.skip_operand' class="structfield">
+                           <span id='skip_operand.v' class='invisible'>
+                           <code>skip_operand: <a class="type" href="https://doc.rust-lang.org/nightly/std/os/raw/type.c_uint.html" title="type std::os::raw::c_uint">c_uint</a></code>
+                           </span></span><div class='docblock'><p>internal, do not use</p>
+</div><span id='structfield.extra_index_operand' class="structfield">
+                           <span id='extra_index_operand.v' class='invisible'>
+                           <code>extra_index_operand: <a class="enum" href="../../xed_sys/xed_interface/enum.xed_reg_enum_t.html" title="enum xed_sys::xed_interface::xed_reg_enum_t">xed_reg_enum_t</a></code>
+                           </span></span><div class='docblock'><p>internal, do not use</p>
+</div><span id='structfield.implicit' class="structfield">
+                           <span id='implicit.v' class='invisible'>
+                           <code>implicit: <a class="type" href="../../xed_sys/xed_interface/type.xed_bool_t.html" title="type xed_sys::xed_interface::xed_bool_t">xed_bool_t</a></code>
+                           </span></span><div class='docblock'><p>internal, do not use</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../xed_sys/xed_interface/struct.xed_print_info_t.html" title="struct xed_sys::xed_interface::xed_print_info_t">xed_print_info_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#15222' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="struct" href="../../xed_sys/xed_interface/struct.xed_print_info_t.html" title="struct xed_sys::xed_interface::xed_print_info_t">xed_print_info_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#15222' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../../xed_sys/xed_interface/struct.xed_print_info_t.html" title="struct xed_sys::xed_interface::xed_print_info_t">xed_print_info_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#15336-15338' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; Self</code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "xed_sys";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

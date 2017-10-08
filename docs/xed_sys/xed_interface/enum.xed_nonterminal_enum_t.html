@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xed_nonterminal_enum_t` enum in crate `xed_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xed_nonterminal_enum_t">
+
+    <title>xed_sys::xed_interface::xed_nonterminal_enum_t - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc enum">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Enum xed_nonterminal_enum_t</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a></p><script>window.sidebarCurrent = {name: 'xed_nonterminal_enum_t', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a>::<wbr><a class="enum" href=''>xed_nonterminal_enum_t</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2712-2964' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'><div class="docblock attributes">#[repr(u32)]
+</div>pub enum xed_nonterminal_enum_t {
+    XED_NONTERMINAL_INVALID,
+    XED_NONTERMINAL_AR10,
+    XED_NONTERMINAL_AR11,
+    XED_NONTERMINAL_AR12,
+    XED_NONTERMINAL_AR13,
+    XED_NONTERMINAL_AR14,
+    XED_NONTERMINAL_AR15,
+    XED_NONTERMINAL_AR8,
+    XED_NONTERMINAL_AR9,
+    XED_NONTERMINAL_ARAX,
+    XED_NONTERMINAL_ARBP,
+    XED_NONTERMINAL_ARBX,
+    XED_NONTERMINAL_ARCX,
+    XED_NONTERMINAL_ARDI,
+    XED_NONTERMINAL_ARDX,
+    XED_NONTERMINAL_ARSI,
+    XED_NONTERMINAL_ARSP,
+    XED_NONTERMINAL_ASZ_NONTERM,
+    XED_NONTERMINAL_AVX512_ROUND,
+    XED_NONTERMINAL_AVX_INSTRUCTIONS,
+    XED_NONTERMINAL_AVX_SPLITTER,
+    XED_NONTERMINAL_BND_B,
+    XED_NONTERMINAL_BND_B_CHECK,
+    XED_NONTERMINAL_BND_R,
+    XED_NONTERMINAL_BND_R_CHECK,
+    XED_NONTERMINAL_BRANCH_HINT,
+    XED_NONTERMINAL_BRDISP32,
+    XED_NONTERMINAL_BRDISP8,
+    XED_NONTERMINAL_BRDISPZ,
+    XED_NONTERMINAL_CR_B,
+    XED_NONTERMINAL_CR_R,
+    XED_NONTERMINAL_CR_WIDTH,
+    XED_NONTERMINAL_DF64,
+    XED_NONTERMINAL_DR_B,
+    XED_NONTERMINAL_DR_R,
+    XED_NONTERMINAL_ESIZE_128_BITS,
+    XED_NONTERMINAL_ESIZE_16_BITS,
+    XED_NONTERMINAL_ESIZE_1_BITS,
+    XED_NONTERMINAL_ESIZE_2_BITS,
+    XED_NONTERMINAL_ESIZE_32_BITS,
+    XED_NONTERMINAL_ESIZE_4_BITS,
+    XED_NONTERMINAL_ESIZE_64_BITS,
+    XED_NONTERMINAL_ESIZE_8_BITS,
+    XED_NONTERMINAL_EVEX_INSTRUCTIONS,
+    XED_NONTERMINAL_EVEX_SPLITTER,
+    XED_NONTERMINAL_FINAL_DSEG,
+    XED_NONTERMINAL_FINAL_DSEG1,
+    XED_NONTERMINAL_FINAL_DSEG1_MODE64,
+    XED_NONTERMINAL_FINAL_DSEG1_NOT64,
+    XED_NONTERMINAL_FINAL_DSEG_MODE64,
+    XED_NONTERMINAL_FINAL_DSEG_NOT64,
+    XED_NONTERMINAL_FINAL_ESEG,
+    XED_NONTERMINAL_FINAL_ESEG1,
+    XED_NONTERMINAL_FINAL_SSEG,
+    XED_NONTERMINAL_FINAL_SSEG0,
+    XED_NONTERMINAL_FINAL_SSEG1,
+    XED_NONTERMINAL_FINAL_SSEG_MODE64,
+    XED_NONTERMINAL_FINAL_SSEG_NOT64,
+    XED_NONTERMINAL_FIX_ROUND_LEN128,
+    XED_NONTERMINAL_FIX_ROUND_LEN512,
+    XED_NONTERMINAL_FORCE64,
+    XED_NONTERMINAL_GPR16_B,
+    XED_NONTERMINAL_GPR16_R,
+    XED_NONTERMINAL_GPR16_SB,
+    XED_NONTERMINAL_GPR32_B,
+    XED_NONTERMINAL_GPR32_R,
+    XED_NONTERMINAL_GPR32_SB,
+    XED_NONTERMINAL_GPR32_X,
+    XED_NONTERMINAL_GPR64_B,
+    XED_NONTERMINAL_GPR64_R,
+    XED_NONTERMINAL_GPR64_SB,
+    XED_NONTERMINAL_GPR64_X,
+    XED_NONTERMINAL_GPR8_B,
+    XED_NONTERMINAL_GPR8_R,
+    XED_NONTERMINAL_GPR8_SB,
+    XED_NONTERMINAL_GPRM_B,
+    XED_NONTERMINAL_GPRM_R,
+    XED_NONTERMINAL_GPRV_B,
+    XED_NONTERMINAL_GPRV_R,
+    XED_NONTERMINAL_GPRV_SB,
+    XED_NONTERMINAL_GPRY_B,
+    XED_NONTERMINAL_GPRY_R,
+    XED_NONTERMINAL_GPRZ_B,
+    XED_NONTERMINAL_GPRZ_R,
+    XED_NONTERMINAL_IGNORE66,
+    XED_NONTERMINAL_IMMUNE66,
+    XED_NONTERMINAL_IMMUNE66_LOOP64,
+    XED_NONTERMINAL_IMMUNE_REXW,
+    XED_NONTERMINAL_INSTRUCTIONS,
+    XED_NONTERMINAL_ISA,
+    XED_NONTERMINAL_MASK1,
+    XED_NONTERMINAL_MASKNOT0,
+    XED_NONTERMINAL_MASK_B,
+    XED_NONTERMINAL_MASK_N,
+    XED_NONTERMINAL_MASK_N32,
+    XED_NONTERMINAL_MASK_N64,
+    XED_NONTERMINAL_MASK_R,
+    XED_NONTERMINAL_MEMDISP,
+    XED_NONTERMINAL_MEMDISP16,
+    XED_NONTERMINAL_MEMDISP32,
+    XED_NONTERMINAL_MEMDISP8,
+    XED_NONTERMINAL_MEMDISPV,
+    XED_NONTERMINAL_MMX_B,
+    XED_NONTERMINAL_MMX_R,
+    XED_NONTERMINAL_MODRM,
+    XED_NONTERMINAL_MODRM16,
+    XED_NONTERMINAL_MODRM32,
+    XED_NONTERMINAL_MODRM64ALT32,
+    XED_NONTERMINAL_NELEM_EIGHTHMEM,
+    XED_NONTERMINAL_NELEM_FULL,
+    XED_NONTERMINAL_NELEM_FULLMEM,
+    XED_NONTERMINAL_NELEM_GPR_READER,
+    XED_NONTERMINAL_NELEM_GPR_READER_BYTE,
+    XED_NONTERMINAL_NELEM_GPR_READER_SUBDWORD,
+    XED_NONTERMINAL_NELEM_GPR_READER_WORD,
+    XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP,
+    XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP_D,
+    XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP_Q,
+    XED_NONTERMINAL_NELEM_GPR_WRITER_STORE,
+    XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_BYTE,
+    XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_SUBDWORD,
+    XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_WORD,
+    XED_NONTERMINAL_NELEM_GSCAT,
+    XED_NONTERMINAL_NELEM_HALF,
+    XED_NONTERMINAL_NELEM_HALFMEM,
+    XED_NONTERMINAL_NELEM_MEM128,
+    XED_NONTERMINAL_NELEM_MOVDDUP,
+    XED_NONTERMINAL_NELEM_QUARTERMEM,
+    XED_NONTERMINAL_NELEM_SCALAR,
+    XED_NONTERMINAL_NELEM_TUPLE1,
+    XED_NONTERMINAL_NELEM_TUPLE1_4X,
+    XED_NONTERMINAL_NELEM_TUPLE1_BYTE,
+    XED_NONTERMINAL_NELEM_TUPLE1_SUBDWORD,
+    XED_NONTERMINAL_NELEM_TUPLE1_WORD,
+    XED_NONTERMINAL_NELEM_TUPLE2,
+    XED_NONTERMINAL_NELEM_TUPLE4,
+    XED_NONTERMINAL_NELEM_TUPLE8,
+    XED_NONTERMINAL_OEAX,
+    XED_NONTERMINAL_ONE,
+    XED_NONTERMINAL_ORAX,
+    XED_NONTERMINAL_ORBP,
+    XED_NONTERMINAL_ORDX,
+    XED_NONTERMINAL_ORSP,
+    XED_NONTERMINAL_OSZ_NONTERM,
+    XED_NONTERMINAL_OVERRIDE_SEG0,
+    XED_NONTERMINAL_OVERRIDE_SEG1,
+    XED_NONTERMINAL_PREFIXES,
+    XED_NONTERMINAL_REFINING66,
+    XED_NONTERMINAL_REMOVE_SEGMENT,
+    XED_NONTERMINAL_RFLAGS,
+    XED_NONTERMINAL_RIP,
+    XED_NONTERMINAL_RIPA,
+    XED_NONTERMINAL_SAE,
+    XED_NONTERMINAL_SEG,
+    XED_NONTERMINAL_SEG_MOV,
+    XED_NONTERMINAL_SE_IMM8,
+    XED_NONTERMINAL_SIB,
+    XED_NONTERMINAL_SIB_BASE0,
+    XED_NONTERMINAL_SIMM8,
+    XED_NONTERMINAL_SIMMZ,
+    XED_NONTERMINAL_SRBP,
+    XED_NONTERMINAL_SRSP,
+    XED_NONTERMINAL_UIMM16,
+    XED_NONTERMINAL_UIMM32,
+    XED_NONTERMINAL_UIMM8,
+    XED_NONTERMINAL_UIMM8_1,
+    XED_NONTERMINAL_UIMMV,
+    XED_NONTERMINAL_UISA_VMODRM_XMM,
+    XED_NONTERMINAL_UISA_VMODRM_YMM,
+    XED_NONTERMINAL_UISA_VMODRM_ZMM,
+    XED_NONTERMINAL_UISA_VSIB_BASE,
+    XED_NONTERMINAL_UISA_VSIB_INDEX_XMM,
+    XED_NONTERMINAL_UISA_VSIB_INDEX_YMM,
+    XED_NONTERMINAL_UISA_VSIB_INDEX_ZMM,
+    XED_NONTERMINAL_UISA_VSIB_XMM,
+    XED_NONTERMINAL_UISA_VSIB_YMM,
+    XED_NONTERMINAL_UISA_VSIB_ZMM,
+    XED_NONTERMINAL_VGPR32_B,
+    XED_NONTERMINAL_VGPR32_B_32,
+    XED_NONTERMINAL_VGPR32_B_64,
+    XED_NONTERMINAL_VGPR32_N,
+    XED_NONTERMINAL_VGPR32_N_32,
+    XED_NONTERMINAL_VGPR32_N_64,
+    XED_NONTERMINAL_VGPR32_R,
+    XED_NONTERMINAL_VGPR32_R_32,
+    XED_NONTERMINAL_VGPR32_R_64,
+    XED_NONTERMINAL_VGPR64_B,
+    XED_NONTERMINAL_VGPR64_N,
+    XED_NONTERMINAL_VGPR64_R,
+    XED_NONTERMINAL_VGPRY_N,
+    XED_NONTERMINAL_VMODRM_XMM,
+    XED_NONTERMINAL_VMODRM_YMM,
+    XED_NONTERMINAL_VSIB_BASE,
+    XED_NONTERMINAL_VSIB_INDEX_XMM,
+    XED_NONTERMINAL_VSIB_INDEX_YMM,
+    XED_NONTERMINAL_VSIB_XMM,
+    XED_NONTERMINAL_VSIB_YMM,
+    XED_NONTERMINAL_X87,
+    XED_NONTERMINAL_XMM_B,
+    XED_NONTERMINAL_XMM_B3,
+    XED_NONTERMINAL_XMM_B3_32,
+    XED_NONTERMINAL_XMM_B3_64,
+    XED_NONTERMINAL_XMM_B_32,
+    XED_NONTERMINAL_XMM_B_64,
+    XED_NONTERMINAL_XMM_N,
+    XED_NONTERMINAL_XMM_N3,
+    XED_NONTERMINAL_XMM_N3_32,
+    XED_NONTERMINAL_XMM_N3_64,
+    XED_NONTERMINAL_XMM_N_32,
+    XED_NONTERMINAL_XMM_N_64,
+    XED_NONTERMINAL_XMM_R,
+    XED_NONTERMINAL_XMM_R3,
+    XED_NONTERMINAL_XMM_R3_32,
+    XED_NONTERMINAL_XMM_R3_64,
+    XED_NONTERMINAL_XMM_R_32,
+    XED_NONTERMINAL_XMM_R_64,
+    XED_NONTERMINAL_XMM_SE,
+    XED_NONTERMINAL_XMM_SE32,
+    XED_NONTERMINAL_XMM_SE64,
+    XED_NONTERMINAL_XOP_INSTRUCTIONS,
+    XED_NONTERMINAL_YMM_B,
+    XED_NONTERMINAL_YMM_B3,
+    XED_NONTERMINAL_YMM_B3_32,
+    XED_NONTERMINAL_YMM_B3_64,
+    XED_NONTERMINAL_YMM_B_32,
+    XED_NONTERMINAL_YMM_B_64,
+    XED_NONTERMINAL_YMM_N,
+    XED_NONTERMINAL_YMM_N3,
+    XED_NONTERMINAL_YMM_N3_32,
+    XED_NONTERMINAL_YMM_N3_64,
+    XED_NONTERMINAL_YMM_N_32,
+    XED_NONTERMINAL_YMM_N_64,
+    XED_NONTERMINAL_YMM_R,
+    XED_NONTERMINAL_YMM_R3,
+    XED_NONTERMINAL_YMM_R3_32,
+    XED_NONTERMINAL_YMM_R3_64,
+    XED_NONTERMINAL_YMM_R_32,
+    XED_NONTERMINAL_YMM_R_64,
+    XED_NONTERMINAL_YMM_SE,
+    XED_NONTERMINAL_YMM_SE32,
+    XED_NONTERMINAL_YMM_SE64,
+    XED_NONTERMINAL_ZMM_B3,
+    XED_NONTERMINAL_ZMM_B3_32,
+    XED_NONTERMINAL_ZMM_B3_64,
+    XED_NONTERMINAL_ZMM_N3,
+    XED_NONTERMINAL_ZMM_N3_32,
+    XED_NONTERMINAL_ZMM_N3_64,
+    XED_NONTERMINAL_ZMM_R3,
+    XED_NONTERMINAL_ZMM_R3_32,
+    XED_NONTERMINAL_ZMM_R3_64,
+    XED_NONTERMINAL_LAST,
+}</pre><h2 id='variants' class='variants'>Variants</h2>
+<span id='variant.XED_NONTERMINAL_INVALID' class='variant'><span id='XED_NONTERMINAL_INVALID.v' class='invisible'><code>XED_NONTERMINAL_INVALID</code></span></span><span id='variant.XED_NONTERMINAL_AR10' class='variant'><span id='XED_NONTERMINAL_AR10.v' class='invisible'><code>XED_NONTERMINAL_AR10</code></span></span><span id='variant.XED_NONTERMINAL_AR11' class='variant'><span id='XED_NONTERMINAL_AR11.v' class='invisible'><code>XED_NONTERMINAL_AR11</code></span></span><span id='variant.XED_NONTERMINAL_AR12' class='variant'><span id='XED_NONTERMINAL_AR12.v' class='invisible'><code>XED_NONTERMINAL_AR12</code></span></span><span id='variant.XED_NONTERMINAL_AR13' class='variant'><span id='XED_NONTERMINAL_AR13.v' class='invisible'><code>XED_NONTERMINAL_AR13</code></span></span><span id='variant.XED_NONTERMINAL_AR14' class='variant'><span id='XED_NONTERMINAL_AR14.v' class='invisible'><code>XED_NONTERMINAL_AR14</code></span></span><span id='variant.XED_NONTERMINAL_AR15' class='variant'><span id='XED_NONTERMINAL_AR15.v' class='invisible'><code>XED_NONTERMINAL_AR15</code></span></span><span id='variant.XED_NONTERMINAL_AR8' class='variant'><span id='XED_NONTERMINAL_AR8.v' class='invisible'><code>XED_NONTERMINAL_AR8</code></span></span><span id='variant.XED_NONTERMINAL_AR9' class='variant'><span id='XED_NONTERMINAL_AR9.v' class='invisible'><code>XED_NONTERMINAL_AR9</code></span></span><span id='variant.XED_NONTERMINAL_ARAX' class='variant'><span id='XED_NONTERMINAL_ARAX.v' class='invisible'><code>XED_NONTERMINAL_ARAX</code></span></span><span id='variant.XED_NONTERMINAL_ARBP' class='variant'><span id='XED_NONTERMINAL_ARBP.v' class='invisible'><code>XED_NONTERMINAL_ARBP</code></span></span><span id='variant.XED_NONTERMINAL_ARBX' class='variant'><span id='XED_NONTERMINAL_ARBX.v' class='invisible'><code>XED_NONTERMINAL_ARBX</code></span></span><span id='variant.XED_NONTERMINAL_ARCX' class='variant'><span id='XED_NONTERMINAL_ARCX.v' class='invisible'><code>XED_NONTERMINAL_ARCX</code></span></span><span id='variant.XED_NONTERMINAL_ARDI' class='variant'><span id='XED_NONTERMINAL_ARDI.v' class='invisible'><code>XED_NONTERMINAL_ARDI</code></span></span><span id='variant.XED_NONTERMINAL_ARDX' class='variant'><span id='XED_NONTERMINAL_ARDX.v' class='invisible'><code>XED_NONTERMINAL_ARDX</code></span></span><span id='variant.XED_NONTERMINAL_ARSI' class='variant'><span id='XED_NONTERMINAL_ARSI.v' class='invisible'><code>XED_NONTERMINAL_ARSI</code></span></span><span id='variant.XED_NONTERMINAL_ARSP' class='variant'><span id='XED_NONTERMINAL_ARSP.v' class='invisible'><code>XED_NONTERMINAL_ARSP</code></span></span><span id='variant.XED_NONTERMINAL_ASZ_NONTERM' class='variant'><span id='XED_NONTERMINAL_ASZ_NONTERM.v' class='invisible'><code>XED_NONTERMINAL_ASZ_NONTERM</code></span></span><span id='variant.XED_NONTERMINAL_AVX512_ROUND' class='variant'><span id='XED_NONTERMINAL_AVX512_ROUND.v' class='invisible'><code>XED_NONTERMINAL_AVX512_ROUND</code></span></span><span id='variant.XED_NONTERMINAL_AVX_INSTRUCTIONS' class='variant'><span id='XED_NONTERMINAL_AVX_INSTRUCTIONS.v' class='invisible'><code>XED_NONTERMINAL_AVX_INSTRUCTIONS</code></span></span><span id='variant.XED_NONTERMINAL_AVX_SPLITTER' class='variant'><span id='XED_NONTERMINAL_AVX_SPLITTER.v' class='invisible'><code>XED_NONTERMINAL_AVX_SPLITTER</code></span></span><span id='variant.XED_NONTERMINAL_BND_B' class='variant'><span id='XED_NONTERMINAL_BND_B.v' class='invisible'><code>XED_NONTERMINAL_BND_B</code></span></span><span id='variant.XED_NONTERMINAL_BND_B_CHECK' class='variant'><span id='XED_NONTERMINAL_BND_B_CHECK.v' class='invisible'><code>XED_NONTERMINAL_BND_B_CHECK</code></span></span><span id='variant.XED_NONTERMINAL_BND_R' class='variant'><span id='XED_NONTERMINAL_BND_R.v' class='invisible'><code>XED_NONTERMINAL_BND_R</code></span></span><span id='variant.XED_NONTERMINAL_BND_R_CHECK' class='variant'><span id='XED_NONTERMINAL_BND_R_CHECK.v' class='invisible'><code>XED_NONTERMINAL_BND_R_CHECK</code></span></span><span id='variant.XED_NONTERMINAL_BRANCH_HINT' class='variant'><span id='XED_NONTERMINAL_BRANCH_HINT.v' class='invisible'><code>XED_NONTERMINAL_BRANCH_HINT</code></span></span><span id='variant.XED_NONTERMINAL_BRDISP32' class='variant'><span id='XED_NONTERMINAL_BRDISP32.v' class='invisible'><code>XED_NONTERMINAL_BRDISP32</code></span></span><span id='variant.XED_NONTERMINAL_BRDISP8' class='variant'><span id='XED_NONTERMINAL_BRDISP8.v' class='invisible'><code>XED_NONTERMINAL_BRDISP8</code></span></span><span id='variant.XED_NONTERMINAL_BRDISPZ' class='variant'><span id='XED_NONTERMINAL_BRDISPZ.v' class='invisible'><code>XED_NONTERMINAL_BRDISPZ</code></span></span><span id='variant.XED_NONTERMINAL_CR_B' class='variant'><span id='XED_NONTERMINAL_CR_B.v' class='invisible'><code>XED_NONTERMINAL_CR_B</code></span></span><span id='variant.XED_NONTERMINAL_CR_R' class='variant'><span id='XED_NONTERMINAL_CR_R.v' class='invisible'><code>XED_NONTERMINAL_CR_R</code></span></span><span id='variant.XED_NONTERMINAL_CR_WIDTH' class='variant'><span id='XED_NONTERMINAL_CR_WIDTH.v' class='invisible'><code>XED_NONTERMINAL_CR_WIDTH</code></span></span><span id='variant.XED_NONTERMINAL_DF64' class='variant'><span id='XED_NONTERMINAL_DF64.v' class='invisible'><code>XED_NONTERMINAL_DF64</code></span></span><span id='variant.XED_NONTERMINAL_DR_B' class='variant'><span id='XED_NONTERMINAL_DR_B.v' class='invisible'><code>XED_NONTERMINAL_DR_B</code></span></span><span id='variant.XED_NONTERMINAL_DR_R' class='variant'><span id='XED_NONTERMINAL_DR_R.v' class='invisible'><code>XED_NONTERMINAL_DR_R</code></span></span><span id='variant.XED_NONTERMINAL_ESIZE_128_BITS' class='variant'><span id='XED_NONTERMINAL_ESIZE_128_BITS.v' class='invisible'><code>XED_NONTERMINAL_ESIZE_128_BITS</code></span></span><span id='variant.XED_NONTERMINAL_ESIZE_16_BITS' class='variant'><span id='XED_NONTERMINAL_ESIZE_16_BITS.v' class='invisible'><code>XED_NONTERMINAL_ESIZE_16_BITS</code></span></span><span id='variant.XED_NONTERMINAL_ESIZE_1_BITS' class='variant'><span id='XED_NONTERMINAL_ESIZE_1_BITS.v' class='invisible'><code>XED_NONTERMINAL_ESIZE_1_BITS</code></span></span><span id='variant.XED_NONTERMINAL_ESIZE_2_BITS' class='variant'><span id='XED_NONTERMINAL_ESIZE_2_BITS.v' class='invisible'><code>XED_NONTERMINAL_ESIZE_2_BITS</code></span></span><span id='variant.XED_NONTERMINAL_ESIZE_32_BITS' class='variant'><span id='XED_NONTERMINAL_ESIZE_32_BITS.v' class='invisible'><code>XED_NONTERMINAL_ESIZE_32_BITS</code></span></span><span id='variant.XED_NONTERMINAL_ESIZE_4_BITS' class='variant'><span id='XED_NONTERMINAL_ESIZE_4_BITS.v' class='invisible'><code>XED_NONTERMINAL_ESIZE_4_BITS</code></span></span><span id='variant.XED_NONTERMINAL_ESIZE_64_BITS' class='variant'><span id='XED_NONTERMINAL_ESIZE_64_BITS.v' class='invisible'><code>XED_NONTERMINAL_ESIZE_64_BITS</code></span></span><span id='variant.XED_NONTERMINAL_ESIZE_8_BITS' class='variant'><span id='XED_NONTERMINAL_ESIZE_8_BITS.v' class='invisible'><code>XED_NONTERMINAL_ESIZE_8_BITS</code></span></span><span id='variant.XED_NONTERMINAL_EVEX_INSTRUCTIONS' class='variant'><span id='XED_NONTERMINAL_EVEX_INSTRUCTIONS.v' class='invisible'><code>XED_NONTERMINAL_EVEX_INSTRUCTIONS</code></span></span><span id='variant.XED_NONTERMINAL_EVEX_SPLITTER' class='variant'><span id='XED_NONTERMINAL_EVEX_SPLITTER.v' class='invisible'><code>XED_NONTERMINAL_EVEX_SPLITTER</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_DSEG' class='variant'><span id='XED_NONTERMINAL_FINAL_DSEG.v' class='invisible'><code>XED_NONTERMINAL_FINAL_DSEG</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_DSEG1' class='variant'><span id='XED_NONTERMINAL_FINAL_DSEG1.v' class='invisible'><code>XED_NONTERMINAL_FINAL_DSEG1</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_DSEG1_MODE64' class='variant'><span id='XED_NONTERMINAL_FINAL_DSEG1_MODE64.v' class='invisible'><code>XED_NONTERMINAL_FINAL_DSEG1_MODE64</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_DSEG1_NOT64' class='variant'><span id='XED_NONTERMINAL_FINAL_DSEG1_NOT64.v' class='invisible'><code>XED_NONTERMINAL_FINAL_DSEG1_NOT64</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_DSEG_MODE64' class='variant'><span id='XED_NONTERMINAL_FINAL_DSEG_MODE64.v' class='invisible'><code>XED_NONTERMINAL_FINAL_DSEG_MODE64</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_DSEG_NOT64' class='variant'><span id='XED_NONTERMINAL_FINAL_DSEG_NOT64.v' class='invisible'><code>XED_NONTERMINAL_FINAL_DSEG_NOT64</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_ESEG' class='variant'><span id='XED_NONTERMINAL_FINAL_ESEG.v' class='invisible'><code>XED_NONTERMINAL_FINAL_ESEG</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_ESEG1' class='variant'><span id='XED_NONTERMINAL_FINAL_ESEG1.v' class='invisible'><code>XED_NONTERMINAL_FINAL_ESEG1</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_SSEG' class='variant'><span id='XED_NONTERMINAL_FINAL_SSEG.v' class='invisible'><code>XED_NONTERMINAL_FINAL_SSEG</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_SSEG0' class='variant'><span id='XED_NONTERMINAL_FINAL_SSEG0.v' class='invisible'><code>XED_NONTERMINAL_FINAL_SSEG0</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_SSEG1' class='variant'><span id='XED_NONTERMINAL_FINAL_SSEG1.v' class='invisible'><code>XED_NONTERMINAL_FINAL_SSEG1</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_SSEG_MODE64' class='variant'><span id='XED_NONTERMINAL_FINAL_SSEG_MODE64.v' class='invisible'><code>XED_NONTERMINAL_FINAL_SSEG_MODE64</code></span></span><span id='variant.XED_NONTERMINAL_FINAL_SSEG_NOT64' class='variant'><span id='XED_NONTERMINAL_FINAL_SSEG_NOT64.v' class='invisible'><code>XED_NONTERMINAL_FINAL_SSEG_NOT64</code></span></span><span id='variant.XED_NONTERMINAL_FIX_ROUND_LEN128' class='variant'><span id='XED_NONTERMINAL_FIX_ROUND_LEN128.v' class='invisible'><code>XED_NONTERMINAL_FIX_ROUND_LEN128</code></span></span><span id='variant.XED_NONTERMINAL_FIX_ROUND_LEN512' class='variant'><span id='XED_NONTERMINAL_FIX_ROUND_LEN512.v' class='invisible'><code>XED_NONTERMINAL_FIX_ROUND_LEN512</code></span></span><span id='variant.XED_NONTERMINAL_FORCE64' class='variant'><span id='XED_NONTERMINAL_FORCE64.v' class='invisible'><code>XED_NONTERMINAL_FORCE64</code></span></span><span id='variant.XED_NONTERMINAL_GPR16_B' class='variant'><span id='XED_NONTERMINAL_GPR16_B.v' class='invisible'><code>XED_NONTERMINAL_GPR16_B</code></span></span><span id='variant.XED_NONTERMINAL_GPR16_R' class='variant'><span id='XED_NONTERMINAL_GPR16_R.v' class='invisible'><code>XED_NONTERMINAL_GPR16_R</code></span></span><span id='variant.XED_NONTERMINAL_GPR16_SB' class='variant'><span id='XED_NONTERMINAL_GPR16_SB.v' class='invisible'><code>XED_NONTERMINAL_GPR16_SB</code></span></span><span id='variant.XED_NONTERMINAL_GPR32_B' class='variant'><span id='XED_NONTERMINAL_GPR32_B.v' class='invisible'><code>XED_NONTERMINAL_GPR32_B</code></span></span><span id='variant.XED_NONTERMINAL_GPR32_R' class='variant'><span id='XED_NONTERMINAL_GPR32_R.v' class='invisible'><code>XED_NONTERMINAL_GPR32_R</code></span></span><span id='variant.XED_NONTERMINAL_GPR32_SB' class='variant'><span id='XED_NONTERMINAL_GPR32_SB.v' class='invisible'><code>XED_NONTERMINAL_GPR32_SB</code></span></span><span id='variant.XED_NONTERMINAL_GPR32_X' class='variant'><span id='XED_NONTERMINAL_GPR32_X.v' class='invisible'><code>XED_NONTERMINAL_GPR32_X</code></span></span><span id='variant.XED_NONTERMINAL_GPR64_B' class='variant'><span id='XED_NONTERMINAL_GPR64_B.v' class='invisible'><code>XED_NONTERMINAL_GPR64_B</code></span></span><span id='variant.XED_NONTERMINAL_GPR64_R' class='variant'><span id='XED_NONTERMINAL_GPR64_R.v' class='invisible'><code>XED_NONTERMINAL_GPR64_R</code></span></span><span id='variant.XED_NONTERMINAL_GPR64_SB' class='variant'><span id='XED_NONTERMINAL_GPR64_SB.v' class='invisible'><code>XED_NONTERMINAL_GPR64_SB</code></span></span><span id='variant.XED_NONTERMINAL_GPR64_X' class='variant'><span id='XED_NONTERMINAL_GPR64_X.v' class='invisible'><code>XED_NONTERMINAL_GPR64_X</code></span></span><span id='variant.XED_NONTERMINAL_GPR8_B' class='variant'><span id='XED_NONTERMINAL_GPR8_B.v' class='invisible'><code>XED_NONTERMINAL_GPR8_B</code></span></span><span id='variant.XED_NONTERMINAL_GPR8_R' class='variant'><span id='XED_NONTERMINAL_GPR8_R.v' class='invisible'><code>XED_NONTERMINAL_GPR8_R</code></span></span><span id='variant.XED_NONTERMINAL_GPR8_SB' class='variant'><span id='XED_NONTERMINAL_GPR8_SB.v' class='invisible'><code>XED_NONTERMINAL_GPR8_SB</code></span></span><span id='variant.XED_NONTERMINAL_GPRM_B' class='variant'><span id='XED_NONTERMINAL_GPRM_B.v' class='invisible'><code>XED_NONTERMINAL_GPRM_B</code></span></span><span id='variant.XED_NONTERMINAL_GPRM_R' class='variant'><span id='XED_NONTERMINAL_GPRM_R.v' class='invisible'><code>XED_NONTERMINAL_GPRM_R</code></span></span><span id='variant.XED_NONTERMINAL_GPRV_B' class='variant'><span id='XED_NONTERMINAL_GPRV_B.v' class='invisible'><code>XED_NONTERMINAL_GPRV_B</code></span></span><span id='variant.XED_NONTERMINAL_GPRV_R' class='variant'><span id='XED_NONTERMINAL_GPRV_R.v' class='invisible'><code>XED_NONTERMINAL_GPRV_R</code></span></span><span id='variant.XED_NONTERMINAL_GPRV_SB' class='variant'><span id='XED_NONTERMINAL_GPRV_SB.v' class='invisible'><code>XED_NONTERMINAL_GPRV_SB</code></span></span><span id='variant.XED_NONTERMINAL_GPRY_B' class='variant'><span id='XED_NONTERMINAL_GPRY_B.v' class='invisible'><code>XED_NONTERMINAL_GPRY_B</code></span></span><span id='variant.XED_NONTERMINAL_GPRY_R' class='variant'><span id='XED_NONTERMINAL_GPRY_R.v' class='invisible'><code>XED_NONTERMINAL_GPRY_R</code></span></span><span id='variant.XED_NONTERMINAL_GPRZ_B' class='variant'><span id='XED_NONTERMINAL_GPRZ_B.v' class='invisible'><code>XED_NONTERMINAL_GPRZ_B</code></span></span><span id='variant.XED_NONTERMINAL_GPRZ_R' class='variant'><span id='XED_NONTERMINAL_GPRZ_R.v' class='invisible'><code>XED_NONTERMINAL_GPRZ_R</code></span></span><span id='variant.XED_NONTERMINAL_IGNORE66' class='variant'><span id='XED_NONTERMINAL_IGNORE66.v' class='invisible'><code>XED_NONTERMINAL_IGNORE66</code></span></span><span id='variant.XED_NONTERMINAL_IMMUNE66' class='variant'><span id='XED_NONTERMINAL_IMMUNE66.v' class='invisible'><code>XED_NONTERMINAL_IMMUNE66</code></span></span><span id='variant.XED_NONTERMINAL_IMMUNE66_LOOP64' class='variant'><span id='XED_NONTERMINAL_IMMUNE66_LOOP64.v' class='invisible'><code>XED_NONTERMINAL_IMMUNE66_LOOP64</code></span></span><span id='variant.XED_NONTERMINAL_IMMUNE_REXW' class='variant'><span id='XED_NONTERMINAL_IMMUNE_REXW.v' class='invisible'><code>XED_NONTERMINAL_IMMUNE_REXW</code></span></span><span id='variant.XED_NONTERMINAL_INSTRUCTIONS' class='variant'><span id='XED_NONTERMINAL_INSTRUCTIONS.v' class='invisible'><code>XED_NONTERMINAL_INSTRUCTIONS</code></span></span><span id='variant.XED_NONTERMINAL_ISA' class='variant'><span id='XED_NONTERMINAL_ISA.v' class='invisible'><code>XED_NONTERMINAL_ISA</code></span></span><span id='variant.XED_NONTERMINAL_MASK1' class='variant'><span id='XED_NONTERMINAL_MASK1.v' class='invisible'><code>XED_NONTERMINAL_MASK1</code></span></span><span id='variant.XED_NONTERMINAL_MASKNOT0' class='variant'><span id='XED_NONTERMINAL_MASKNOT0.v' class='invisible'><code>XED_NONTERMINAL_MASKNOT0</code></span></span><span id='variant.XED_NONTERMINAL_MASK_B' class='variant'><span id='XED_NONTERMINAL_MASK_B.v' class='invisible'><code>XED_NONTERMINAL_MASK_B</code></span></span><span id='variant.XED_NONTERMINAL_MASK_N' class='variant'><span id='XED_NONTERMINAL_MASK_N.v' class='invisible'><code>XED_NONTERMINAL_MASK_N</code></span></span><span id='variant.XED_NONTERMINAL_MASK_N32' class='variant'><span id='XED_NONTERMINAL_MASK_N32.v' class='invisible'><code>XED_NONTERMINAL_MASK_N32</code></span></span><span id='variant.XED_NONTERMINAL_MASK_N64' class='variant'><span id='XED_NONTERMINAL_MASK_N64.v' class='invisible'><code>XED_NONTERMINAL_MASK_N64</code></span></span><span id='variant.XED_NONTERMINAL_MASK_R' class='variant'><span id='XED_NONTERMINAL_MASK_R.v' class='invisible'><code>XED_NONTERMINAL_MASK_R</code></span></span><span id='variant.XED_NONTERMINAL_MEMDISP' class='variant'><span id='XED_NONTERMINAL_MEMDISP.v' class='invisible'><code>XED_NONTERMINAL_MEMDISP</code></span></span><span id='variant.XED_NONTERMINAL_MEMDISP16' class='variant'><span id='XED_NONTERMINAL_MEMDISP16.v' class='invisible'><code>XED_NONTERMINAL_MEMDISP16</code></span></span><span id='variant.XED_NONTERMINAL_MEMDISP32' class='variant'><span id='XED_NONTERMINAL_MEMDISP32.v' class='invisible'><code>XED_NONTERMINAL_MEMDISP32</code></span></span><span id='variant.XED_NONTERMINAL_MEMDISP8' class='variant'><span id='XED_NONTERMINAL_MEMDISP8.v' class='invisible'><code>XED_NONTERMINAL_MEMDISP8</code></span></span><span id='variant.XED_NONTERMINAL_MEMDISPV' class='variant'><span id='XED_NONTERMINAL_MEMDISPV.v' class='invisible'><code>XED_NONTERMINAL_MEMDISPV</code></span></span><span id='variant.XED_NONTERMINAL_MMX_B' class='variant'><span id='XED_NONTERMINAL_MMX_B.v' class='invisible'><code>XED_NONTERMINAL_MMX_B</code></span></span><span id='variant.XED_NONTERMINAL_MMX_R' class='variant'><span id='XED_NONTERMINAL_MMX_R.v' class='invisible'><code>XED_NONTERMINAL_MMX_R</code></span></span><span id='variant.XED_NONTERMINAL_MODRM' class='variant'><span id='XED_NONTERMINAL_MODRM.v' class='invisible'><code>XED_NONTERMINAL_MODRM</code></span></span><span id='variant.XED_NONTERMINAL_MODRM16' class='variant'><span id='XED_NONTERMINAL_MODRM16.v' class='invisible'><code>XED_NONTERMINAL_MODRM16</code></span></span><span id='variant.XED_NONTERMINAL_MODRM32' class='variant'><span id='XED_NONTERMINAL_MODRM32.v' class='invisible'><code>XED_NONTERMINAL_MODRM32</code></span></span><span id='variant.XED_NONTERMINAL_MODRM64ALT32' class='variant'><span id='XED_NONTERMINAL_MODRM64ALT32.v' class='invisible'><code>XED_NONTERMINAL_MODRM64ALT32</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_EIGHTHMEM' class='variant'><span id='XED_NONTERMINAL_NELEM_EIGHTHMEM.v' class='invisible'><code>XED_NONTERMINAL_NELEM_EIGHTHMEM</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_FULL' class='variant'><span id='XED_NONTERMINAL_NELEM_FULL.v' class='invisible'><code>XED_NONTERMINAL_NELEM_FULL</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_FULLMEM' class='variant'><span id='XED_NONTERMINAL_NELEM_FULLMEM.v' class='invisible'><code>XED_NONTERMINAL_NELEM_FULLMEM</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GPR_READER' class='variant'><span id='XED_NONTERMINAL_NELEM_GPR_READER.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GPR_READER</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GPR_READER_BYTE' class='variant'><span id='XED_NONTERMINAL_NELEM_GPR_READER_BYTE.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GPR_READER_BYTE</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GPR_READER_SUBDWORD' class='variant'><span id='XED_NONTERMINAL_NELEM_GPR_READER_SUBDWORD.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GPR_READER_SUBDWORD</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GPR_READER_WORD' class='variant'><span id='XED_NONTERMINAL_NELEM_GPR_READER_WORD.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GPR_READER_WORD</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP' class='variant'><span id='XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP_D' class='variant'><span id='XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP_D.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP_D</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP_Q' class='variant'><span id='XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP_Q.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GPR_WRITER_LDOP_Q</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GPR_WRITER_STORE' class='variant'><span id='XED_NONTERMINAL_NELEM_GPR_WRITER_STORE.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GPR_WRITER_STORE</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_BYTE' class='variant'><span id='XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_BYTE.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_BYTE</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_SUBDWORD' class='variant'><span id='XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_SUBDWORD.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_SUBDWORD</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_WORD' class='variant'><span id='XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_WORD.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GPR_WRITER_STORE_WORD</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_GSCAT' class='variant'><span id='XED_NONTERMINAL_NELEM_GSCAT.v' class='invisible'><code>XED_NONTERMINAL_NELEM_GSCAT</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_HALF' class='variant'><span id='XED_NONTERMINAL_NELEM_HALF.v' class='invisible'><code>XED_NONTERMINAL_NELEM_HALF</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_HALFMEM' class='variant'><span id='XED_NONTERMINAL_NELEM_HALFMEM.v' class='invisible'><code>XED_NONTERMINAL_NELEM_HALFMEM</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_MEM128' class='variant'><span id='XED_NONTERMINAL_NELEM_MEM128.v' class='invisible'><code>XED_NONTERMINAL_NELEM_MEM128</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_MOVDDUP' class='variant'><span id='XED_NONTERMINAL_NELEM_MOVDDUP.v' class='invisible'><code>XED_NONTERMINAL_NELEM_MOVDDUP</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_QUARTERMEM' class='variant'><span id='XED_NONTERMINAL_NELEM_QUARTERMEM.v' class='invisible'><code>XED_NONTERMINAL_NELEM_QUARTERMEM</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_SCALAR' class='variant'><span id='XED_NONTERMINAL_NELEM_SCALAR.v' class='invisible'><code>XED_NONTERMINAL_NELEM_SCALAR</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_TUPLE1' class='variant'><span id='XED_NONTERMINAL_NELEM_TUPLE1.v' class='invisible'><code>XED_NONTERMINAL_NELEM_TUPLE1</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_TUPLE1_4X' class='variant'><span id='XED_NONTERMINAL_NELEM_TUPLE1_4X.v' class='invisible'><code>XED_NONTERMINAL_NELEM_TUPLE1_4X</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_TUPLE1_BYTE' class='variant'><span id='XED_NONTERMINAL_NELEM_TUPLE1_BYTE.v' class='invisible'><code>XED_NONTERMINAL_NELEM_TUPLE1_BYTE</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_TUPLE1_SUBDWORD' class='variant'><span id='XED_NONTERMINAL_NELEM_TUPLE1_SUBDWORD.v' class='invisible'><code>XED_NONTERMINAL_NELEM_TUPLE1_SUBDWORD</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_TUPLE1_WORD' class='variant'><span id='XED_NONTERMINAL_NELEM_TUPLE1_WORD.v' class='invisible'><code>XED_NONTERMINAL_NELEM_TUPLE1_WORD</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_TUPLE2' class='variant'><span id='XED_NONTERMINAL_NELEM_TUPLE2.v' class='invisible'><code>XED_NONTERMINAL_NELEM_TUPLE2</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_TUPLE4' class='variant'><span id='XED_NONTERMINAL_NELEM_TUPLE4.v' class='invisible'><code>XED_NONTERMINAL_NELEM_TUPLE4</code></span></span><span id='variant.XED_NONTERMINAL_NELEM_TUPLE8' class='variant'><span id='XED_NONTERMINAL_NELEM_TUPLE8.v' class='invisible'><code>XED_NONTERMINAL_NELEM_TUPLE8</code></span></span><span id='variant.XED_NONTERMINAL_OEAX' class='variant'><span id='XED_NONTERMINAL_OEAX.v' class='invisible'><code>XED_NONTERMINAL_OEAX</code></span></span><span id='variant.XED_NONTERMINAL_ONE' class='variant'><span id='XED_NONTERMINAL_ONE.v' class='invisible'><code>XED_NONTERMINAL_ONE</code></span></span><span id='variant.XED_NONTERMINAL_ORAX' class='variant'><span id='XED_NONTERMINAL_ORAX.v' class='invisible'><code>XED_NONTERMINAL_ORAX</code></span></span><span id='variant.XED_NONTERMINAL_ORBP' class='variant'><span id='XED_NONTERMINAL_ORBP.v' class='invisible'><code>XED_NONTERMINAL_ORBP</code></span></span><span id='variant.XED_NONTERMINAL_ORDX' class='variant'><span id='XED_NONTERMINAL_ORDX.v' class='invisible'><code>XED_NONTERMINAL_ORDX</code></span></span><span id='variant.XED_NONTERMINAL_ORSP' class='variant'><span id='XED_NONTERMINAL_ORSP.v' class='invisible'><code>XED_NONTERMINAL_ORSP</code></span></span><span id='variant.XED_NONTERMINAL_OSZ_NONTERM' class='variant'><span id='XED_NONTERMINAL_OSZ_NONTERM.v' class='invisible'><code>XED_NONTERMINAL_OSZ_NONTERM</code></span></span><span id='variant.XED_NONTERMINAL_OVERRIDE_SEG0' class='variant'><span id='XED_NONTERMINAL_OVERRIDE_SEG0.v' class='invisible'><code>XED_NONTERMINAL_OVERRIDE_SEG0</code></span></span><span id='variant.XED_NONTERMINAL_OVERRIDE_SEG1' class='variant'><span id='XED_NONTERMINAL_OVERRIDE_SEG1.v' class='invisible'><code>XED_NONTERMINAL_OVERRIDE_SEG1</code></span></span><span id='variant.XED_NONTERMINAL_PREFIXES' class='variant'><span id='XED_NONTERMINAL_PREFIXES.v' class='invisible'><code>XED_NONTERMINAL_PREFIXES</code></span></span><span id='variant.XED_NONTERMINAL_REFINING66' class='variant'><span id='XED_NONTERMINAL_REFINING66.v' class='invisible'><code>XED_NONTERMINAL_REFINING66</code></span></span><span id='variant.XED_NONTERMINAL_REMOVE_SEGMENT' class='variant'><span id='XED_NONTERMINAL_REMOVE_SEGMENT.v' class='invisible'><code>XED_NONTERMINAL_REMOVE_SEGMENT</code></span></span><span id='variant.XED_NONTERMINAL_RFLAGS' class='variant'><span id='XED_NONTERMINAL_RFLAGS.v' class='invisible'><code>XED_NONTERMINAL_RFLAGS</code></span></span><span id='variant.XED_NONTERMINAL_RIP' class='variant'><span id='XED_NONTERMINAL_RIP.v' class='invisible'><code>XED_NONTERMINAL_RIP</code></span></span><span id='variant.XED_NONTERMINAL_RIPA' class='variant'><span id='XED_NONTERMINAL_RIPA.v' class='invisible'><code>XED_NONTERMINAL_RIPA</code></span></span><span id='variant.XED_NONTERMINAL_SAE' class='variant'><span id='XED_NONTERMINAL_SAE.v' class='invisible'><code>XED_NONTERMINAL_SAE</code></span></span><span id='variant.XED_NONTERMINAL_SEG' class='variant'><span id='XED_NONTERMINAL_SEG.v' class='invisible'><code>XED_NONTERMINAL_SEG</code></span></span><span id='variant.XED_NONTERMINAL_SEG_MOV' class='variant'><span id='XED_NONTERMINAL_SEG_MOV.v' class='invisible'><code>XED_NONTERMINAL_SEG_MOV</code></span></span><span id='variant.XED_NONTERMINAL_SE_IMM8' class='variant'><span id='XED_NONTERMINAL_SE_IMM8.v' class='invisible'><code>XED_NONTERMINAL_SE_IMM8</code></span></span><span id='variant.XED_NONTERMINAL_SIB' class='variant'><span id='XED_NONTERMINAL_SIB.v' class='invisible'><code>XED_NONTERMINAL_SIB</code></span></span><span id='variant.XED_NONTERMINAL_SIB_BASE0' class='variant'><span id='XED_NONTERMINAL_SIB_BASE0.v' class='invisible'><code>XED_NONTERMINAL_SIB_BASE0</code></span></span><span id='variant.XED_NONTERMINAL_SIMM8' class='variant'><span id='XED_NONTERMINAL_SIMM8.v' class='invisible'><code>XED_NONTERMINAL_SIMM8</code></span></span><span id='variant.XED_NONTERMINAL_SIMMZ' class='variant'><span id='XED_NONTERMINAL_SIMMZ.v' class='invisible'><code>XED_NONTERMINAL_SIMMZ</code></span></span><span id='variant.XED_NONTERMINAL_SRBP' class='variant'><span id='XED_NONTERMINAL_SRBP.v' class='invisible'><code>XED_NONTERMINAL_SRBP</code></span></span><span id='variant.XED_NONTERMINAL_SRSP' class='variant'><span id='XED_NONTERMINAL_SRSP.v' class='invisible'><code>XED_NONTERMINAL_SRSP</code></span></span><span id='variant.XED_NONTERMINAL_UIMM16' class='variant'><span id='XED_NONTERMINAL_UIMM16.v' class='invisible'><code>XED_NONTERMINAL_UIMM16</code></span></span><span id='variant.XED_NONTERMINAL_UIMM32' class='variant'><span id='XED_NONTERMINAL_UIMM32.v' class='invisible'><code>XED_NONTERMINAL_UIMM32</code></span></span><span id='variant.XED_NONTERMINAL_UIMM8' class='variant'><span id='XED_NONTERMINAL_UIMM8.v' class='invisible'><code>XED_NONTERMINAL_UIMM8</code></span></span><span id='variant.XED_NONTERMINAL_UIMM8_1' class='variant'><span id='XED_NONTERMINAL_UIMM8_1.v' class='invisible'><code>XED_NONTERMINAL_UIMM8_1</code></span></span><span id='variant.XED_NONTERMINAL_UIMMV' class='variant'><span id='XED_NONTERMINAL_UIMMV.v' class='invisible'><code>XED_NONTERMINAL_UIMMV</code></span></span><span id='variant.XED_NONTERMINAL_UISA_VMODRM_XMM' class='variant'><span id='XED_NONTERMINAL_UISA_VMODRM_XMM.v' class='invisible'><code>XED_NONTERMINAL_UISA_VMODRM_XMM</code></span></span><span id='variant.XED_NONTERMINAL_UISA_VMODRM_YMM' class='variant'><span id='XED_NONTERMINAL_UISA_VMODRM_YMM.v' class='invisible'><code>XED_NONTERMINAL_UISA_VMODRM_YMM</code></span></span><span id='variant.XED_NONTERMINAL_UISA_VMODRM_ZMM' class='variant'><span id='XED_NONTERMINAL_UISA_VMODRM_ZMM.v' class='invisible'><code>XED_NONTERMINAL_UISA_VMODRM_ZMM</code></span></span><span id='variant.XED_NONTERMINAL_UISA_VSIB_BASE' class='variant'><span id='XED_NONTERMINAL_UISA_VSIB_BASE.v' class='invisible'><code>XED_NONTERMINAL_UISA_VSIB_BASE</code></span></span><span id='variant.XED_NONTERMINAL_UISA_VSIB_INDEX_XMM' class='variant'><span id='XED_NONTERMINAL_UISA_VSIB_INDEX_XMM.v' class='invisible'><code>XED_NONTERMINAL_UISA_VSIB_INDEX_XMM</code></span></span><span id='variant.XED_NONTERMINAL_UISA_VSIB_INDEX_YMM' class='variant'><span id='XED_NONTERMINAL_UISA_VSIB_INDEX_YMM.v' class='invisible'><code>XED_NONTERMINAL_UISA_VSIB_INDEX_YMM</code></span></span><span id='variant.XED_NONTERMINAL_UISA_VSIB_INDEX_ZMM' class='variant'><span id='XED_NONTERMINAL_UISA_VSIB_INDEX_ZMM.v' class='invisible'><code>XED_NONTERMINAL_UISA_VSIB_INDEX_ZMM</code></span></span><span id='variant.XED_NONTERMINAL_UISA_VSIB_XMM' class='variant'><span id='XED_NONTERMINAL_UISA_VSIB_XMM.v' class='invisible'><code>XED_NONTERMINAL_UISA_VSIB_XMM</code></span></span><span id='variant.XED_NONTERMINAL_UISA_VSIB_YMM' class='variant'><span id='XED_NONTERMINAL_UISA_VSIB_YMM.v' class='invisible'><code>XED_NONTERMINAL_UISA_VSIB_YMM</code></span></span><span id='variant.XED_NONTERMINAL_UISA_VSIB_ZMM' class='variant'><span id='XED_NONTERMINAL_UISA_VSIB_ZMM.v' class='invisible'><code>XED_NONTERMINAL_UISA_VSIB_ZMM</code></span></span><span id='variant.XED_NONTERMINAL_VGPR32_B' class='variant'><span id='XED_NONTERMINAL_VGPR32_B.v' class='invisible'><code>XED_NONTERMINAL_VGPR32_B</code></span></span><span id='variant.XED_NONTERMINAL_VGPR32_B_32' class='variant'><span id='XED_NONTERMINAL_VGPR32_B_32.v' class='invisible'><code>XED_NONTERMINAL_VGPR32_B_32</code></span></span><span id='variant.XED_NONTERMINAL_VGPR32_B_64' class='variant'><span id='XED_NONTERMINAL_VGPR32_B_64.v' class='invisible'><code>XED_NONTERMINAL_VGPR32_B_64</code></span></span><span id='variant.XED_NONTERMINAL_VGPR32_N' class='variant'><span id='XED_NONTERMINAL_VGPR32_N.v' class='invisible'><code>XED_NONTERMINAL_VGPR32_N</code></span></span><span id='variant.XED_NONTERMINAL_VGPR32_N_32' class='variant'><span id='XED_NONTERMINAL_VGPR32_N_32.v' class='invisible'><code>XED_NONTERMINAL_VGPR32_N_32</code></span></span><span id='variant.XED_NONTERMINAL_VGPR32_N_64' class='variant'><span id='XED_NONTERMINAL_VGPR32_N_64.v' class='invisible'><code>XED_NONTERMINAL_VGPR32_N_64</code></span></span><span id='variant.XED_NONTERMINAL_VGPR32_R' class='variant'><span id='XED_NONTERMINAL_VGPR32_R.v' class='invisible'><code>XED_NONTERMINAL_VGPR32_R</code></span></span><span id='variant.XED_NONTERMINAL_VGPR32_R_32' class='variant'><span id='XED_NONTERMINAL_VGPR32_R_32.v' class='invisible'><code>XED_NONTERMINAL_VGPR32_R_32</code></span></span><span id='variant.XED_NONTERMINAL_VGPR32_R_64' class='variant'><span id='XED_NONTERMINAL_VGPR32_R_64.v' class='invisible'><code>XED_NONTERMINAL_VGPR32_R_64</code></span></span><span id='variant.XED_NONTERMINAL_VGPR64_B' class='variant'><span id='XED_NONTERMINAL_VGPR64_B.v' class='invisible'><code>XED_NONTERMINAL_VGPR64_B</code></span></span><span id='variant.XED_NONTERMINAL_VGPR64_N' class='variant'><span id='XED_NONTERMINAL_VGPR64_N.v' class='invisible'><code>XED_NONTERMINAL_VGPR64_N</code></span></span><span id='variant.XED_NONTERMINAL_VGPR64_R' class='variant'><span id='XED_NONTERMINAL_VGPR64_R.v' class='invisible'><code>XED_NONTERMINAL_VGPR64_R</code></span></span><span id='variant.XED_NONTERMINAL_VGPRY_N' class='variant'><span id='XED_NONTERMINAL_VGPRY_N.v' class='invisible'><code>XED_NONTERMINAL_VGPRY_N</code></span></span><span id='variant.XED_NONTERMINAL_VMODRM_XMM' class='variant'><span id='XED_NONTERMINAL_VMODRM_XMM.v' class='invisible'><code>XED_NONTERMINAL_VMODRM_XMM</code></span></span><span id='variant.XED_NONTERMINAL_VMODRM_YMM' class='variant'><span id='XED_NONTERMINAL_VMODRM_YMM.v' class='invisible'><code>XED_NONTERMINAL_VMODRM_YMM</code></span></span><span id='variant.XED_NONTERMINAL_VSIB_BASE' class='variant'><span id='XED_NONTERMINAL_VSIB_BASE.v' class='invisible'><code>XED_NONTERMINAL_VSIB_BASE</code></span></span><span id='variant.XED_NONTERMINAL_VSIB_INDEX_XMM' class='variant'><span id='XED_NONTERMINAL_VSIB_INDEX_XMM.v' class='invisible'><code>XED_NONTERMINAL_VSIB_INDEX_XMM</code></span></span><span id='variant.XED_NONTERMINAL_VSIB_INDEX_YMM' class='variant'><span id='XED_NONTERMINAL_VSIB_INDEX_YMM.v' class='invisible'><code>XED_NONTERMINAL_VSIB_INDEX_YMM</code></span></span><span id='variant.XED_NONTERMINAL_VSIB_XMM' class='variant'><span id='XED_NONTERMINAL_VSIB_XMM.v' class='invisible'><code>XED_NONTERMINAL_VSIB_XMM</code></span></span><span id='variant.XED_NONTERMINAL_VSIB_YMM' class='variant'><span id='XED_NONTERMINAL_VSIB_YMM.v' class='invisible'><code>XED_NONTERMINAL_VSIB_YMM</code></span></span><span id='variant.XED_NONTERMINAL_X87' class='variant'><span id='XED_NONTERMINAL_X87.v' class='invisible'><code>XED_NONTERMINAL_X87</code></span></span><span id='variant.XED_NONTERMINAL_XMM_B' class='variant'><span id='XED_NONTERMINAL_XMM_B.v' class='invisible'><code>XED_NONTERMINAL_XMM_B</code></span></span><span id='variant.XED_NONTERMINAL_XMM_B3' class='variant'><span id='XED_NONTERMINAL_XMM_B3.v' class='invisible'><code>XED_NONTERMINAL_XMM_B3</code></span></span><span id='variant.XED_NONTERMINAL_XMM_B3_32' class='variant'><span id='XED_NONTERMINAL_XMM_B3_32.v' class='invisible'><code>XED_NONTERMINAL_XMM_B3_32</code></span></span><span id='variant.XED_NONTERMINAL_XMM_B3_64' class='variant'><span id='XED_NONTERMINAL_XMM_B3_64.v' class='invisible'><code>XED_NONTERMINAL_XMM_B3_64</code></span></span><span id='variant.XED_NONTERMINAL_XMM_B_32' class='variant'><span id='XED_NONTERMINAL_XMM_B_32.v' class='invisible'><code>XED_NONTERMINAL_XMM_B_32</code></span></span><span id='variant.XED_NONTERMINAL_XMM_B_64' class='variant'><span id='XED_NONTERMINAL_XMM_B_64.v' class='invisible'><code>XED_NONTERMINAL_XMM_B_64</code></span></span><span id='variant.XED_NONTERMINAL_XMM_N' class='variant'><span id='XED_NONTERMINAL_XMM_N.v' class='invisible'><code>XED_NONTERMINAL_XMM_N</code></span></span><span id='variant.XED_NONTERMINAL_XMM_N3' class='variant'><span id='XED_NONTERMINAL_XMM_N3.v' class='invisible'><code>XED_NONTERMINAL_XMM_N3</code></span></span><span id='variant.XED_NONTERMINAL_XMM_N3_32' class='variant'><span id='XED_NONTERMINAL_XMM_N3_32.v' class='invisible'><code>XED_NONTERMINAL_XMM_N3_32</code></span></span><span id='variant.XED_NONTERMINAL_XMM_N3_64' class='variant'><span id='XED_NONTERMINAL_XMM_N3_64.v' class='invisible'><code>XED_NONTERMINAL_XMM_N3_64</code></span></span><span id='variant.XED_NONTERMINAL_XMM_N_32' class='variant'><span id='XED_NONTERMINAL_XMM_N_32.v' class='invisible'><code>XED_NONTERMINAL_XMM_N_32</code></span></span><span id='variant.XED_NONTERMINAL_XMM_N_64' class='variant'><span id='XED_NONTERMINAL_XMM_N_64.v' class='invisible'><code>XED_NONTERMINAL_XMM_N_64</code></span></span><span id='variant.XED_NONTERMINAL_XMM_R' class='variant'><span id='XED_NONTERMINAL_XMM_R.v' class='invisible'><code>XED_NONTERMINAL_XMM_R</code></span></span><span id='variant.XED_NONTERMINAL_XMM_R3' class='variant'><span id='XED_NONTERMINAL_XMM_R3.v' class='invisible'><code>XED_NONTERMINAL_XMM_R3</code></span></span><span id='variant.XED_NONTERMINAL_XMM_R3_32' class='variant'><span id='XED_NONTERMINAL_XMM_R3_32.v' class='invisible'><code>XED_NONTERMINAL_XMM_R3_32</code></span></span><span id='variant.XED_NONTERMINAL_XMM_R3_64' class='variant'><span id='XED_NONTERMINAL_XMM_R3_64.v' class='invisible'><code>XED_NONTERMINAL_XMM_R3_64</code></span></span><span id='variant.XED_NONTERMINAL_XMM_R_32' class='variant'><span id='XED_NONTERMINAL_XMM_R_32.v' class='invisible'><code>XED_NONTERMINAL_XMM_R_32</code></span></span><span id='variant.XED_NONTERMINAL_XMM_R_64' class='variant'><span id='XED_NONTERMINAL_XMM_R_64.v' class='invisible'><code>XED_NONTERMINAL_XMM_R_64</code></span></span><span id='variant.XED_NONTERMINAL_XMM_SE' class='variant'><span id='XED_NONTERMINAL_XMM_SE.v' class='invisible'><code>XED_NONTERMINAL_XMM_SE</code></span></span><span id='variant.XED_NONTERMINAL_XMM_SE32' class='variant'><span id='XED_NONTERMINAL_XMM_SE32.v' class='invisible'><code>XED_NONTERMINAL_XMM_SE32</code></span></span><span id='variant.XED_NONTERMINAL_XMM_SE64' class='variant'><span id='XED_NONTERMINAL_XMM_SE64.v' class='invisible'><code>XED_NONTERMINAL_XMM_SE64</code></span></span><span id='variant.XED_NONTERMINAL_XOP_INSTRUCTIONS' class='variant'><span id='XED_NONTERMINAL_XOP_INSTRUCTIONS.v' class='invisible'><code>XED_NONTERMINAL_XOP_INSTRUCTIONS</code></span></span><span id='variant.XED_NONTERMINAL_YMM_B' class='variant'><span id='XED_NONTERMINAL_YMM_B.v' class='invisible'><code>XED_NONTERMINAL_YMM_B</code></span></span><span id='variant.XED_NONTERMINAL_YMM_B3' class='variant'><span id='XED_NONTERMINAL_YMM_B3.v' class='invisible'><code>XED_NONTERMINAL_YMM_B3</code></span></span><span id='variant.XED_NONTERMINAL_YMM_B3_32' class='variant'><span id='XED_NONTERMINAL_YMM_B3_32.v' class='invisible'><code>XED_NONTERMINAL_YMM_B3_32</code></span></span><span id='variant.XED_NONTERMINAL_YMM_B3_64' class='variant'><span id='XED_NONTERMINAL_YMM_B3_64.v' class='invisible'><code>XED_NONTERMINAL_YMM_B3_64</code></span></span><span id='variant.XED_NONTERMINAL_YMM_B_32' class='variant'><span id='XED_NONTERMINAL_YMM_B_32.v' class='invisible'><code>XED_NONTERMINAL_YMM_B_32</code></span></span><span id='variant.XED_NONTERMINAL_YMM_B_64' class='variant'><span id='XED_NONTERMINAL_YMM_B_64.v' class='invisible'><code>XED_NONTERMINAL_YMM_B_64</code></span></span><span id='variant.XED_NONTERMINAL_YMM_N' class='variant'><span id='XED_NONTERMINAL_YMM_N.v' class='invisible'><code>XED_NONTERMINAL_YMM_N</code></span></span><span id='variant.XED_NONTERMINAL_YMM_N3' class='variant'><span id='XED_NONTERMINAL_YMM_N3.v' class='invisible'><code>XED_NONTERMINAL_YMM_N3</code></span></span><span id='variant.XED_NONTERMINAL_YMM_N3_32' class='variant'><span id='XED_NONTERMINAL_YMM_N3_32.v' class='invisible'><code>XED_NONTERMINAL_YMM_N3_32</code></span></span><span id='variant.XED_NONTERMINAL_YMM_N3_64' class='variant'><span id='XED_NONTERMINAL_YMM_N3_64.v' class='invisible'><code>XED_NONTERMINAL_YMM_N3_64</code></span></span><span id='variant.XED_NONTERMINAL_YMM_N_32' class='variant'><span id='XED_NONTERMINAL_YMM_N_32.v' class='invisible'><code>XED_NONTERMINAL_YMM_N_32</code></span></span><span id='variant.XED_NONTERMINAL_YMM_N_64' class='variant'><span id='XED_NONTERMINAL_YMM_N_64.v' class='invisible'><code>XED_NONTERMINAL_YMM_N_64</code></span></span><span id='variant.XED_NONTERMINAL_YMM_R' class='variant'><span id='XED_NONTERMINAL_YMM_R.v' class='invisible'><code>XED_NONTERMINAL_YMM_R</code></span></span><span id='variant.XED_NONTERMINAL_YMM_R3' class='variant'><span id='XED_NONTERMINAL_YMM_R3.v' class='invisible'><code>XED_NONTERMINAL_YMM_R3</code></span></span><span id='variant.XED_NONTERMINAL_YMM_R3_32' class='variant'><span id='XED_NONTERMINAL_YMM_R3_32.v' class='invisible'><code>XED_NONTERMINAL_YMM_R3_32</code></span></span><span id='variant.XED_NONTERMINAL_YMM_R3_64' class='variant'><span id='XED_NONTERMINAL_YMM_R3_64.v' class='invisible'><code>XED_NONTERMINAL_YMM_R3_64</code></span></span><span id='variant.XED_NONTERMINAL_YMM_R_32' class='variant'><span id='XED_NONTERMINAL_YMM_R_32.v' class='invisible'><code>XED_NONTERMINAL_YMM_R_32</code></span></span><span id='variant.XED_NONTERMINAL_YMM_R_64' class='variant'><span id='XED_NONTERMINAL_YMM_R_64.v' class='invisible'><code>XED_NONTERMINAL_YMM_R_64</code></span></span><span id='variant.XED_NONTERMINAL_YMM_SE' class='variant'><span id='XED_NONTERMINAL_YMM_SE.v' class='invisible'><code>XED_NONTERMINAL_YMM_SE</code></span></span><span id='variant.XED_NONTERMINAL_YMM_SE32' class='variant'><span id='XED_NONTERMINAL_YMM_SE32.v' class='invisible'><code>XED_NONTERMINAL_YMM_SE32</code></span></span><span id='variant.XED_NONTERMINAL_YMM_SE64' class='variant'><span id='XED_NONTERMINAL_YMM_SE64.v' class='invisible'><code>XED_NONTERMINAL_YMM_SE64</code></span></span><span id='variant.XED_NONTERMINAL_ZMM_B3' class='variant'><span id='XED_NONTERMINAL_ZMM_B3.v' class='invisible'><code>XED_NONTERMINAL_ZMM_B3</code></span></span><span id='variant.XED_NONTERMINAL_ZMM_B3_32' class='variant'><span id='XED_NONTERMINAL_ZMM_B3_32.v' class='invisible'><code>XED_NONTERMINAL_ZMM_B3_32</code></span></span><span id='variant.XED_NONTERMINAL_ZMM_B3_64' class='variant'><span id='XED_NONTERMINAL_ZMM_B3_64.v' class='invisible'><code>XED_NONTERMINAL_ZMM_B3_64</code></span></span><span id='variant.XED_NONTERMINAL_ZMM_N3' class='variant'><span id='XED_NONTERMINAL_ZMM_N3.v' class='invisible'><code>XED_NONTERMINAL_ZMM_N3</code></span></span><span id='variant.XED_NONTERMINAL_ZMM_N3_32' class='variant'><span id='XED_NONTERMINAL_ZMM_N3_32.v' class='invisible'><code>XED_NONTERMINAL_ZMM_N3_32</code></span></span><span id='variant.XED_NONTERMINAL_ZMM_N3_64' class='variant'><span id='XED_NONTERMINAL_ZMM_N3_64.v' class='invisible'><code>XED_NONTERMINAL_ZMM_N3_64</code></span></span><span id='variant.XED_NONTERMINAL_ZMM_R3' class='variant'><span id='XED_NONTERMINAL_ZMM_R3.v' class='invisible'><code>XED_NONTERMINAL_ZMM_R3</code></span></span><span id='variant.XED_NONTERMINAL_ZMM_R3_32' class='variant'><span id='XED_NONTERMINAL_ZMM_R3_32.v' class='invisible'><code>XED_NONTERMINAL_ZMM_R3_32</code></span></span><span id='variant.XED_NONTERMINAL_ZMM_R3_64' class='variant'><span id='XED_NONTERMINAL_ZMM_R3_64.v' class='invisible'><code>XED_NONTERMINAL_ZMM_R3_64</code></span></span><span id='variant.XED_NONTERMINAL_LAST' class='variant'><span id='XED_NONTERMINAL_LAST.v' class='invisible'><code>XED_NONTERMINAL_LAST</code></span></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_nonterminal_enum_t.html" title="enum xed_sys::xed_interface::xed_nonterminal_enum_t">xed_nonterminal_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2711' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_nonterminal_enum_t.html" title="enum xed_sys::xed_interface::xed_nonterminal_enum_t">xed_nonterminal_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2711' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_nonterminal_enum_t.html" title="enum xed_sys::xed_interface::xed_nonterminal_enum_t">xed_nonterminal_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2711' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="../../xed_sys/xed_interface/enum.xed_nonterminal_enum_t.html" title="enum xed_sys::xed_interface::xed_nonterminal_enum_t">xed_nonterminal_enum_t</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_nonterminal_enum_t.html" title="enum xed_sys::xed_interface::xed_nonterminal_enum_t">xed_nonterminal_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2711' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class="enum" href="../../xed_sys/xed_interface/enum.xed_nonterminal_enum_t.html" title="enum xed_sys::xed_interface::xed_nonterminal_enum_t">xed_nonterminal_enum_t</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html" title="trait core::cmp::Eq">Eq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_nonterminal_enum_t.html" title="enum xed_sys::xed_interface::xed_nonterminal_enum_t">xed_nonterminal_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2711' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html" title="trait core::hash::Hash">Hash</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_nonterminal_enum_t.html" title="enum xed_sys::xed_interface::xed_nonterminal_enum_t">xed_nonterminal_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2711' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class="method"><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash">Read more</a></p>
+</div><h4 id='method.hash_slice' class="method"><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[Self]</a>, state: &amp;mut H) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;H: <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>,&nbsp;</span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "xed_sys";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>

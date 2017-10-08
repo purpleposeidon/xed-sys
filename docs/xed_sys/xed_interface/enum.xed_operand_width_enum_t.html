@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xed_operand_width_enum_t` enum in crate `xed_sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xed_operand_width_enum_t">
+
+    <title>xed_sys::xed_interface::xed_operand_width_enum_t - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc enum">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Enum xed_operand_width_enum_t</p><div class="block items"><ul><li><a href="#variants">Variants</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a></p><script>window.sidebarCurrent = {name: 'xed_operand_width_enum_t', ty: 'enum', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Enum <a href='../index.html'>xed_sys</a>::<wbr><a href='index.html'>xed_interface</a>::<wbr><a class="enum" href=''>xed_operand_width_enum_t</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2978-3095' title='goto source code'>[src]</a></span></h1>
+<pre class='rust enum'><div class="docblock attributes">#[repr(u32)]
+</div>pub enum xed_operand_width_enum_t {
+    XED_OPERAND_WIDTH_INVALID,
+    XED_OPERAND_WIDTH_ASZ,
+    XED_OPERAND_WIDTH_SSZ,
+    XED_OPERAND_WIDTH_PSEUDO,
+    XED_OPERAND_WIDTH_PSEUDOX87,
+    XED_OPERAND_WIDTH_A16,
+    XED_OPERAND_WIDTH_A32,
+    XED_OPERAND_WIDTH_B,
+    XED_OPERAND_WIDTH_D,
+    XED_OPERAND_WIDTH_I8,
+    XED_OPERAND_WIDTH_U8,
+    XED_OPERAND_WIDTH_I16,
+    XED_OPERAND_WIDTH_U16,
+    XED_OPERAND_WIDTH_I32,
+    XED_OPERAND_WIDTH_U32,
+    XED_OPERAND_WIDTH_I64,
+    XED_OPERAND_WIDTH_U64,
+    XED_OPERAND_WIDTH_F16,
+    XED_OPERAND_WIDTH_F32,
+    XED_OPERAND_WIDTH_F64,
+    XED_OPERAND_WIDTH_DQ,
+    XED_OPERAND_WIDTH_XUB,
+    XED_OPERAND_WIDTH_XUW,
+    XED_OPERAND_WIDTH_XUD,
+    XED_OPERAND_WIDTH_XUQ,
+    XED_OPERAND_WIDTH_X128,
+    XED_OPERAND_WIDTH_XB,
+    XED_OPERAND_WIDTH_XW,
+    XED_OPERAND_WIDTH_XD,
+    XED_OPERAND_WIDTH_XQ,
+    XED_OPERAND_WIDTH_MB,
+    XED_OPERAND_WIDTH_MW,
+    XED_OPERAND_WIDTH_MD,
+    XED_OPERAND_WIDTH_MQ,
+    XED_OPERAND_WIDTH_M64INT,
+    XED_OPERAND_WIDTH_M64REAL,
+    XED_OPERAND_WIDTH_MEM108,
+    XED_OPERAND_WIDTH_MEM14,
+    XED_OPERAND_WIDTH_MEM16,
+    XED_OPERAND_WIDTH_MEM16INT,
+    XED_OPERAND_WIDTH_MEM28,
+    XED_OPERAND_WIDTH_MEM32INT,
+    XED_OPERAND_WIDTH_MEM32REAL,
+    XED_OPERAND_WIDTH_MEM80DEC,
+    XED_OPERAND_WIDTH_MEM80REAL,
+    XED_OPERAND_WIDTH_F80,
+    XED_OPERAND_WIDTH_MEM94,
+    XED_OPERAND_WIDTH_MFPXENV,
+    XED_OPERAND_WIDTH_MXSAVE,
+    XED_OPERAND_WIDTH_MPREFETCH,
+    XED_OPERAND_WIDTH_P,
+    XED_OPERAND_WIDTH_P2,
+    XED_OPERAND_WIDTH_PD,
+    XED_OPERAND_WIDTH_PS,
+    XED_OPERAND_WIDTH_PI,
+    XED_OPERAND_WIDTH_Q,
+    XED_OPERAND_WIDTH_S,
+    XED_OPERAND_WIDTH_S64,
+    XED_OPERAND_WIDTH_SD,
+    XED_OPERAND_WIDTH_SI,
+    XED_OPERAND_WIDTH_SS,
+    XED_OPERAND_WIDTH_V,
+    XED_OPERAND_WIDTH_Y,
+    XED_OPERAND_WIDTH_W,
+    XED_OPERAND_WIDTH_Z,
+    XED_OPERAND_WIDTH_SPW8,
+    XED_OPERAND_WIDTH_SPW,
+    XED_OPERAND_WIDTH_SPW3,
+    XED_OPERAND_WIDTH_SPW2,
+    XED_OPERAND_WIDTH_I1,
+    XED_OPERAND_WIDTH_I2,
+    XED_OPERAND_WIDTH_I3,
+    XED_OPERAND_WIDTH_I4,
+    XED_OPERAND_WIDTH_I5,
+    XED_OPERAND_WIDTH_I6,
+    XED_OPERAND_WIDTH_I7,
+    XED_OPERAND_WIDTH_VAR,
+    XED_OPERAND_WIDTH_BND32,
+    XED_OPERAND_WIDTH_BND64,
+    XED_OPERAND_WIDTH_QQ,
+    XED_OPERAND_WIDTH_YUB,
+    XED_OPERAND_WIDTH_YUW,
+    XED_OPERAND_WIDTH_YUD,
+    XED_OPERAND_WIDTH_YUQ,
+    XED_OPERAND_WIDTH_Y128,
+    XED_OPERAND_WIDTH_YB,
+    XED_OPERAND_WIDTH_YW,
+    XED_OPERAND_WIDTH_YD,
+    XED_OPERAND_WIDTH_YQ,
+    XED_OPERAND_WIDTH_YPS,
+    XED_OPERAND_WIDTH_YPD,
+    XED_OPERAND_WIDTH_VV,
+    XED_OPERAND_WIDTH_ZV,
+    XED_OPERAND_WIDTH_WRD,
+    XED_OPERAND_WIDTH_MSKW,
+    XED_OPERAND_WIDTH_ZMSKW,
+    XED_OPERAND_WIDTH_ZF32,
+    XED_OPERAND_WIDTH_ZF64,
+    XED_OPERAND_WIDTH_ZB,
+    XED_OPERAND_WIDTH_ZW,
+    XED_OPERAND_WIDTH_ZD,
+    XED_OPERAND_WIDTH_ZQ,
+    XED_OPERAND_WIDTH_ZUB,
+    XED_OPERAND_WIDTH_ZUW,
+    XED_OPERAND_WIDTH_ZUD,
+    XED_OPERAND_WIDTH_ZUQ,
+    XED_OPERAND_WIDTH_ZI8,
+    XED_OPERAND_WIDTH_ZI16,
+    XED_OPERAND_WIDTH_ZI32,
+    XED_OPERAND_WIDTH_ZI64,
+    XED_OPERAND_WIDTH_ZU8,
+    XED_OPERAND_WIDTH_ZU16,
+    XED_OPERAND_WIDTH_ZU32,
+    XED_OPERAND_WIDTH_ZU64,
+    XED_OPERAND_WIDTH_ZU128,
+    XED_OPERAND_WIDTH_LAST,
+}</pre><h2 id='variants' class='variants'>Variants</h2>
+<span id='variant.XED_OPERAND_WIDTH_INVALID' class='variant'><span id='XED_OPERAND_WIDTH_INVALID.v' class='invisible'><code>XED_OPERAND_WIDTH_INVALID</code></span></span><span id='variant.XED_OPERAND_WIDTH_ASZ' class='variant'><span id='XED_OPERAND_WIDTH_ASZ.v' class='invisible'><code>XED_OPERAND_WIDTH_ASZ</code></span></span><span id='variant.XED_OPERAND_WIDTH_SSZ' class='variant'><span id='XED_OPERAND_WIDTH_SSZ.v' class='invisible'><code>XED_OPERAND_WIDTH_SSZ</code></span></span><span id='variant.XED_OPERAND_WIDTH_PSEUDO' class='variant'><span id='XED_OPERAND_WIDTH_PSEUDO.v' class='invisible'><code>XED_OPERAND_WIDTH_PSEUDO</code></span></span><span id='variant.XED_OPERAND_WIDTH_PSEUDOX87' class='variant'><span id='XED_OPERAND_WIDTH_PSEUDOX87.v' class='invisible'><code>XED_OPERAND_WIDTH_PSEUDOX87</code></span></span><span id='variant.XED_OPERAND_WIDTH_A16' class='variant'><span id='XED_OPERAND_WIDTH_A16.v' class='invisible'><code>XED_OPERAND_WIDTH_A16</code></span></span><span id='variant.XED_OPERAND_WIDTH_A32' class='variant'><span id='XED_OPERAND_WIDTH_A32.v' class='invisible'><code>XED_OPERAND_WIDTH_A32</code></span></span><span id='variant.XED_OPERAND_WIDTH_B' class='variant'><span id='XED_OPERAND_WIDTH_B.v' class='invisible'><code>XED_OPERAND_WIDTH_B</code></span></span><span id='variant.XED_OPERAND_WIDTH_D' class='variant'><span id='XED_OPERAND_WIDTH_D.v' class='invisible'><code>XED_OPERAND_WIDTH_D</code></span></span><span id='variant.XED_OPERAND_WIDTH_I8' class='variant'><span id='XED_OPERAND_WIDTH_I8.v' class='invisible'><code>XED_OPERAND_WIDTH_I8</code></span></span><span id='variant.XED_OPERAND_WIDTH_U8' class='variant'><span id='XED_OPERAND_WIDTH_U8.v' class='invisible'><code>XED_OPERAND_WIDTH_U8</code></span></span><span id='variant.XED_OPERAND_WIDTH_I16' class='variant'><span id='XED_OPERAND_WIDTH_I16.v' class='invisible'><code>XED_OPERAND_WIDTH_I16</code></span></span><span id='variant.XED_OPERAND_WIDTH_U16' class='variant'><span id='XED_OPERAND_WIDTH_U16.v' class='invisible'><code>XED_OPERAND_WIDTH_U16</code></span></span><span id='variant.XED_OPERAND_WIDTH_I32' class='variant'><span id='XED_OPERAND_WIDTH_I32.v' class='invisible'><code>XED_OPERAND_WIDTH_I32</code></span></span><span id='variant.XED_OPERAND_WIDTH_U32' class='variant'><span id='XED_OPERAND_WIDTH_U32.v' class='invisible'><code>XED_OPERAND_WIDTH_U32</code></span></span><span id='variant.XED_OPERAND_WIDTH_I64' class='variant'><span id='XED_OPERAND_WIDTH_I64.v' class='invisible'><code>XED_OPERAND_WIDTH_I64</code></span></span><span id='variant.XED_OPERAND_WIDTH_U64' class='variant'><span id='XED_OPERAND_WIDTH_U64.v' class='invisible'><code>XED_OPERAND_WIDTH_U64</code></span></span><span id='variant.XED_OPERAND_WIDTH_F16' class='variant'><span id='XED_OPERAND_WIDTH_F16.v' class='invisible'><code>XED_OPERAND_WIDTH_F16</code></span></span><span id='variant.XED_OPERAND_WIDTH_F32' class='variant'><span id='XED_OPERAND_WIDTH_F32.v' class='invisible'><code>XED_OPERAND_WIDTH_F32</code></span></span><span id='variant.XED_OPERAND_WIDTH_F64' class='variant'><span id='XED_OPERAND_WIDTH_F64.v' class='invisible'><code>XED_OPERAND_WIDTH_F64</code></span></span><span id='variant.XED_OPERAND_WIDTH_DQ' class='variant'><span id='XED_OPERAND_WIDTH_DQ.v' class='invisible'><code>XED_OPERAND_WIDTH_DQ</code></span></span><span id='variant.XED_OPERAND_WIDTH_XUB' class='variant'><span id='XED_OPERAND_WIDTH_XUB.v' class='invisible'><code>XED_OPERAND_WIDTH_XUB</code></span></span><span id='variant.XED_OPERAND_WIDTH_XUW' class='variant'><span id='XED_OPERAND_WIDTH_XUW.v' class='invisible'><code>XED_OPERAND_WIDTH_XUW</code></span></span><span id='variant.XED_OPERAND_WIDTH_XUD' class='variant'><span id='XED_OPERAND_WIDTH_XUD.v' class='invisible'><code>XED_OPERAND_WIDTH_XUD</code></span></span><span id='variant.XED_OPERAND_WIDTH_XUQ' class='variant'><span id='XED_OPERAND_WIDTH_XUQ.v' class='invisible'><code>XED_OPERAND_WIDTH_XUQ</code></span></span><span id='variant.XED_OPERAND_WIDTH_X128' class='variant'><span id='XED_OPERAND_WIDTH_X128.v' class='invisible'><code>XED_OPERAND_WIDTH_X128</code></span></span><span id='variant.XED_OPERAND_WIDTH_XB' class='variant'><span id='XED_OPERAND_WIDTH_XB.v' class='invisible'><code>XED_OPERAND_WIDTH_XB</code></span></span><span id='variant.XED_OPERAND_WIDTH_XW' class='variant'><span id='XED_OPERAND_WIDTH_XW.v' class='invisible'><code>XED_OPERAND_WIDTH_XW</code></span></span><span id='variant.XED_OPERAND_WIDTH_XD' class='variant'><span id='XED_OPERAND_WIDTH_XD.v' class='invisible'><code>XED_OPERAND_WIDTH_XD</code></span></span><span id='variant.XED_OPERAND_WIDTH_XQ' class='variant'><span id='XED_OPERAND_WIDTH_XQ.v' class='invisible'><code>XED_OPERAND_WIDTH_XQ</code></span></span><span id='variant.XED_OPERAND_WIDTH_MB' class='variant'><span id='XED_OPERAND_WIDTH_MB.v' class='invisible'><code>XED_OPERAND_WIDTH_MB</code></span></span><span id='variant.XED_OPERAND_WIDTH_MW' class='variant'><span id='XED_OPERAND_WIDTH_MW.v' class='invisible'><code>XED_OPERAND_WIDTH_MW</code></span></span><span id='variant.XED_OPERAND_WIDTH_MD' class='variant'><span id='XED_OPERAND_WIDTH_MD.v' class='invisible'><code>XED_OPERAND_WIDTH_MD</code></span></span><span id='variant.XED_OPERAND_WIDTH_MQ' class='variant'><span id='XED_OPERAND_WIDTH_MQ.v' class='invisible'><code>XED_OPERAND_WIDTH_MQ</code></span></span><span id='variant.XED_OPERAND_WIDTH_M64INT' class='variant'><span id='XED_OPERAND_WIDTH_M64INT.v' class='invisible'><code>XED_OPERAND_WIDTH_M64INT</code></span></span><span id='variant.XED_OPERAND_WIDTH_M64REAL' class='variant'><span id='XED_OPERAND_WIDTH_M64REAL.v' class='invisible'><code>XED_OPERAND_WIDTH_M64REAL</code></span></span><span id='variant.XED_OPERAND_WIDTH_MEM108' class='variant'><span id='XED_OPERAND_WIDTH_MEM108.v' class='invisible'><code>XED_OPERAND_WIDTH_MEM108</code></span></span><span id='variant.XED_OPERAND_WIDTH_MEM14' class='variant'><span id='XED_OPERAND_WIDTH_MEM14.v' class='invisible'><code>XED_OPERAND_WIDTH_MEM14</code></span></span><span id='variant.XED_OPERAND_WIDTH_MEM16' class='variant'><span id='XED_OPERAND_WIDTH_MEM16.v' class='invisible'><code>XED_OPERAND_WIDTH_MEM16</code></span></span><span id='variant.XED_OPERAND_WIDTH_MEM16INT' class='variant'><span id='XED_OPERAND_WIDTH_MEM16INT.v' class='invisible'><code>XED_OPERAND_WIDTH_MEM16INT</code></span></span><span id='variant.XED_OPERAND_WIDTH_MEM28' class='variant'><span id='XED_OPERAND_WIDTH_MEM28.v' class='invisible'><code>XED_OPERAND_WIDTH_MEM28</code></span></span><span id='variant.XED_OPERAND_WIDTH_MEM32INT' class='variant'><span id='XED_OPERAND_WIDTH_MEM32INT.v' class='invisible'><code>XED_OPERAND_WIDTH_MEM32INT</code></span></span><span id='variant.XED_OPERAND_WIDTH_MEM32REAL' class='variant'><span id='XED_OPERAND_WIDTH_MEM32REAL.v' class='invisible'><code>XED_OPERAND_WIDTH_MEM32REAL</code></span></span><span id='variant.XED_OPERAND_WIDTH_MEM80DEC' class='variant'><span id='XED_OPERAND_WIDTH_MEM80DEC.v' class='invisible'><code>XED_OPERAND_WIDTH_MEM80DEC</code></span></span><span id='variant.XED_OPERAND_WIDTH_MEM80REAL' class='variant'><span id='XED_OPERAND_WIDTH_MEM80REAL.v' class='invisible'><code>XED_OPERAND_WIDTH_MEM80REAL</code></span></span><span id='variant.XED_OPERAND_WIDTH_F80' class='variant'><span id='XED_OPERAND_WIDTH_F80.v' class='invisible'><code>XED_OPERAND_WIDTH_F80</code></span></span><span id='variant.XED_OPERAND_WIDTH_MEM94' class='variant'><span id='XED_OPERAND_WIDTH_MEM94.v' class='invisible'><code>XED_OPERAND_WIDTH_MEM94</code></span></span><span id='variant.XED_OPERAND_WIDTH_MFPXENV' class='variant'><span id='XED_OPERAND_WIDTH_MFPXENV.v' class='invisible'><code>XED_OPERAND_WIDTH_MFPXENV</code></span></span><span id='variant.XED_OPERAND_WIDTH_MXSAVE' class='variant'><span id='XED_OPERAND_WIDTH_MXSAVE.v' class='invisible'><code>XED_OPERAND_WIDTH_MXSAVE</code></span></span><span id='variant.XED_OPERAND_WIDTH_MPREFETCH' class='variant'><span id='XED_OPERAND_WIDTH_MPREFETCH.v' class='invisible'><code>XED_OPERAND_WIDTH_MPREFETCH</code></span></span><span id='variant.XED_OPERAND_WIDTH_P' class='variant'><span id='XED_OPERAND_WIDTH_P.v' class='invisible'><code>XED_OPERAND_WIDTH_P</code></span></span><span id='variant.XED_OPERAND_WIDTH_P2' class='variant'><span id='XED_OPERAND_WIDTH_P2.v' class='invisible'><code>XED_OPERAND_WIDTH_P2</code></span></span><span id='variant.XED_OPERAND_WIDTH_PD' class='variant'><span id='XED_OPERAND_WIDTH_PD.v' class='invisible'><code>XED_OPERAND_WIDTH_PD</code></span></span><span id='variant.XED_OPERAND_WIDTH_PS' class='variant'><span id='XED_OPERAND_WIDTH_PS.v' class='invisible'><code>XED_OPERAND_WIDTH_PS</code></span></span><span id='variant.XED_OPERAND_WIDTH_PI' class='variant'><span id='XED_OPERAND_WIDTH_PI.v' class='invisible'><code>XED_OPERAND_WIDTH_PI</code></span></span><span id='variant.XED_OPERAND_WIDTH_Q' class='variant'><span id='XED_OPERAND_WIDTH_Q.v' class='invisible'><code>XED_OPERAND_WIDTH_Q</code></span></span><span id='variant.XED_OPERAND_WIDTH_S' class='variant'><span id='XED_OPERAND_WIDTH_S.v' class='invisible'><code>XED_OPERAND_WIDTH_S</code></span></span><span id='variant.XED_OPERAND_WIDTH_S64' class='variant'><span id='XED_OPERAND_WIDTH_S64.v' class='invisible'><code>XED_OPERAND_WIDTH_S64</code></span></span><span id='variant.XED_OPERAND_WIDTH_SD' class='variant'><span id='XED_OPERAND_WIDTH_SD.v' class='invisible'><code>XED_OPERAND_WIDTH_SD</code></span></span><span id='variant.XED_OPERAND_WIDTH_SI' class='variant'><span id='XED_OPERAND_WIDTH_SI.v' class='invisible'><code>XED_OPERAND_WIDTH_SI</code></span></span><span id='variant.XED_OPERAND_WIDTH_SS' class='variant'><span id='XED_OPERAND_WIDTH_SS.v' class='invisible'><code>XED_OPERAND_WIDTH_SS</code></span></span><span id='variant.XED_OPERAND_WIDTH_V' class='variant'><span id='XED_OPERAND_WIDTH_V.v' class='invisible'><code>XED_OPERAND_WIDTH_V</code></span></span><span id='variant.XED_OPERAND_WIDTH_Y' class='variant'><span id='XED_OPERAND_WIDTH_Y.v' class='invisible'><code>XED_OPERAND_WIDTH_Y</code></span></span><span id='variant.XED_OPERAND_WIDTH_W' class='variant'><span id='XED_OPERAND_WIDTH_W.v' class='invisible'><code>XED_OPERAND_WIDTH_W</code></span></span><span id='variant.XED_OPERAND_WIDTH_Z' class='variant'><span id='XED_OPERAND_WIDTH_Z.v' class='invisible'><code>XED_OPERAND_WIDTH_Z</code></span></span><span id='variant.XED_OPERAND_WIDTH_SPW8' class='variant'><span id='XED_OPERAND_WIDTH_SPW8.v' class='invisible'><code>XED_OPERAND_WIDTH_SPW8</code></span></span><span id='variant.XED_OPERAND_WIDTH_SPW' class='variant'><span id='XED_OPERAND_WIDTH_SPW.v' class='invisible'><code>XED_OPERAND_WIDTH_SPW</code></span></span><span id='variant.XED_OPERAND_WIDTH_SPW3' class='variant'><span id='XED_OPERAND_WIDTH_SPW3.v' class='invisible'><code>XED_OPERAND_WIDTH_SPW3</code></span></span><span id='variant.XED_OPERAND_WIDTH_SPW2' class='variant'><span id='XED_OPERAND_WIDTH_SPW2.v' class='invisible'><code>XED_OPERAND_WIDTH_SPW2</code></span></span><span id='variant.XED_OPERAND_WIDTH_I1' class='variant'><span id='XED_OPERAND_WIDTH_I1.v' class='invisible'><code>XED_OPERAND_WIDTH_I1</code></span></span><span id='variant.XED_OPERAND_WIDTH_I2' class='variant'><span id='XED_OPERAND_WIDTH_I2.v' class='invisible'><code>XED_OPERAND_WIDTH_I2</code></span></span><span id='variant.XED_OPERAND_WIDTH_I3' class='variant'><span id='XED_OPERAND_WIDTH_I3.v' class='invisible'><code>XED_OPERAND_WIDTH_I3</code></span></span><span id='variant.XED_OPERAND_WIDTH_I4' class='variant'><span id='XED_OPERAND_WIDTH_I4.v' class='invisible'><code>XED_OPERAND_WIDTH_I4</code></span></span><span id='variant.XED_OPERAND_WIDTH_I5' class='variant'><span id='XED_OPERAND_WIDTH_I5.v' class='invisible'><code>XED_OPERAND_WIDTH_I5</code></span></span><span id='variant.XED_OPERAND_WIDTH_I6' class='variant'><span id='XED_OPERAND_WIDTH_I6.v' class='invisible'><code>XED_OPERAND_WIDTH_I6</code></span></span><span id='variant.XED_OPERAND_WIDTH_I7' class='variant'><span id='XED_OPERAND_WIDTH_I7.v' class='invisible'><code>XED_OPERAND_WIDTH_I7</code></span></span><span id='variant.XED_OPERAND_WIDTH_VAR' class='variant'><span id='XED_OPERAND_WIDTH_VAR.v' class='invisible'><code>XED_OPERAND_WIDTH_VAR</code></span></span><span id='variant.XED_OPERAND_WIDTH_BND32' class='variant'><span id='XED_OPERAND_WIDTH_BND32.v' class='invisible'><code>XED_OPERAND_WIDTH_BND32</code></span></span><span id='variant.XED_OPERAND_WIDTH_BND64' class='variant'><span id='XED_OPERAND_WIDTH_BND64.v' class='invisible'><code>XED_OPERAND_WIDTH_BND64</code></span></span><span id='variant.XED_OPERAND_WIDTH_QQ' class='variant'><span id='XED_OPERAND_WIDTH_QQ.v' class='invisible'><code>XED_OPERAND_WIDTH_QQ</code></span></span><span id='variant.XED_OPERAND_WIDTH_YUB' class='variant'><span id='XED_OPERAND_WIDTH_YUB.v' class='invisible'><code>XED_OPERAND_WIDTH_YUB</code></span></span><span id='variant.XED_OPERAND_WIDTH_YUW' class='variant'><span id='XED_OPERAND_WIDTH_YUW.v' class='invisible'><code>XED_OPERAND_WIDTH_YUW</code></span></span><span id='variant.XED_OPERAND_WIDTH_YUD' class='variant'><span id='XED_OPERAND_WIDTH_YUD.v' class='invisible'><code>XED_OPERAND_WIDTH_YUD</code></span></span><span id='variant.XED_OPERAND_WIDTH_YUQ' class='variant'><span id='XED_OPERAND_WIDTH_YUQ.v' class='invisible'><code>XED_OPERAND_WIDTH_YUQ</code></span></span><span id='variant.XED_OPERAND_WIDTH_Y128' class='variant'><span id='XED_OPERAND_WIDTH_Y128.v' class='invisible'><code>XED_OPERAND_WIDTH_Y128</code></span></span><span id='variant.XED_OPERAND_WIDTH_YB' class='variant'><span id='XED_OPERAND_WIDTH_YB.v' class='invisible'><code>XED_OPERAND_WIDTH_YB</code></span></span><span id='variant.XED_OPERAND_WIDTH_YW' class='variant'><span id='XED_OPERAND_WIDTH_YW.v' class='invisible'><code>XED_OPERAND_WIDTH_YW</code></span></span><span id='variant.XED_OPERAND_WIDTH_YD' class='variant'><span id='XED_OPERAND_WIDTH_YD.v' class='invisible'><code>XED_OPERAND_WIDTH_YD</code></span></span><span id='variant.XED_OPERAND_WIDTH_YQ' class='variant'><span id='XED_OPERAND_WIDTH_YQ.v' class='invisible'><code>XED_OPERAND_WIDTH_YQ</code></span></span><span id='variant.XED_OPERAND_WIDTH_YPS' class='variant'><span id='XED_OPERAND_WIDTH_YPS.v' class='invisible'><code>XED_OPERAND_WIDTH_YPS</code></span></span><span id='variant.XED_OPERAND_WIDTH_YPD' class='variant'><span id='XED_OPERAND_WIDTH_YPD.v' class='invisible'><code>XED_OPERAND_WIDTH_YPD</code></span></span><span id='variant.XED_OPERAND_WIDTH_VV' class='variant'><span id='XED_OPERAND_WIDTH_VV.v' class='invisible'><code>XED_OPERAND_WIDTH_VV</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZV' class='variant'><span id='XED_OPERAND_WIDTH_ZV.v' class='invisible'><code>XED_OPERAND_WIDTH_ZV</code></span></span><span id='variant.XED_OPERAND_WIDTH_WRD' class='variant'><span id='XED_OPERAND_WIDTH_WRD.v' class='invisible'><code>XED_OPERAND_WIDTH_WRD</code></span></span><span id='variant.XED_OPERAND_WIDTH_MSKW' class='variant'><span id='XED_OPERAND_WIDTH_MSKW.v' class='invisible'><code>XED_OPERAND_WIDTH_MSKW</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZMSKW' class='variant'><span id='XED_OPERAND_WIDTH_ZMSKW.v' class='invisible'><code>XED_OPERAND_WIDTH_ZMSKW</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZF32' class='variant'><span id='XED_OPERAND_WIDTH_ZF32.v' class='invisible'><code>XED_OPERAND_WIDTH_ZF32</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZF64' class='variant'><span id='XED_OPERAND_WIDTH_ZF64.v' class='invisible'><code>XED_OPERAND_WIDTH_ZF64</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZB' class='variant'><span id='XED_OPERAND_WIDTH_ZB.v' class='invisible'><code>XED_OPERAND_WIDTH_ZB</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZW' class='variant'><span id='XED_OPERAND_WIDTH_ZW.v' class='invisible'><code>XED_OPERAND_WIDTH_ZW</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZD' class='variant'><span id='XED_OPERAND_WIDTH_ZD.v' class='invisible'><code>XED_OPERAND_WIDTH_ZD</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZQ' class='variant'><span id='XED_OPERAND_WIDTH_ZQ.v' class='invisible'><code>XED_OPERAND_WIDTH_ZQ</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZUB' class='variant'><span id='XED_OPERAND_WIDTH_ZUB.v' class='invisible'><code>XED_OPERAND_WIDTH_ZUB</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZUW' class='variant'><span id='XED_OPERAND_WIDTH_ZUW.v' class='invisible'><code>XED_OPERAND_WIDTH_ZUW</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZUD' class='variant'><span id='XED_OPERAND_WIDTH_ZUD.v' class='invisible'><code>XED_OPERAND_WIDTH_ZUD</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZUQ' class='variant'><span id='XED_OPERAND_WIDTH_ZUQ.v' class='invisible'><code>XED_OPERAND_WIDTH_ZUQ</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZI8' class='variant'><span id='XED_OPERAND_WIDTH_ZI8.v' class='invisible'><code>XED_OPERAND_WIDTH_ZI8</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZI16' class='variant'><span id='XED_OPERAND_WIDTH_ZI16.v' class='invisible'><code>XED_OPERAND_WIDTH_ZI16</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZI32' class='variant'><span id='XED_OPERAND_WIDTH_ZI32.v' class='invisible'><code>XED_OPERAND_WIDTH_ZI32</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZI64' class='variant'><span id='XED_OPERAND_WIDTH_ZI64.v' class='invisible'><code>XED_OPERAND_WIDTH_ZI64</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZU8' class='variant'><span id='XED_OPERAND_WIDTH_ZU8.v' class='invisible'><code>XED_OPERAND_WIDTH_ZU8</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZU16' class='variant'><span id='XED_OPERAND_WIDTH_ZU16.v' class='invisible'><code>XED_OPERAND_WIDTH_ZU16</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZU32' class='variant'><span id='XED_OPERAND_WIDTH_ZU32.v' class='invisible'><code>XED_OPERAND_WIDTH_ZU32</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZU64' class='variant'><span id='XED_OPERAND_WIDTH_ZU64.v' class='invisible'><code>XED_OPERAND_WIDTH_ZU64</code></span></span><span id='variant.XED_OPERAND_WIDTH_ZU128' class='variant'><span id='XED_OPERAND_WIDTH_ZU128.v' class='invisible'><code>XED_OPERAND_WIDTH_ZU128</code></span></span><span id='variant.XED_OPERAND_WIDTH_LAST' class='variant'><span id='XED_OPERAND_WIDTH_LAST.v' class='invisible'><code>XED_OPERAND_WIDTH_LAST</code></span></span><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_operand_width_enum_t.html" title="enum xed_sys::xed_interface::xed_operand_width_enum_t">xed_operand_width_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2977' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Copy.html" title="trait core::marker::Copy">Copy</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_operand_width_enum_t.html" title="enum xed_sys::xed_interface::xed_operand_width_enum_t">xed_operand_width_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2977' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_operand_width_enum_t.html" title="enum xed_sys::xed_interface::xed_operand_width_enum_t">xed_operand_width_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2977' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="enum" href="../../xed_sys/xed_interface/enum.xed_operand_width_enum_t.html" title="enum xed_sys::xed_interface::xed_operand_width_enum_t">xed_operand_width_enum_t</a></code></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_operand_width_enum_t.html" title="enum xed_sys::xed_interface::xed_operand_width_enum_t">xed_operand_width_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2977' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class="enum" href="../../xed_sys/xed_interface/enum.xed_operand_width_enum_t.html" title="enum xed_sys::xed_interface::xed_operand_width_enum_t">xed_operand_width_enum_t</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.Eq.html" title="trait core::cmp::Eq">Eq</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_operand_width_enum_t.html" title="enum xed_sys::xed_interface::xed_operand_width_enum_t">xed_operand_width_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2977' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'></div><h3 class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html" title="trait core::hash::Hash">Hash</a> for <a class="enum" href="../../xed_sys/xed_interface/enum.xed_operand_width_enum_t.html" title="enum xed_sys::xed_interface::xed_operand_width_enum_t">xed_operand_width_enum_t</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/xed_sys/xed_interface.rs.html#2977' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.hash' class="method"><span id='hash.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash' class='fnname'>hash</a>&lt;__H:&nbsp;<a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>&gt;(&amp;self, __arg_0: &amp;mut __H)</code></span></h4>
+<div class='docblock'><p>Feeds this value into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#tymethod.hash">Read more</a></p>
+</div><h4 id='method.hash_slice' class="method"><span id='hash_slice.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice' class='fnname'>hash_slice</a>&lt;H&gt;(data: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.slice.html">&amp;[Self]</a>, state: &amp;mut H) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;H: <a class="trait" href="https://doc.rust-lang.org/nightly/core/hash/trait.Hasher.html" title="trait core::hash::Hasher">Hasher</a>,&nbsp;</span></code><div class='since' title='Stable since Rust version 1.3.0'>1.3.0</div></span></h4>
+<div class='docblock'><p>Feeds a slice of this type into the given [<code>Hasher</code>]. <a href="https://doc.rust-lang.org/nightly/core/hash/trait.Hash.html#method.hash_slice">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "xed_sys";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
