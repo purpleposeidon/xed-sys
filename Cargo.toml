@@ -8,7 +8,7 @@ homepage = "https://github.com/valarauca/xed-sys"
 repository = "https://github.com/valarauca/xed-sys"
 categories = ["external-ffi-bindings", "hardware-support", "encoding", "parsing"]
 license = "Apache-2.0"
-keywords = ["xed", "intel"]
+keywords = ["xed", "intel", "asm", "x86", "x64"]
 
 [dependencies]
 
